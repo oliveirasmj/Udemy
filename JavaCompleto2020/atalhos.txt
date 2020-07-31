@@ -1,0 +1,9 @@
+Indentar - Ctrl Shift F
+Import - Ctrl Shift O
+
+
+Reset perspective --> Window - Perspective - Reset Perspective 
+Perspective JAVA --> Window - Open Perspective - Java
+Console --> Windows - Show View - Console
+
+https://blog.algaworks.com/atalhos-e-configuracoes-para-ganhar-produtividade-com-eclipse/

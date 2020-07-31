@@ -1,0 +1,5 @@
+Toggle Breakpoint - Ctrl Shift B (marcar ponto onde é para começar debug)
+Debug As Java Aplication ---OU--- ao lado do botao do run
+Começar a escrever valores na consola
+Linha a Linha - F6
+Mudar perspetiva para original - canto superior direito
