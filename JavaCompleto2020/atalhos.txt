@@ -6,4 +6,5 @@ Reset perspective --> Window - Perspective - Reset Perspective
 Perspective JAVA --> Window - Open Perspective - Java
 Console --> Windows - Show View - Console
 
+Links:
 https://blog.algaworks.com/atalhos-e-configuracoes-para-ganhar-produtividade-com-eclipse/
