@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\olive\Downloads\Projetos\Udemy\JavaCompleto2020\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+103457224.index
+1574843208.index
+1898811742.index
+3894722788.index
+3510846143.index

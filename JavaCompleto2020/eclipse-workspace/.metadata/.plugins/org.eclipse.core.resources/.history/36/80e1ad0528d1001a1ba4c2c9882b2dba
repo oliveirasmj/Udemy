@@ -1,0 +1,30 @@
+package secao6;
+
+import java.util.Scanner;
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		
+		while (x==1 || x==2 || x==3 || x==4) {
+
+			if(x>0 && y>0) {
+				System.out.println("primeiro");
+			} else if(x>0 && y<0){
+				System.out.println("quarto");
+			} else if(x<0 && y<0){
+				System.out.println("terceiro");
+			} else if(x<0 && y>0){
+				System.out.println("segundo");
+			}
+			
+			//ler novamente variaveis
+			x = sc.nextInt();
+		}
+		sc.close();
+	}
+
+}
