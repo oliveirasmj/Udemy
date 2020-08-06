@@ -1,4 +1,4 @@
-package semPOO;
+package primeiroProblemaSemPOO;
 
 import java.util.Scanner;
 

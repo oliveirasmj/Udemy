@@ -1,4 +1,4 @@
-package comPOO;
+package primeiroProblemaComPOO;
 
 public class Triangle {
 
