@@ -24,13 +24,14 @@ public class Main {
 		System.out.print("Escreva: ");
 		Scanner sc = new Scanner(System.in);
 		//String variavel = sc.next();
-		int variavelint = sc.nextInt();
+		int variavelint = sc.nextInt(); //Cuidado que pode ser preciso limpar o buffer a seguir para mudar de linha
+		
 		//double variaveldouble = sc.nextDouble();
 		//char variavelchar = sc.next().charAt(0); // 0 é o primeiro caracter que encontrar
 		System.out.println("A variável é: " + variavelint);
 		
 		//Ler variaveis ate apertar o enter
-		sc.nextLine(); //limpar buffer - é preciso para que proximas var nao fiquem brancas - fica pendente na linha anterior - sc.nextInt()
+		sc.nextLine(); //limpar buffer - fica pendente na linha anterior por causa do sc.nextInt()  --> é preciso para que proxima var nao fique branca
 		System.out.print("Escreva: ");
 		String linha = sc.nextLine();
 		System.out.println("A linha é: " + linha);
@@ -39,7 +40,7 @@ public class Main {
 		int a=5, b=2;
 		System.out.println(a/b); System.out.println((double)a/b);
 		
-		
+		//https://pt.stackoverflow.com/questions/186906/linha-de-c%C3%B3digo-ignorada
 	}
 
 }
