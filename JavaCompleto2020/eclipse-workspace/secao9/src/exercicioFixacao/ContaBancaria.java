@@ -11,10 +11,17 @@ public class ContaBancaria {
 		this.nomeTitular = nomeTitular;
 	}
 
-	public ContaBancaria(int numConta, String nomeTitular, double saldo) {
+	//	public ContaBancaria(int numConta, String nomeTitular, double saldo) {
+	//		this.numConta = numConta;
+	//		this.nomeTitular = nomeTitular;
+	//		this.saldo = saldo;
+	//	}
+	
+	//esta alternativa é mais correta do ponto de vista de negocio
+	public ContaBancaria(int numConta, String nomeTitular, double depositoInicial) {
 		this.numConta = numConta;
 		this.nomeTitular = nomeTitular;
-		this.saldo = saldo;
+		deposito(depositoInicial); //assim chama-se diretamente o método e caso mais tarde haja alguma taxa não se muda o código nos dois locais
 	}
 
 	public String getNomeTitular() {
