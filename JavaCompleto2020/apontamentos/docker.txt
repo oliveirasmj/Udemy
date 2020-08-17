@@ -1,0 +1,7 @@
+Docker - é uma plataforma open source utilizado para virtualização baseado em containers
+ -É muito mais rápido do que a típica virtualização, poupa recursos
+ -Não têm camada do sistema operativo nem do hypervisor
+O sistema operativo é partilhado ao invés da virtualização
+
+Container - Imagem a ser executada.
+cada um executa apenas um processo

@@ -1,0 +1,183 @@
+---------------------JAVA BASICO-----------------------------
+HelloWorld.class (depois de compilados dao origem a class)
+HelloWorld.java (source code)
+Compiler (é compilado para bytecode e executado no JVM) - compilador - transforma em linguagem maquina
+JVM - Java virtual mahine
+
+Scanner
+Scanner sc = new Scanner(System.in);
+String str = sc.nextLine();
+
+Ao criar uma variavel nao objeto é defido um quadrado com o valor la dentro
+Num objeto é criado um quadrado com a posição da memória
+
+Vantagens POO:
+-Duplicação de código
+-Responsabilidades em cada classe
+
+Locale.setDefault(Locale.US); //mudar regiao por causa da virgula e ponto - casas decimais
+double x = 10.2626452; int y = 3; String var = "ola"; char letra = 'A';
+soutf("Double: %f - Inteiro: %d - String: %s - Letra: %c", x, y, var, letra);
+
+int a=5, b=2; System.out.println(a/b); System.out.println((double)a/b); //Truncado e valor real
+
+//INCREMENTO
+//num=num+1
+//num+=1
+//num++  --> valor antigo será usado para o cálculo
+//++num  --> valor antigo não será usado para o cálculo
+
+Math.pow(5, 2)
+Math.sqrt(25)
+
+Membros de instância vs Membros estáticos/de classe
+-Membros de instância tem valor diferente para cada objeto  +  É preciso instanciar
+-Membros estáticos tem o mesmo valor para diferentes objetos (chamados com o nome da classe: Math.sqrt()) + não é preciso instanciar (usados para dados e funções nunca irão se modificar)
+
+
+---------------------CLASSES E OBJETOS-----------------------------
+Classe - representa categoria de algo (descreve caracteristicas) - modelo
+Objeto - instância de uma classe - tem atributos (cor)
+	Classe: int cor -> Objeto cor: vermelho
+Método - é uma função que retorna algo (int/void) ou modifica(setter)
+Carro c = new Carro( );
+
+-Primitivo VS Referencia
+int number; number = 35;		number|35|
+Customer cust; cust = new Customer;	cust| |-------> |:Custormer|
+
+number2 = number			number|35| number2|35|
+Customer cust2; cust2=cust		cust| |-------> |:Custormer|
+					cust2| |------->
+
+private String txt; //txt = null
+
+
+---------------------DEFINICAO CLASSES-----------------------------
+Construtor - é o que é executado na instânciação do objeto (iniciar valores) - método para iniciar os objetos
+Sobrecarga/Overloading - mais de um construtor (varios parametros) - com o mesmo nome
+Encapsulamento - consiste em esconder detalhes de implementação (getters e setters e modificadores private)
+
+This - referência para o próprio objeto (distinguir atributos e variaveis locais ou passar objeto como argumento)
+Os campos devem ser privados e os metodos publicos para serem usados
+
+Modificadores - private, public, protected
+-public - visiveis por todas as classes
+-private - visiveis dentro da classe
+-protected - visiveis dentro da package
+-(default) - visiveis dentro da package
+
+---------------------INTERACAO ENTRE OBJETOS-----------------------------
+final - valor não altera
+
+private final int MAX_ALUNOS_TURMA = 25 //constante valor fixo
+private static int numAlunos = 0; //mesmo valor	para todas os objetos
+
+-Triangle x = new Triangle(); x.area()-> 6 --> Membros de instância (valor para cada objeto - correto)
+-Triangle y = new Triangle(); x.area()-> 4 --> Membros de instância (valor para cada objeto - correto)
+
+-Calculator calc1 = new Calculator(); calc1.PI()-> 3.14 --> Membros estáticos (não totalmente certo)
+-Calculator calc2 = new Calculator(); calc2.PI()-> 3.14 --> Membros estáticos (não totalmente certo)
+-double c = Calculator.PI -> Membros estáticos - Não é preciso instanciar objetos (o mais correto)
+
+Apenas "métodos static" podem ser chamados no public static void main(String[] args) {}
+Para chamar diretamente um método de uma classe(sem instanciar - Classe.metodo() ), então o método terá de ser "static"
+
+
+---------------------MEMÓRIA/ARRAYS/LISTAS(AGRUPAMENTO DE OBJETOS)-----------------------------
+Tipos de Referência - classes (através de ponteiros) - posição da memória fica lá dentro
+Tipos de Valor(primitivos) - caixas em que valor fica lá dentro
+
+Garbage collector - monitoriza os objetos alocados pelo programa (no heap) e desaloca os que não estão a ser utilizados
+Ou seja - se o ponteiro desaparecer o que está no solto no Heap desaparece
+Product P1 = new Product(...);
+Product P2 = new Product(...);
+P1 = P2;
+//O que está no Heap do P1 (para onde apontava) será eliminado, pois apontará para o mesmo de P2
+
+Desalocação por escopo - elimina as váriáveis primitivas que não serão precisas (p. ex. dentro de um if)
+
+
+Array
+private int x[] = new int[10] //tamanho definido
+private int x[] //sem tamanho
+
+private int[] numebers;
+private String[] names;
+
+Coleções: ArrayList(listas de objetos), HashMaps(mapeia chaves para valores)
+private ArrayList<String> files
+files = new ArrayList<String>(); //no construtor - java 7 diamante
+
+https://www.guj.com.br/t/por-favor-qual-e-a-diferenca-dentre-arraylist-e-list/69167/2
+
+NAO PODE SER TIPO DADOS PRIMITIVO
+add, get, size, remove, etc...
+
+Iterações:
+foreach - percorre ate ao fim, nao pode ser alterada (nao remove)
+while - nao precisa ir ate ao fim
+Iterator - nao precisa ir ate ao fim - listar, remover
+
+JAVA DOC - documentação do java
+nome da classe, descrição, constrotores e metodos, valores de retorno
+/**
+
+-------------------HERANÇA, POLIMORF, INTERFACE---------------------------
+Encapsulamento - getters e setters - relativos aos campos
+
+Enumerado - conjunto de nomes significativos
+public enum MarcasEnum {
+    AMAZON, DELL, HP, TOSHIBA, LG, SAMSUNG;
+}
+
+Herança - herdar características das classes pai (extends)
+VANTAGENS: evita repetição de código e no caso de ser vir a alterar codigo
+Animal -> Mamifero e Reptil -> Cão -> Dalmata
+
+Métodos são herdados por todas as classes
+
+Polimorfismo - classes filho conseguirem chamar metodos com o mesmo nome mas de forma a fazerem coisas diferentes
+(abstract)
+
+Instance of (é um) - verifica se um objeto é de um tipo de classe
+Ferrari ferrari = new Ferrari();
+if (ferrari instance of Vehicle)
+
+Sobreposição toString
+
+-------------------ABSTRATA---------------------------
+Métodos abstratos não têm corpo na classe pai - mover()
+Apenas tem corpo na classe filho - voar, nadas, saltar...
+Classe com metodos abstratos é uma CLASSE ABSTRATA(nao podem ser instanciadas)
+Apenas as filho podem ser instanciadas
+
+
+-------------------INTERFACE---------------------------
+é um conjunto de métodos vazios que são implementados noutra classe
+
+VS: https://www.devmedia.com.br/interfaces-x-classes-abstratas/13337
+
+-------------------------------EXCEPÇÕES---------------------------------
+Programação defensiva
+Lançamento e tratamento de exceções
+Reporte de erros
+
+Objetivo: prevenir que erros afectem o sistema
+
+Remover aluno com id que não existe
+try - instruções a proteger
+catch - reportar
+finally - faz sempre
+
+RuntimeException - compilador nao obriga a tratar - programa termina
+Exception - compilador obriga a tratar
+
+Throws - lançam uma exceção verificada devem indicá-lo incluindo uma cláusula throws
+
+-------------------------------OUTROS---------------------------------
+
+Funções puras e alta ordem
+funções que não possuem efeitos colaterais, que não dependam de nenhuma informação externa a elas além de seus parâmetros
+
+Imutabilidade - var nao altera

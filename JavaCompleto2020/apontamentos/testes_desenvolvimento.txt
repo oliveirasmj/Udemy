@@ -1,0 +1,76 @@
+Tcp garante entrega - torrent
+UDP nao garante - steam
+
+Design Patterns (padrões de projetos) são soluções generalistas para problemas recorrentes durante o desenvolvimento de um software.
+-3 camadas - MVC - modelo(cruds), control(faz comunicação entre model e vista), vista(informações do controller)
+----------------------------------------------------------------------
+Testes: (é o processo que consiste em encontrar erros)
+TDD (Test Driven Development ) é um conceito promovido pelo 
+Extreme Programming - Framework: junit: framework open-source para construção de testes automatizados em Java
+
+Método WhiteBox (baseados na estrutura interna do programa)
+	- assegurar que todas as condições/atribuições sao executadas 1 vez
+	- base path - nº decisoes simples + 1
+Método BlackBox
+	- não é baseado na estrutura
+	- comportamento de entradas e saídas
+	- partições de equivalência (Reduz um conjunto de entradas infinito)
+----------------------------------------------------------------------
+Testes automatizados: consiste num software para controlar a execução do teste de software
+Testes unitários: consiste em testar pequenas unidades de software (metodos p. exe)
+Testes de integração: antes de centralizar tudo repositório há testes
+
+continuous integration: (abordagem de desenvolvimento) - centralizar no repositorio constantemente
+continuous deployment: (abordagem de desenvolvimento) - consiste entregas pequenas e rápidas
+self documenting code: conjunto de regras para melhor entender o codigo
+(maxClassSize = 23, nomes de variáveis claros)
+
+mock:
+spy:
+coverage:
+----------------------------------------------------------------------
+Desenvolvimento
+
+Processos prescritivos
+-Cascatas:
+  Cascata Sequencial: requisitos estaveis
+  Cascata revisto: pode-se voltar atrás (anterior apenas)
+  Incremental: divide-se por iterações(pequenas cascatas)
+
+-Desenvolvimento rapido de aplicações: mais rapido e iterativo
+-Evolutivos: iterativos(ciclos), requisitos podem ser modificados
+  Ageis: nao precisam de prever o futuro, permite mudança, requisitos podem ser modificados
+	incentivam iterações(ciclos), custo nao aumenta, é agil
+	Exemplos: DSDM, Scrum, Crystal, FDD, Extreme Programing
+--------------------------------------------------------------------------------------------------
+Extreme Programing: 
+-equipas medias e pequenas, 
+-requisitos vagos, 
+-revisao permanente do codigo(refratoring), 
+-integração continua e testes(centralizar no repositorio constantemente - antes de submeter há testes), 
+-cliente + equipa
+-teste Unitario - teste de qualquer função de uma classe (1+2=3)
+
+SCRUM é um framework que promove uma interação entre a equipe, visando a gestão de projetos e o desenvolvimento ágil
+-os projetos são dividos em ciclos (sprints - mensais por norma)
+-a cada dia de uma Sprint, a equipe faz uma breve reunião (Daily Scrum)
+-objetivo é disseminar conhecimento sobre o que foi feito no dia anterior
+-identificar impedimentos e priorizar o trabalho do dia que se inicia
+
+-->Product Backlog: é o nome dado para o conjunto de objetivos de um projeto
+-->Sprint Backlog: é como se chamam as tarefas específicas
+-->Sprint Review Meeting: essa é a reunião que acontece ao final de cada sprint
+
+
+KAMBAN (sistema visual para gerir projetos) - tem no git
+-TO DO
+-In Progress
+-Done
+
+--------------------------------------------------------------------------------------------------
+Princípios de desenvolvimento:
+(pesquisa "software development + termo")
+- SOLID
+- DRY
+- KISS
+- YAGNI

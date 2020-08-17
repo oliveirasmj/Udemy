@@ -1,0 +1,24 @@
+https://www.devmedia.com.br/servicos-restful-verbos-http/37103
+O HTTP é o protocolo responsável pela comunicação de sites na web
+
+--> GET: utilizado para obter/enviar dados em que os valores na URL nao importam
+ex: pesquisa de notícias num site
+192.168.1.1/android_register_login/listar_doentes.php?id=42
+o GET, os parâmetros são passados no cabeçalho da requisição
+exemplo: formulário de procura
+
+--> POST: utilizado para obter/enviar dados em que os valores na URL nao importam
+ex: registar um utilizador - nao quero que a password seja passada pela url
+192.168.1.1/android_register_login/listar_doentes.php
+o POST envia os parâmetros no corpo da requisição HTTP
+exemplo: enviar informações de clientes
+
+--> DELETE: usado para remover o recurso
+--> PUT: para editar o recurso
+--> PATCH: editar o recurso sem a necessidade de enviar todos os atributos
+----------------------------------------------------------------------------------
+
+API - retorno de dados (BD ou JSON)
+
+O que é REST?
+REST maturity levels?
