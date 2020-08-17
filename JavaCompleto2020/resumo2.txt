@@ -36,9 +36,22 @@ Para chamar diretamente um método de uma classe(sem instanciar - Classe.metodo(
 
 final - valor não altera
 
-Contrutor - é o que é executado na instânciação do objeto (iniciar valores)
+Construtor - é o que é executado na instânciação do objeto (iniciar valores)
 Sobrecarga - mais de um construtor
 this - referência para o próprio objeto (distinguir atributos e variaveis locais ou passar objeto como argumento)
 Encapsulamento - consiste em esconder detalhes de implementação (getters e setters e modificadores private)
 
 modificadores - private, public, protected
+
+----------------------------------------------------
+Tipos de Referência - classes (através de ponteiros) - posição da memória fica lá dentro
+Tipos de Valor(primitivos) - caixas em que valor fica lá dentro
+
+Garbage collector - monitoriza os objetos alocados pelo programa (no heap) e desaloca os que não estão a ser utilizados
+Ou seja - se o ponteiro desaparecer o que está no solto no Heap desaparece
+Product P1 = new Product(...);
+Product P2 = new Product(...);
+P1 = P2;
+//O que está no Heap do P1 (para onde apontava) será eliminado, pois apontará para o mesmo de P2
+
+Desalocação por escopo - elimina as váriáveis primitivas que não serão precisas (p. ex. dentro de um if)
