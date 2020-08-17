@@ -85,8 +85,9 @@ Para chamar diretamente um método de uma classe(sem instanciar - Classe.metodo(
 
 
 ---------------------MEMÓRIA/ARRAYS/LISTAS(AGRUPAMENTO DE OBJETOS)-----------------------------
-Tipos de Referência - classes (através de ponteiros) - posição da memória fica lá dentro
-Tipos de Valor(primitivos) - caixas em que valor fica lá dentro
+Tipos de variáveis:
+-Tipos de Referência - classes (através de ponteiros) - posição da memória fica lá dentro - Stack ------> Heap
+-Tipos de Valor (primitivos) - caixas em que valor fica lá dentro
 
 Garbage collector - monitoriza os objetos alocados pelo programa (no heap) e desaloca os que não estão a ser utilizados
 Ou seja - se o ponteiro desaparecer o que está no solto no Heap desaparece
