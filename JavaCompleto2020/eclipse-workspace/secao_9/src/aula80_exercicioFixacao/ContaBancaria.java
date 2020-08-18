@@ -1,4 +1,4 @@
-package exercicioFixacao;
+package aula80_exercicioFixacao;
 
 public class ContaBancaria {
 	

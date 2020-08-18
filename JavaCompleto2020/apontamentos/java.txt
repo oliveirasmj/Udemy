@@ -98,12 +98,16 @@ P1 = P2;
 
 Desalocação por escopo - elimina as váriáveis primitivas que não serão precisas (p. ex. dentro de um if)
 
+-------
 
-Array
+Arrays/Vetores: dados do mesmo tipo ordenados por posições
+-vantagens: acesso imediato aos elementos pela posição
+-desvantagens: tamanho fixo e dificuldade para inserir e eliminar
+
 private int x[] = new int[10] //tamanho definido
 private int x[] //sem tamanho
 
-private int[] numebers;
+private int[] numbers;
 private String[] names;
 
 Coleções: ArrayList(listas de objetos), HashMaps(mapeia chaves para valores)
@@ -149,7 +153,7 @@ Sobreposição toString
 
 -------------------ABSTRATA---------------------------
 Métodos abstratos não têm corpo na classe pai - mover()
-Apenas tem corpo na classe filho - voar, nadas, saltar...
+Apenas tem corpo na classe filho - voar, nadar, saltar...
 Classe com metodos abstratos é uma CLASSE ABSTRATA(nao podem ser instanciadas)
 Apenas as filho podem ser instanciadas
 
