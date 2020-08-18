@@ -87,7 +87,7 @@ Para chamar diretamente um método de uma classe(sem instanciar - Classe.metodo(
 ---------------------MEMÓRIA/ARRAYS/LISTAS(AGRUPAMENTO DE OBJETOS)-----------------------------
 Tipos de variáveis:
 -Tipos de Referência - classes (através de ponteiros) - posição da memória fica lá dentro - Stack ------> Heap
--Tipos de Valor (primitivos) - caixas em que valor fica lá dentro
+-Tipos de Valor (primitivos) - caixas em que valor fica lá dentro - boolean, byte, char, short, int, long, float, double
 
 Garbage collector - monitoriza os objetos alocados pelo programa (no heap) e desaloca os que não estão a ser utilizados
 Ou seja - se o ponteiro desaparecer o que está no solto no Heap desaparece
@@ -98,22 +98,42 @@ P1 = P2;
 
 Desalocação por escopo - elimina as váriáveis primitivas que não serão precisas (p. ex. dentro de um if)
 
+Wrapper classes - classes equivalentes aos tipos primitivo - Double(wrapper classe) e double(primitivo)
+-usado para converter valores entre os dois tipos(ex. String to int)
+
 -------
 
 Arrays/Vetores: dados do mesmo tipo ordenados por posições
 -vantagens: acesso imediato aos elementos pela posição
 -desvantagens: tamanho fixo e dificuldade para inserir e eliminar
 
-private int x[] = new int[10] //tamanho definido
-private int x[] //sem tamanho
+String x[] = new String[10] //tamanho definido
+String x[] //sem tamanho
+String[] names; //dar nome ao array
+String[] names = new String[] {"Mike", "Pedro", "Carlos"};
 
-private int[] numbers;
-private String[] names;
+Boxing: conversão de um objeto valor para um objeto referência
+int x = 20; Object obj = x;
+UnBoxing: conversão de um objeto referência para um objeto valor
+int x = 20; Object obj = x; int y = (int) obj;
+
+FOR VS FOREACH:
+
+String[] vect = new String[] {"Mike", "Pedro", "Carlos"};
+
+for(int i=0; i<vect.length; i++){
+     sout(vect[i]);
+}
+
+for(String obj : vect){
+     sout(obj);
+}
+
+-------
 
 Coleções: ArrayList(listas de objetos), HashMaps(mapeia chaves para valores)
 private ArrayList<String> files
 files = new ArrayList<String>(); //no construtor - java 7 diamante
-
 https://www.guj.com.br/t/por-favor-qual-e-a-diferenca-dentre-arraylist-e-list/69167/2
 
 NAO PODE SER TIPO DADOS PRIMITIVO
