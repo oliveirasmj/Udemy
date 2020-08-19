@@ -103,13 +103,11 @@ Wrapper classes - classes equivalentes aos tipos primitivo - Double(wrapper clas
 
 -------
 
-Arrays/Vetores: dados do mesmo tipo ordenados por posições
+Array/Vetor: dados do mesmo tipo ordenados por posições
 -vantagens: acesso imediato aos elementos pela posição
 -desvantagens: tamanho fixo e dificuldade para inserir e eliminar
 
-String x[] = new String[10] //tamanho definido
-String x[] //sem tamanho
-String[] names; //dar nome ao array
+String vect[] = new String[10] //tamanho definido de array de Strings
 String[] names = new String[] {"Mike", "Pedro", "Carlos"};
 
 Boxing: conversão de um objeto valor para um objeto referência
@@ -120,14 +118,31 @@ int x = 20; Object obj = x; int y = (int) obj;
 FOR VS FOREACH:
 
 String[] vect = new String[] {"Mike", "Pedro", "Carlos"};
-
 for(int i=0; i<vect.length; i++){
      sout(vect[i]);
 }
-
 for(String obj : vect){
      sout(obj);
 }
+
+-------
+List:
+-é uma estrutura de dados 
+-do mesmo tipo
+-ordenada
+-inicia vazia, sem dizer o valor inicial
+-cada elemento é um nó
+-não é uma classe, é uma interface - não pode ser instanciada
+	List<String> list = new List<>(); -- ERRADO
+
+Classes que implementam List: ArrayList, LinkedList, etc - forma de instanciar
+	List<String> list = new ArrayList<>(); -- CERTO
+
+Vantagens: 
+-tamanho variável e facilidade para inserir e eliminar
+Desvantagens: 
+-acesso sequencial - é preciso percorrer toda a lista para chegar a um elemento
+-tipo de dados não pode ser primitivo, apenas o wraper
 
 -------
 

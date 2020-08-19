@@ -1,4 +1,4 @@
-package aula88_exemplo1;
+package aula88_vetores;
 
 import java.util.Scanner;
 

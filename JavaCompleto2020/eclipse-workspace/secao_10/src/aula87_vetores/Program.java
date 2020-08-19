@@ -1,4 +1,4 @@
-package aula87_exemplo1;
+package aula87_vetores;
 
 import java.util.Scanner;
 
