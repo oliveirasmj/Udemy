@@ -67,6 +67,10 @@ Modificadores - private, public, protected
 -protected - visiveis dentro da package
 -(default) - visiveis dentro da package
 
+public String toString() {
+	return getId() + ", " + getName() + ", " + String.format("%.2f", getSalary());
+}	
+
 ---------------------INTERACAO ENTRE OBJETOS-----------------------------
 final - valor não altera
 
@@ -102,7 +106,6 @@ Wrapper classes - classes equivalentes aos tipos primitivo - Double(wrapper clas
 -usado para converter valores entre os dois tipos(ex. String to int)
 
 -------
-
 Array/Vetor: dados do mesmo tipo ordenados por posições
 -vantagens: acesso imediato aos elementos pela posição
 -desvantagens: tamanho fixo e dificuldade para inserir e eliminar
@@ -110,6 +113,21 @@ Array/Vetor: dados do mesmo tipo ordenados por posições
 String vect[] = new String[10] //tamanho definido de array de Strings
 String[] names = new String[] {"Mike", "Pedro", "Carlos"};
 
+------
+Matriz - é o nome dado a arranjos bidimensionais (do mesmo tipo, odenada)
+Vantagens: acesso imediato aos elementos pela posição
+Desvantagens: tamanho fixo, dificuldade para inserir e eliminar
+
+int mat[][] = new int[n][n]; //criacao de vetor com n elementos
+
+//Percorrer matriz	
+for(int i=0; i<n; i++) {
+	for(int j=0; j<n; j++) {
+		mat[i][j] = sc.nextInt();
+	}
+}
+
+-----
 Boxing: conversão de um objeto valor para um objeto referência
 int x = 20; Object obj = x;
 UnBoxing: conversão de um objeto referência para um objeto valor
@@ -133,10 +151,10 @@ List:
 -inicia vazia, sem dizer o valor inicial
 -cada elemento é um nó
 -não é uma classe, é uma interface - não pode ser instanciada
-	List<String> list = new List<>(); -- ERRADO
+	List<String> list = new List<>(); -- ERRADO - nao se pode instanciar uma interface
 
 Classes que implementam List: ArrayList, LinkedList, etc - forma de instanciar
-	List<String> list = new ArrayList<>(); -- CERTO
+	List<String> list = new ArrayList<>(); -- CERTO - criar uma lista implementando o arraylist
 
 Vantagens: 
 -tamanho variável e facilidade para inserir e eliminar
@@ -146,6 +164,8 @@ Desvantagens:
 
 -------
 
+
+-------
 Coleções: ArrayList(listas de objetos), HashMaps(mapeia chaves para valores)
 private ArrayList<String> files
 files = new ArrayList<String>(); //no construtor - java 7 diamante
@@ -221,3 +241,10 @@ Funções puras e alta ordem
 funções que não possuem efeitos colaterais, que não dependam de nenhuma informação externa a elas além de seus parâmetros
 
 Imutabilidade - var nao altera
+
+public static void main(String[] args) {
+	boolean x = true;
+	while(x) { //while (x == true)
+	System.out.println(x);
+	}
+}

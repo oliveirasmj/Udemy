@@ -28,7 +28,7 @@ public class Program {
 			System.out.println(x);
 		}
 		
-		System.out.println("Index of Bob: " + list.indexOf("Bob")); //diz a posicao do elemento
+		System.out.println("Index of Bob: " + list.indexOf("Bob")); //diz a posicao do elemento chamado Bob
 		System.out.println("Index of Marco: " + list.indexOf("Marco")); //quando não existe retorna -1
 		System.out.println("--------------------------");
 		

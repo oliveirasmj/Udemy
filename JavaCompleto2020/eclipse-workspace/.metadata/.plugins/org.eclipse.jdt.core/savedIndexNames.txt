@@ -3,7 +3,6 @@ INDEX VERSION 1.131+C:\Users\luisp\Downloads\Estudo\Udemy\JavaCompleto2020\eclip
 2533489121.index
 235448411.index
 2031065293.index
-1574843208.index
 2662839754.index
 3758541175.index
 3920659804.index
