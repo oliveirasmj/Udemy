@@ -163,9 +163,6 @@ Desvantagens:
 -tipo de dados não pode ser primitivo, apenas o wraper
 
 -------
-
-
--------
 Coleções: ArrayList(listas de objetos), HashMaps(mapeia chaves para valores)
 private ArrayList<String> files
 files = new ArrayList<String>(); //no construtor - java 7 diamante
@@ -184,8 +181,6 @@ nome da classe, descrição, constrotores e metodos, valores de retorno
 /**
 
 -------------------HERANÇA, POLIMORF, INTERFACE---------------------------
-Encapsulamento - getters e setters - relativos aos campos
-
 Enumerado - conjunto de nomes significativos
 public enum MarcasEnum {
     AMAZON, DELL, HP, TOSHIBA, LG, SAMSUNG;
