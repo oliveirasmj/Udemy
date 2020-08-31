@@ -151,10 +151,10 @@ List:
 -inicia vazia, sem dizer o valor inicial
 -cada elemento é um nó
 -não é uma classe, é uma interface - não pode ser instanciada
-	List<String> list = new List<>(); -- ERRADO - nao se pode instanciar uma interface
+	private List<String> list = new List<>(); -- ERRADO - nao se pode instanciar uma interface
 
 Classes que implementam List: ArrayList, LinkedList, etc - forma de instanciar
-	List<String> list = new ArrayList<>(); -- CERTO - criar uma lista implementando o arraylist
+	private List<String> list = new ArrayList<>(); -- CERTO - criar uma lista implementando o arraylist
 
 Vantagens: 
 -tamanho variável e facilidade para inserir e eliminar
@@ -195,6 +195,7 @@ Coleções: ArrayList(listas de objetos), HashMaps(mapeia chaves para valores)
 private ArrayList<String> files
 files = new ArrayList<String>(); //no construtor - java 7 diamante
 https://www.guj.com.br/t/por-favor-qual-e-a-diferenca-dentre-arraylist-e-list/69167/2
+private List<String> list = new ArrayList<>(); //CERTO
 
 NAO PODE SER TIPO DADOS PRIMITIVO
 add, get, size, remove, etc...
