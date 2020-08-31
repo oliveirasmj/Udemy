@@ -1,9 +1,11 @@
-package aula120_exercicioFixacao;
+package aula120_exercicioFixacao.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+import aula120_exercicioFixacao.enums.OrderStatus;
 
 public class Order {
 	

@@ -1,4 +1,4 @@
-package aula120_exercicioFixacao;
+package aula120_exercicioFixacao.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

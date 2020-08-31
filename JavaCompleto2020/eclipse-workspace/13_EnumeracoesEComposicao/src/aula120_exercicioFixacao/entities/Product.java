@@ -1,4 +1,4 @@
-package aula120_exercicioFixacao;
+package aula120_exercicioFixacao.entities;
 
 public class Product {
 	

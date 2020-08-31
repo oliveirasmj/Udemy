@@ -1,9 +1,15 @@
-package aula120_exercicioFixacao;
+package aula120_exercicioFixacao.application;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
+
+import aula120_exercicioFixacao.entities.Client;
+import aula120_exercicioFixacao.entities.Order;
+import aula120_exercicioFixacao.entities.OrderItem;
+import aula120_exercicioFixacao.entities.Product;
+import aula120_exercicioFixacao.enums.OrderStatus;
 
 public class Program {
 
@@ -40,7 +46,7 @@ public class Program {
 		System.out.println(order);
 		
 		//System.out.println(order.getClient().getName()); //aceder ao nome do cliente atraves do objeto order
-		
+	
 		sc.close();
 	}
 

@@ -61,7 +61,7 @@ Encapsulamento - consiste em esconder detalhes de implementação (getters e set
 This - referência para o próprio objeto (distinguir atributos e variaveis locais ou passar objeto como argumento)
 Os campos devem ser privados e os metodos publicos para serem usados
 
-Modificadores - private, public, protected
+Modificadores - public, private, protected
 -public - visiveis por todas as classes
 -private - visiveis dentro da classe
 -protected - visiveis dentro da package
