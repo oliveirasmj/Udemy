@@ -162,7 +162,35 @@ Desvantagens:
 -acesso sequencial - é preciso percorrer toda a lista para chegar a um elemento
 -tipo de dados não pode ser primitivo, apenas o wraper
 
+------
+Datas:
+SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+System.out.print("Bith date (DD/MM/YYY): "); Date birthDate = sdf.parse(sc.next());
+System.out.print(sdf.format(birthDate));
+
+Date birthDate2 = new Date();
+System.out.println(sdf.format(birthDate2));
+------
+Append:
+public String toString() {
+	StringBuilder sb = new StringBuilder();
+	sb.append("Order moment: " + sdf.format(moment) + "\n");
+	sb.append("Order status" + status + "\n");
+	sb.append("Client: " + client + "\n");
+	return sb.toString();
+}
+
 -------
+Enumerados:
+public enum OrderStatus {
+	PENDING_PAYMENT,
+	PROCESSING,
+	SHIPPED,
+	DELIVERED;
+}
+
+System.out.print("Status: "); OrderStatus status = OrderStatus.valueOf(sc.next());
+------
 Coleções: ArrayList(listas de objetos), HashMaps(mapeia chaves para valores)
 private ArrayList<String> files
 files = new ArrayList<String>(); //no construtor - java 7 diamante
