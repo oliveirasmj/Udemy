@@ -162,6 +162,11 @@ Desvantagens:
 -acesso sequencial - é preciso percorrer toda a lista para chegar a um elemento
 -tipo de dados não pode ser primitivo, apenas o wraper
 
+Coleções: ArrayList(listas de objetos), HashMaps(mapeia chaves para valores)
+https://www.guj.com.br/t/por-favor-qual-e-a-diferenca-dentre-arraylist-e-list/69167/2
+NAO PODE SER TIPO DADOS PRIMITIVO
+add, get, size, remove, etc...
+
 ------
 Datas:
 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -181,7 +186,7 @@ public String toString() {
 }
 
 -------
-Enumerados:
+Enumerados: conjunto de nomes significativos (exemplo: ciclo de vida de uma encomenda)
 public enum OrderStatus {
 	PENDING_PAYMENT,
 	PROCESSING,
@@ -189,41 +194,38 @@ public enum OrderStatus {
 	DELIVERED;
 }
 
-System.out.print("Status: "); OrderStatus status = OrderStatus.valueOf(sc.next());
+System.out.print("Introduza o status: "); OrderStatus status = OrderStatus.valueOf(sc.next());
+
 ------
-Coleções: ArrayList(listas de objetos), HashMaps(mapeia chaves para valores)
-private ArrayList<String> files
-files = new ArrayList<String>(); //no construtor - java 7 diamante
-https://www.guj.com.br/t/por-favor-qual-e-a-diferenca-dentre-arraylist-e-list/69167/2
-private List<String> list = new ArrayList<>(); //CERTO
+Composição - é um tipo de associação que permite que um objeto contenha outro (diamante preto)
+(Relação tem-um ou tem vários)
 
-NAO PODE SER TIPO DADOS PRIMITIVO
-add, get, size, remove, etc...
+public class Order {
+	private Date moment;
+	private OrderStatus status;
+	private Client client; //uma encomenda pode ter um cliente (tem referência para o Cliente)
+	private List<OrderItem> orders = new ArrayList<OrderItem>(); //uma encomenda pode ter vários OrderItem
+}
 
+------
 Iterações:
 foreach - percorre ate ao fim, nao pode ser alterada (nao remove)
 while - nao precisa ir ate ao fim
 Iterator - nao precisa ir ate ao fim - listar, remover
 
-JAVA DOC - documentação do java
-nome da classe, descrição, constrotores e metodos, valores de retorno
-/**
 
 -------------------HERANÇA, POLIMORF, INTERFACE---------------------------
-Enumerado - conjunto de nomes significativos (exemplo: ciclo de vida de uma encomenda)
-public enum MarcasEnum {
-    AMAZON, DELL, HP, TOSHIBA, LG, SAMSUNG;
-}
------
-Composição - é um tipo de associação que permite que um objeto contenha outro (diamante preto)
-(Relação tem-um ou tem vários)
------
-Herança - herdar características das classes pai (extends)
-VANTAGENS: evita repetição de código e no caso de ser vir a alterar codigo
+
+Herança - é uma forma que permite que uma classe herde todos os dados da outra - classes pai/filho (extends) - lê-se "é um"
+-Classe Pai = generalização/superclasse; Classe filho = especialização/subclasse
+-VANTAGENS: evita repetição de código e no caso de ser vir a alterar codigo
 Animal -> Mamifero e Reptil -> Cão -> Dalmata
 
 Métodos são herdados por todas as classes
 Polimorfismo(abstract) - classes filho conseguirem chamar metodos com o mesmo nome mas de forma a fazerem coisas diferentes
+-----
+Upcasting - casting da subclasse para superclasse (polimorfismo)
+Downcasting - casting da superclasse para subclasse (instance of, equals)
 -----
 Instance of (é um) - verifica se um objeto é de um tipo de classe
 Ferrari ferrari = new Ferrari();
@@ -259,6 +261,10 @@ Exception - compilador obriga a tratar
 Throws - lançam uma exceção verificada devem indicá-lo incluindo uma cláusula throws
 
 -------------------------------OUTROS---------------------------------
+JAVA DOC - documentação do java
+nome da classe, descrição, constrotores e metodos, valores de retorno
+/**
+
 
 Funções puras e alta ordem
 funções que não possuem efeitos colaterais, que não dependam de nenhuma informação externa a elas além de seus parâmetros
@@ -271,3 +277,6 @@ public static void main(String[] args) {
 	System.out.println(x);
 	}
 }
+
+System.out.print("How many items to this order? "); int numItems = sc.nextInt(); //Vai ficar pendente na linha
+System.out.print("Product name: "); sc.nextLine(); String nomeProduto = sc.nextLine(); //Quebra de linha pendente, é preciso ler até ao fim da primeira linha

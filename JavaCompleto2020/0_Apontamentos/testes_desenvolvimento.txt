@@ -3,6 +3,15 @@ UDP nao garante - steam
 
 Design Patterns (padrões de projetos) são soluções generalistas para problemas recorrentes durante o desenvolvimento de um software.
 -3 camadas - MVC - modelo(cruds), control(faz comunicação entre model e vista), vista(informações do controller)
+
+json é rest
+-----------
+rota - manda para o controlador/view
+
+modelo é onde tem as querys
+controlador - parte logica de programação
+view - parte visual
+
 ----------------------------------------------------------------------
 Testes: (é o processo que consiste em encontrar erros)
 TDD (Test Driven Development ) é um conceito promovido pelo 
