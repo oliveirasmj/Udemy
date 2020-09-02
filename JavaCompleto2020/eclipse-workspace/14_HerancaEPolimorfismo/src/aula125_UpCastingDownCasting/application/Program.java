@@ -11,18 +11,17 @@ public class Program {
 		Account acc = new Account(1001, "Alex", 0.0);
 		BusinessAccount bacc = new BusinessAccount(1002, "Maria", 0.0, 500.0);
 
-		// UPCASTING
+		// UPCASTING - converter Account em BusinessAccount
 		Account acc1 = bacc; // não dá erro porque uma BusinessAcount é uma Account
-		Account acc2 = new BusinessAccount(1003, "Bob", 0.0, 200.0);
+		Account acc2 = new BusinessAccount(1003, "Bob", 0.0, 200.0); //outra forma - não dá erro porque uma BusinessAcount é uma Account
 		Account acc3 = new SavingsAccounts(1004, "Anna", 0.0, 0.01);
 
-		// DOWNCASTING
+		// DOWNCASTING - converter BusinessAccount em Account
 		// BusinessAccount acc4 = acc2; //Não se pode converter de Account para BusinessAcount de forma automatica
 		BusinessAccount acc4 = (BusinessAccount) acc2; // Fazendo a conversao manual já é possível converter para BusinessAcount
 		
 		acc4.loan(100.0); // Assim já e possível reconhecer o loan
-		// BusinessAccount acc5 = (BusinessAccount)acc3; //acc3 é BusinessAccount
-		// portanto dá erro
+		// BusinessAccount acc5 = (BusinessAccount)acc3; //acc3 é BusinessAccount - portanto dá erro
 		
 		
 		//Se acc3 for uma BusinessAccount

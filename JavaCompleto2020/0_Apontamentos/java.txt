@@ -222,10 +222,36 @@ Herança - é uma forma que permite que uma classe herde todos os dados da outra
 Animal -> Mamifero e Reptil -> Cão -> Dalmata
 
 Métodos são herdados por todas as classes
+Sobreposição - é a implementação de um método da superclasse na subclasse - @override
 Polimorfismo(abstract) - classes filho conseguirem chamar metodos com o mesmo nome mas de forma a fazerem coisas diferentes
+
 -----
 Upcasting - casting da subclasse para superclasse (polimorfismo)
 Downcasting - casting da superclasse para subclasse (instance of, equals)
+
+public static void main(String[] args) {	
+	Veiculo v = new Veiculo();
+	Carro c = new Carro();
+	Veiculo xpto = new Carro();
+
+	v.getNumRodas(); // o que v consegue ver
+	c.getNumRodas(); c.getNumCavalos(); // o que c consegue ver
+	xpto.getNumRodas(); // o que xpto consegue ver
+		
+	// UPCASTING - converter veiculo em carro
+	Veiculo v2 = c; // não dá erro porque carro é um veículo
+	Veiculo v3 = new Carro(); //outra forma - não dá erro porque carro é um veículo
+		
+	// DOWNCASTING - converter carro em veiculo
+	//Carro c2 = v; //Não se pode converter de Veiculo para carro
+	Carro c2 = (Carro) v3; //Fazendo a conversao manual já é possível converter para Carro
+		
+	//Verificar se um objeto é um Carro
+	if(v3 instanceof Carro) {
+		System.out.println("É um carro");
+	}
+}
+
 -----
 Instance of (é um) - verifica se um objeto é de um tipo de classe
 Ferrari ferrari = new Ferrari();

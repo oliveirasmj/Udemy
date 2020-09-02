@@ -1,4 +1,4 @@
-package aula124_Heranca.entities;
+package aula126_Sobreposicao.entities;
 
 public class Account {
 	
