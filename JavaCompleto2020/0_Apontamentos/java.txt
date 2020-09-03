@@ -72,11 +72,6 @@ public String toString() {
 }	
 
 ---------------------INTERACAO ENTRE OBJETOS-----------------------------
-final - valor não altera
-
-private final int MAX_ALUNOS_TURMA = 25 //constante valor fixo
-private static int numAlunos = 0; //mesmo valor	para todas os objetos
-
 -Triangle x = new Triangle(); x.area()-> 6 --> Membros de instância (valor para cada objeto - correto)
 -Triangle y = new Triangle(); x.area()-> 4 --> Membros de instância (valor para cada objeto - correto)
 
@@ -220,11 +215,48 @@ Herança - é uma forma que permite que uma classe herde todos os dados da outra
 -Classe Pai = generalização/superclasse; Classe filho = especialização/subclasse
 -VANTAGENS: evita repetição de código e no caso de ser vir a alterar codigo
 Animal -> Mamifero e Reptil -> Cão -> Dalmata
+-------
+public class Carro extends Veiculo{
+	private Integer numCavalos;
 
+	public Carro() {
+		super();
+	}
+	
+	public Carro(Integer numRodas, Integer numCavalos) {
+		super(numRodas);
+		this.numCavalos = numCavalos;
+	}
+	
+	public void chamarMetodo(){
+		//System.out.println(super.getNumRodas()); //chamar um metodo da superclasse
+	}
+}
+-------
 Métodos são herdados por todas as classes
 Sobreposição - é a implementação de um método da superclasse na subclasse - @override
-Polimorfismo(abstract) - classes filho conseguirem chamar metodos com o mesmo nome mas de forma a fazerem coisas diferentes
 
+Polimorfismo - permite que variaveis de um mesmo tipo apontem para objetos de tipos diferentes, tendo comportamentos diferentes
+Account x = new Account(); //possui todos os atributos de Account
+Account y = new SavingsAccount(); //possui todos os atributos de Account mais os de SavingsAccount - converte para SavingsAccount 
+//Tanto x como y são variáveis do mesmo tipo (Account), mas objetos de tipos diferentes na memória
+
+x.withdraw(50.0); 
+y.withdraw(50.0);
+//Métodos com comportamentos diferentes caso o withdraw de y(SavingsAccount) seja implementado de forma diferente
+
+Outra vantagem: quando se colocam numa lista, a lista só pode ser de um tipo, logo será do tipo Account
+
+----
+(abstract) - classes filho conseguirem chamar metodos com o mesmo nome mas de forma a fazerem coisas diferentes
+
+-----
+//Sobreposicao
+@Override
+public void withdraw(double amount) { //chamar método da superclasse e escrever o código à nossa maneira
+	super.withdraw(amount); //Escrever código igual à super classe
+	balance -= 2.0; //Mas aplicar uma taxa
+}
 -----
 Upcasting - casting da subclasse para superclasse (polimorfismo)
 Downcasting - casting da superclasse para subclasse (instance of, equals)
@@ -256,8 +288,17 @@ public static void main(String[] args) {
 Instance of (é um) - verifica se um objeto é de um tipo de classe
 Ferrari ferrari = new Ferrari();
 if (ferrari instance of Vehicle)
+-----
+final
+(campos - valor não altera)
+(classe - evita que classe seja herdada) - impede herança de uma classe
+(método - evita que método seja sobreposto) - impede herança de um método(sobreposicao)
+
+private final int MAX_ALUNOS_TURMA = 25 //constante valor fixo
+private static int numAlunos = 0; //mesmo valor	para todas os objetos
 
 -------------------ABSTRATA---------------------------
+São classes que não podem ser instanciadas
 Métodos abstratos não têm corpo na classe pai - mover()
 Apenas tem corpo na classe filho - voar, nadar, saltar...
 Classe com metodos abstratos é uma CLASSE ABSTRATA(nao podem ser instanciadas)
@@ -304,5 +345,5 @@ public static void main(String[] args) {
 	}
 }
 
-System.out.print("How many items to this order? "); int numItems = sc.nextInt(); //Vai ficar pendente na linha
+System.out.print("How many items to this order? "); int numItems = sc.nextInt(); //Vai ficar pendente na linha - caso use o sc.nextLine() cuidado
 System.out.print("Product name: "); sc.nextLine(); String nomeProduto = sc.nextLine(); //Quebra de linha pendente, é preciso ler até ao fim da primeira linha

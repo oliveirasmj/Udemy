@@ -19,5 +19,6 @@ public class Carro extends Veiculo{
 
 	public void setNumCavalos(Integer numCavalos) {
 		this.numCavalos = numCavalos;
+		//System.out.println(super.getNumRodas()); //chamar um metodo da superclasse
 	}	
 }

@@ -1,4 +1,4 @@
-package aula126_Sobreposicao.entities;
+package aula126_SobreposicaoPalavraSuper.entities;
 
 public class Account {
 	

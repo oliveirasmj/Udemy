@@ -1,8 +1,8 @@
-package aula126_Sobreposicao.application;
+package aula126_SobreposicaoPalavraSuper.application;
 
-import aula126_Sobreposicao.entities.Account;
-import aula126_Sobreposicao.entities.BusinessAccount;
-import aula126_Sobreposicao.entities.SavingsAccounts;
+import aula126_SobreposicaoPalavraSuper.entities.Account;
+import aula126_SobreposicaoPalavraSuper.entities.BusinessAccount;
+import aula126_SobreposicaoPalavraSuper.entities.SavingsAccounts;
 
 public class Program {
 
