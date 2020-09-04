@@ -21,6 +21,9 @@ soutf("Double: %f - Inteiro: %d - String: %s - Letra: %c", x, y, var, letra);
 
 int a=5, b=2; System.out.println(a/b); System.out.println((double)a/b); //Truncado e valor real
 
+System.out.print("Individual or company (i/c)? ");
+char type = sc.next().charAt(0);
+
 //INCREMENTO
 //num=num+1
 //num+=1
@@ -82,6 +85,7 @@ public String toString() {
 Apenas "métodos static" podem ser chamados no public static void main(String[] args) {}
 Para chamar diretamente um método de uma classe(sem instanciar - Classe.metodo() ), então o método terá de ser "static"
 
+private static int numAlunos = 0; //mesmo valor	para todas os objetos
 
 ---------------------MEMÓRIA/ARRAYS/LISTAS(AGRUPAMENTO DE OBJETOS)-----------------------------
 Tipos de variáveis:
@@ -239,16 +243,13 @@ Sobreposição - é a implementação de um método da superclasse na subclasse 
 Polimorfismo - permite que variaveis de um mesmo tipo apontem para objetos de tipos diferentes, tendo comportamentos diferentes
 Account x = new Account(); //possui todos os atributos de Account
 Account y = new SavingsAccount(); //possui todos os atributos de Account mais os de SavingsAccount - converte para SavingsAccount 
-//Tanto x como y são variáveis do mesmo tipo (Account), mas objetos de tipos diferentes na memória
+//Tanto x como y são variáveis do mesmo tipo (Account), mas os objetos instânciados são de tipos diferentes na memória
 
 x.withdraw(50.0); 
 y.withdraw(50.0);
 //Métodos com comportamentos diferentes caso o withdraw de y(SavingsAccount) seja implementado de forma diferente
 
-Outra vantagem: quando se colocam numa lista, a lista só pode ser de um tipo, logo será do tipo Account
-
-----
-(abstract) - classes filho conseguirem chamar metodos com o mesmo nome mas de forma a fazerem coisas diferentes
+Outra vantagem: quando se colocam numa coleção(lista), a lista só pode ser de um tipo, logo será do tipo Account
 
 -----
 //Sobreposicao
@@ -290,22 +291,29 @@ Ferrari ferrari = new Ferrari();
 if (ferrari instance of Vehicle)
 -----
 final
-(campos - valor não altera)
-(classe - evita que classe seja herdada) - impede herança de uma classe
-(método - evita que método seja sobreposto) - impede herança de um método(sobreposicao)
+(campos - valor não altera) ---> private final int MAX_ALUNOS_TURMA = 25 //constante valor fixo
+(classe - evita que classe seja herdada) - final class Veiculo
+(método - evita que método seja sobreposto) - public final void contarKms()
 
-private final int MAX_ALUNOS_TURMA = 25 //constante valor fixo
-private static int numAlunos = 0; //mesmo valor	para todas os objetos
 
--------------------ABSTRATA---------------------------
-São classes que não podem ser instanciadas
-Métodos abstratos não têm corpo na classe pai - mover()
+-------------------CLASSES ABSTRATAS---------------------------
+Classes abstratas: são classes que não podem ser instanciadas
+Exemplo:
+SavingsAccount e BusinessAccount extendem Account(que é abstract), ou seja não existe se pode criar uma conta comum, apenas SavingsAccount ou BusinessAccount 
+	
+Métodos abstratos: não têm corpo(implementação) na classe pai - mover()
 Apenas tem corpo na classe filho - voar, nadar, saltar...
-Classe com metodos abstratos é uma CLASSE ABSTRATA(nao podem ser instanciadas)
-Apenas as filho podem ser instanciadas
+
+public abstract class Shape { //Classe abstrata - nao pode ser instanciada
+	private Color color;
+	public Shape() {
+	}
+	(...)
+	public abstract Double area(); //Método abstrato - obriga subclasses a usarem o método
+}
 
 
--------------------INTERFACE---------------------------
+-------------------INTERFACES---------------------------
 é um conjunto de métodos vazios que são implementados noutra classe
 
 VS: https://www.devmedia.com.br/interfaces-x-classes-abstratas/13337
@@ -347,3 +355,8 @@ public static void main(String[] args) {
 
 System.out.print("How many items to this order? "); int numItems = sc.nextInt(); //Vai ficar pendente na linha - caso use o sc.nextLine() cuidado
 System.out.print("Product name: "); sc.nextLine(); String nomeProduto = sc.nextLine(); //Quebra de linha pendente, é preciso ler até ao fim da primeira linha
+
+//Shape p = new Rectangle(color, width, height);
+//list.add(p);
+// ---OU----
+list.add(new Rectangle(color, width, height)); // é feito upcasting para shape
