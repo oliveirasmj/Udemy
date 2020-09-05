@@ -35,7 +35,7 @@ Math.sqrt(25)
 
 Membros de instância vs Membros estáticos/de classe
 -Membros de instância tem valor diferente para cada objeto  +  É preciso instanciar
--Membros estáticos tem o mesmo valor para diferentes objetos (chamados com o nome da classe: Math.sqrt()) + não é preciso instanciar (usados para dados e funções nunca irão se modificar)
+-Membros estáticos tem o mesmo valor para diferentes objetos (chamados com o nome da classe: Math.sqrt()) + não é preciso instanciar (usados para dados e funções que nunca se irão modificar)
 
 
 ---------------------CLASSES E OBJETOS-----------------------------
