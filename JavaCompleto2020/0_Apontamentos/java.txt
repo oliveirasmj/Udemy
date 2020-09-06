@@ -319,7 +319,10 @@ public abstract class Shape { //Classe abstrata - nao pode ser instanciada
 VS: https://www.devmedia.com.br/interfaces-x-classes-abstratas/13337
 
 -------------------------------EXCEPÇÕES---------------------------------
-Programação defensiva
+Excepção - é uma condição de erro - programação defensiva
+Herdado da Classe: 
+- Exception: obriga a tratar
+- RuntimeException: não obriga a tratar
 Lançamento e tratamento de exceções
 Reporte de erros
 
