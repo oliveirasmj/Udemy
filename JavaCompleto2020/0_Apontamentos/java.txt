@@ -167,13 +167,23 @@ NAO PODE SER TIPO DADOS PRIMITIVO
 add, get, size, remove, etc...
 
 ------
-Datas:
-SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-System.out.print("Bith date (DD/MM/YYY): "); Date birthDate = sdf.parse(sc.next());
-System.out.print(sdf.format(birthDate));
+***Datas***
+SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy"); 
+//private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy"); //static - para que nao seja instanciado
 
-Date birthDate2 = new Date();
-System.out.println(sdf.format(birthDate2));
+System.out.print("Bith date (DD/MM/YYY): "); //inserir data
+Date birthDate = sdf.parse(sc.next()); //instanciar data
+System.out.print(sdf.format(birthDate)); //imprimir
+
+Date birthDate2 = new Date(); //data atual
+System.out.println(sdf.format(birthDate2)); //imprimir
+
+***Subtrair datas***
+public long duration() {
+	long diff = checkOut.getTime() - ckeckIn.getTime(); //subtrai ao duas datas em milisegundos
+	return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS); //converte para dias
+}
+
 ------
 Append:
 public String toString() {
@@ -330,13 +340,49 @@ Objetivo: prevenir que erros afectem o sistema
 
 Remover aluno com id que não existe
 try - instruções a proteger
-catch - reportar
-finally - faz sempre
+catch - reportar(caso seja capturada algo no try)
+finally - bloco executado independentemente de ter ocorrido ou não uma excepção
 
 RuntimeException - compilador nao obriga a tratar - programa termina
-Exception - compilador obriga a tratar
+Exception - compilador obriga a tratar - programa não termina
+Cláusula throws: lança a exceção verificada ao invés de trata-la (caso nao se faça try catch)
 
-Throws - lançam uma exceção verificada devem indicá-lo incluindo uma cláusula throws
+***Program***
+try {
+	String[] vect = sc.nextLine().split(" "); //ler varios dados na mesma linha separados por espaço em branco
+	int position = sc.nextInt();
+	System.out.println(vect[position]);
+}
+catch (ArrayIndexOutOfBoundsException e) { //Excepcao que é gerada quando o número não está dentro dos limites
+	System.out.println("Invalid position");
+}
+catch (DomainException e) { //Excepcao que nós criamos
+	System.out.println("Erro in reservation: " + e.getMessage());
+}
+catch (Exception e) { //Para qualquer tipo de excepção
+	System.out.println("Unexpected error");
+}
+finally {
+	System.out.println("Sou sempre executado");
+}
+System.out.println("End of program"); //Agora mensagem já é apresentada com limite invalido ou com letra
+
+***Reservation***
+public Reservation(Integer roomNumber, Date checkIn, Date checkOut) throws DomainException {
+	if (checkOut.before(checkIn)) { //se checkin/checkout for inferior a data atual
+		throw new DomainException("Check-out date must be after check-in date"); //lança DomainException - é necessário trata-la colocando o throws em cima
+	}
+	this.roomNumber = roomNumber;
+	this.checkIn = checkIn;
+	this.checkOut = checkOut;
+}
+
+***DomainException***
+public class DomainException extends Exception { // Exception - tem de tratar excepção com try catch ou throws |||| //RuntimeException - não tem de ser tratada
+	public DomainException(String msg) {
+		super(msg); // passar para o construtor da superclasse
+	}
+}
 
 -------------------------------OUTROS---------------------------------
 JAVA DOC - documentação do java
