@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.time.Instant"/>
-    <fullyQualifiedTypeName name="java.util.TimeZone"/>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="aula113_enumeracoes.Order"/>
-    <fullyQualifiedTypeName name="aula74_construtores.Product"/>
-    <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException"/>
-    <fullyQualifiedTypeName name="java.text.ParseException"/>
-    <fullyQualifiedTypeName name="jdk.javadoc.internal.doclets.formats.html.markup.Comment"/>
-    <fullyQualifiedTypeName name="aula119_exercicio2.Comment"/>
-    <fullyQualifiedTypeName name="aula119_exercicio2.Post"/>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="aula120_exercicioFixacao.Product"/>
     <fullyQualifiedTypeName name="aula120_exercicioFixacao.OrderItem"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="aula113_enumeracoes.OrderStatus"/>
@@ -43,9 +31,7 @@
     <fullyQualifiedTypeName name="aula129_Exercicio.entities.Employee"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="aula130_ExercicioFixacao.entities.ImportedProduct"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="aula130_ExercicioFixacao.entities.UsedProduct"/>
     <fullyQualifiedTypeName name="aula130_ExercicioFixacao.entities.Product"/>
     <fullyQualifiedTypeName name="aula131_ClassesAbstratas.entities.SavingsAccounts"/>
@@ -55,9 +41,23 @@
     <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.enums.Color"/>
     <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.Rectangle"/>
     <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.Shape"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.Individual"/>
     <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.Company"/>
     <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.TaxPlayer"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.File"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="aula142_PrimeiraSolucao_MtRuim.entities.Reservation"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.text.ParseException"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="aula144_TerceiraSolucao_Boa.exceptions.DomainException"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 </qualifiedTypeNameHistroy>
