@@ -109,15 +109,15 @@ Array/Vetor: dados do mesmo tipo ordenados por posições
 -vantagens: acesso imediato aos elementos pela posição
 -desvantagens: tamanho fixo e dificuldade para inserir e eliminar
 
-String vect[] = new String[10] //tamanho definido de array de Strings
-String[] names = new String[] {"Mike", "Pedro", "Carlos"};
+private String[] vect = new String[10] //tamanho definido de array de Strings
+private String[] names = new String[] {"Mike", "Pedro", "Carlos"};
 
 ------
 Matriz - é o nome dado a arranjos bidimensionais (do mesmo tipo, odenada)
 Vantagens: acesso imediato aos elementos pela posição
 Desvantagens: tamanho fixo, dificuldade para inserir e eliminar
 
-int mat[][] = new int[n][n]; //criacao de vetor com n elementos
+private int mat[][] = new int[n][n]; //criacao de vetor com n elementos
 
 //Percorrer matriz	
 for(int i=0; i<n; i++) {
