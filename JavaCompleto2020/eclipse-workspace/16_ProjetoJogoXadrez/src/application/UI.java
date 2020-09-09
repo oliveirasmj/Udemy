@@ -20,8 +20,8 @@ public class UI {
 			System.out.print("-");
 		}
 		else {
-			System.out.print(piece);
+			System.out.print(piece); //Imprime a letra de cada peça - toString
 		}
-		System.out.print(" ");
+		System.out.print(" "); //espaço para nao ficarem todas coladas
 	}
 }

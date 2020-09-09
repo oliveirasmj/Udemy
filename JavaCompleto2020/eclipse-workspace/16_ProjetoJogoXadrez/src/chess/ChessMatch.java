@@ -14,15 +14,15 @@ public class ChessMatch { //Classe que contem as regras
 		initialSetup(); //colocar as peças no inicio do jogo
 	}
 	
-	public ChessPiece[][] getPieces(){  //retorna uma matriz das pecas de xadrez correspondentes à partida
-		ChessPiece[][] mat = new ChessPiece[board.getRow()][board.getColumns()];
+	public ChessPiece[][] getPieces(){  //retorna uma matriz das pecas de xadrez correspondentes à partida - mas a matriz era to tipo Piece e nao ChessPiece
+		ChessPiece[][] mat = new ChessPiece[board.getRows()][board.getColumns()]; //criar uma matriz ChessPiece
 		//percorrer matriz e fazer um downcast para Chesspiece
-		for(int i=0; i<board.getRow(); i++) {
+		for(int i=0; i<board.getRows(); i++) {
 			for(int j=0; j<board.getColumns(); j++) {
-				mat[i][j] = (ChessPiece) board.piece(i, j);
-			}
+				mat[i][j] = (ChessPiece) board.piece(i, j); //matriz mat(tipo ChessPiece) =  matriz de Piece -------> (upcasting)
+			}	
 		}
-		return mat; //retornar a matriz de pecas
+		return mat; //retornar a nova matriz de pecas
 	}
 	
 	private void initialSetup() { //colocar as peças no tabuleiro

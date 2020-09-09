@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="aula113_enumeracoes.OrderStatus"/>
-    <fullyQualifiedTypeName name="aula120_exercicioFixacao.Client"/>
-    <fullyQualifiedTypeName name="aula120_exercicioFixacao.Order"/>
-    <fullyQualifiedTypeName name="aula124_Heranca.application.Program"/>
-    <fullyQualifiedTypeName name="aula121_exercicioFixacao.enums.OrderStatus"/>
-    <fullyQualifiedTypeName name="aula121_exercicioFixacao.entities.Order"/>
-    <fullyQualifiedTypeName name="aula121_exercicioFixacao.entities.Product"/>
-    <fullyQualifiedTypeName name="aula121_exercicioFixacao.entities.OrderItem"/>
     <fullyQualifiedTypeName name="com.sun.security.ntlm.Client"/>
     <fullyQualifiedTypeName name="aula121_exercicioFixacao.entities.Client"/>
     <fullyQualifiedTypeName name="aula117_exercicio.HourContract"/>
     <fullyQualifiedTypeName name="java.lang.Number"/>
-    <fullyQualifiedTypeName name="aula124_Heranca.entities.Account"/>
     <fullyQualifiedTypeName name="aula124_Heranca.entities.BusinessAccount"/>
     <fullyQualifiedTypeName name="aula125_UpCastingDownCasting.entities.SavingsAccounts"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
@@ -27,7 +18,6 @@
     <fullyQualifiedTypeName name="aula126_Sobreposicao.entities.SavingsAccounts"/>
     <fullyQualifiedTypeName name="aula129_Exercicio.entities.OutsourcedEmployee"/>
     <fullyQualifiedTypeName name="aula129_Exercicio.entities.Employee"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="aula130_ExercicioFixacao.entities.ImportedProduct"/>
     <fullyQualifiedTypeName name="aula130_ExercicioFixacao.entities.UsedProduct"/>
@@ -60,4 +50,14 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="aula144_TerceiraSolucao_Boa.exceptions.DomainException"/>
     <fullyQualifiedTypeName name="aula145_ExercicioFixacao.exceptions.DomainException"/>
+    <fullyQualifiedTypeName name="boardgame.Board"/>
+    <fullyQualifiedTypeName name="chess.ChessMatch"/>
+    <fullyQualifiedTypeName name="chess.ChessPiece"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="chess.Color"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.graph.Position"/>
+    <fullyQualifiedTypeName name="boardgame.Position"/>
+    <fullyQualifiedTypeName name="aula124_Heranca.entities.Account"/>
+    <fullyQualifiedTypeName name="chess.pieces.Rook"/>
+    <fullyQualifiedTypeName name="boardgame.Piece"/>
 </qualifiedTypeNameHistroy>
