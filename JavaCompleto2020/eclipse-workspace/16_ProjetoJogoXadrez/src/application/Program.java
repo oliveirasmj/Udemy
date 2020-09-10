@@ -6,8 +6,8 @@ public class Program {
 
 	public static void main(String[] args) {
 		
-		ChessMatch chessMatch = new ChessMatch();
-		UI.printBoard(chessMatch.getPieces());
+		ChessMatch chessMatch = new ChessMatch(); //board = new Board(8, 8);
+		UI.printBoard(chessMatch.getPieces()); //UI - clase de userinterface  |  chessMatch.getPieces() - retorna matriz mat de pecas
 	}
 
 }

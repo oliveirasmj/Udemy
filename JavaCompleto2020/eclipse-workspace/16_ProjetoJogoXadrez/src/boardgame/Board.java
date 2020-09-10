@@ -7,13 +7,13 @@ public class Board {
 	private Piece[][] pieces; //um tabuleiro tem varias pecas (com position la dentro)
 	
 	public Board(int rows, int columns) {
-		if (rows<1 || columns <1) {
-			throw new BoardException("Error creating board: there must be at least 1 row and 1 column");
+		if (rows<1 || columns <1) { //se quantidade de linhas e colunas for menor que um
+			throw new BoardException("Error creating board: there must be at least 1 row and 1 column"); //lançar excepcao
 		}
 		
-		this.rows = rows;					//cria 8 linha
-		this.columns = columns;				//cria 8 colunas
-		pieces = new Piece[rows][columns]; //cria 64 peças???
+		this.rows = rows;					//cria as linha - futuramente 8
+		this.columns = columns;				//cria as colunas - futuramente 8
+		pieces = new Piece[rows][columns];  //cria uma matriz de peças com x posicoes - - futuramente 64
 	}
 
 	public int getRows() {
@@ -25,15 +25,15 @@ public class Board {
 	}
 	
 	public Piece piece(int row, int column) {	//deolve uma peça pela linha e coluna
-		if(!positionExists(row, column)) {
+		if(!positionExists(row, column)) { //se posicao nao existir
 			throw new BoardException("Position not on the board");
 		}
 		
 		return pieces[row][column];
 	}
 	
-	public Piece piece(Position position) {		//deolve uma peça pela posicao
-		if(!positionExists(position)) {
+	public Piece piece(Position position) {		//devolve uma peça pela posicao
+		if(!positionExists(position)) { //se posicao nao existir
 			throw new BoardException("Position not on the board");
 		}
 		
@@ -50,19 +50,19 @@ public class Board {
 		//System.out.println(piece); //Imprime a letra de cada peça - toString
 	}
 	
-	private boolean positionExists(int row, int column) {
-		return row>=0 && rows<rows || column>=0 && column<columns; //retorna a posição se estiver dentro dos limites
+	private boolean positionExists(int row, int column) { //ve se posicao existe
+		return row>=0 && rows<rows || column>=0 && column<columns; //retorna true se a posição se estiver dentro dos limites
 	}
 	
-	public boolean positionExists(Position position) {
-		return positionExists(position.getRow(), position.getColumn());
+	public boolean positionExists(Position position) { //ve se posicao existe
+		return positionExists(position.getRow(), position.getColumn()); //retorna true se a posição se estiver dentro dos limites
 	}
 	
-	public boolean thereIsAPiece(Position position) {
-		if(!positionExists(position)) {
-			throw new BoardException("Position not on the board");
+	public boolean thereIsAPiece(Position position) { //ver se tem uma peça
+		if(!positionExists(position)) { //se posicao nao existir OU se retornar false
+			throw new BoardException("Position not on the board"); //lancar excepcao
 		}
-		
+
 		return piece(position) != null; //se for diferente de nulo tem uma peca e retorna
 	}
 }

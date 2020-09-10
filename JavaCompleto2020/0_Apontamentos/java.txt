@@ -409,3 +409,5 @@ System.out.print("Product name: "); sc.nextLine(); String nomeProduto = sc.nextL
 //list.add(p);
 // ---OU----
 list.add(new Rectangle(color, width, height)); // é feito upcasting para shape
+
+java application/Program
