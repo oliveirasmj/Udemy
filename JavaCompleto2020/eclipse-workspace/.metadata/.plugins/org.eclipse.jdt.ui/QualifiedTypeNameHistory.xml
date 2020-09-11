@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Number"/>
-    <fullyQualifiedTypeName name="aula124_Heranca.entities.BusinessAccount"/>
     <fullyQualifiedTypeName name="aula125_UpCastingDownCasting.entities.SavingsAccounts"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="teste.Bicicleta"/>
@@ -27,16 +25,12 @@
     <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.Rectangle"/>
     <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.Shape"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.Individual"/>
     <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.Company"/>
     <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.TaxPlayer"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.File"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
     <fullyQualifiedTypeName name="aula142_PrimeiraSolucao_MtRuim.entities.Reservation"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
@@ -48,16 +42,22 @@
     <fullyQualifiedTypeName name="aula145_ExercicioFixacao.exceptions.DomainException"/>
     <fullyQualifiedTypeName name="boardgame.Board"/>
     <fullyQualifiedTypeName name="chess.ChessMatch"/>
-    <fullyQualifiedTypeName name="chess.Color"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.graph.Position"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="application.UI"/>
     <fullyQualifiedTypeName name="aula124_Heranca.entities.Account"/>
+    <fullyQualifiedTypeName name="chess.Color"/>
     <fullyQualifiedTypeName name="chess.pieces.Rook"/>
     <fullyQualifiedTypeName name="boardgame.Piece"/>
-    <fullyQualifiedTypeName name="boardgame.BoardException"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-    <fullyQualifiedTypeName name="chess.ChessException"/>
-    <fullyQualifiedTypeName name="boardgame.Position"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="chess.ChessPiece"/>
+    <fullyQualifiedTypeName name="boardgame.BoardException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="chess.ChessPosition"/>
+    <fullyQualifiedTypeName name="chess.ChessPiece"/>
+    <fullyQualifiedTypeName name="chess.ChessException"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.TaxPayer"/>
+    <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.Individual"/>
+    <fullyQualifiedTypeName name="boardgame.Position"/>
 </qualifiedTypeNameHistroy>

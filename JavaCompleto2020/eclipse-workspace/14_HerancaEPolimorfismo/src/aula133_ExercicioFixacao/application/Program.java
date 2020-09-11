@@ -27,7 +27,7 @@ public class Program {
 			
 			if(type=='i') {
 				System.out.print("Health expenditures: "); double healthExpenditures = sc.nextDouble();
-				list.add(new Individual(name, income, healthExpenditures));
+				list.add(new Individual(name, income, healthExpenditures)); //TaxPayer t = new Individual(name, income, healthExpenditures); list.add(t);
 			} else if (type=='c') {
 				System.out.print("Number employees: "); int numberEmployees = sc.nextInt();
 				list.add(new Company(name, income, numberEmployees));

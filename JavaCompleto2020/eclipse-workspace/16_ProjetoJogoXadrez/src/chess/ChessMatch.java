@@ -1,6 +1,7 @@
 package chess;
 
 import boardgame.Board;
+import boardgame.Piece;
 import boardgame.Position;
 import chess.pieces.King;
 import chess.pieces.Rook;
@@ -25,8 +26,32 @@ public class ChessMatch { //Classe que contem as regras
 		return mat; //retornar a nova matriz de pecas
 	}
 	
-	private void placeNewPiece(char column, int row, ChessPiece piece) {
-		board.placePiece(piece, new ChessPosition(column, row).toPosition());
+	public ChessPiece performChessMove(ChessPosition sourcePosition, ChessPosition targetPosition) { //executar movimento e retornar capturada caso haja
+		Position source = sourcePosition.toPosition();
+		Position target = targetPosition.toPosition();
+		validateSourcePosition(source);
+		Piece capturedPiece = makeMove(source, target); //realizar movimento
+		return (ChessPiece)capturedPiece;
+	}
+	
+	private Piece makeMove(Position source, Position target) { //realizar movimento
+		Piece p = board.removePiece(source);
+		Piece capturedPiece = board.removePiece(target);
+		board.placePiece(p, target);
+		return capturedPiece;
+	}
+	
+	private void validateSourcePosition(Position position) { //validar posicao de origem
+		if (!board.thereIsAPiece(position)) {
+			throw new ChessException("There is no piece on source position");
+		}
+		if (!board.piece(position).isThereAnyPossibleMove()) {
+			throw new ChessException("There is no possible moves for the chosen piece");
+		}
+	}
+
+	private void placeNewPiece(char column, int row, ChessPiece piece) { //colocar nova peça
+		board.placePiece(piece, new ChessPosition(column, row).toPosition()); //converter para posicao de array
 	}
 	
 	private void initialSetup() { //colocar as peças no tabuleiro

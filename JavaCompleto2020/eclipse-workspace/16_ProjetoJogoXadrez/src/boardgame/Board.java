@@ -65,4 +65,17 @@ public class Board {
 
 		return piece(position) != null; //se for diferente de nulo tem uma peca e retorna
 	}
+	
+	public Piece removePiece (Position position) {
+		if(!positionExists(position)) { //se posicao nao existir
+			throw new BoardException("Position not on the board");
+		}
+		if(piece(position) == null) {
+			return null;
+		}
+		Piece aux = piece(position);
+		aux.position = null;
+		pieces[position.getRow()][position.getColumn()] = null;
+		return aux; //retornar a peca que foi retirada
+	}
 }
