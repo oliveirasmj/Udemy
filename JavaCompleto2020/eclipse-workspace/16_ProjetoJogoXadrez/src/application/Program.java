@@ -8,8 +8,7 @@ import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.ChessPosition;
 
-public class Program {
-
+public class Program { //PAREI NO FIM DO VIDEO 158
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
