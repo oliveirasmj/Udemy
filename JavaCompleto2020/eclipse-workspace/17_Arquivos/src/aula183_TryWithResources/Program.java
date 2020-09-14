@@ -17,7 +17,7 @@ public class Program {
 			String line = br.readLine(); // se arquivo estiver no final é devolvido nulo
 			while (line != null) { // enquanto nao estiver no final
 				System.out.println(line); // escrever a linha
-				line = br.readLine(); // ler a linha
+				line = br.readLine(); // ler a linha e quebra
 			}
 		} catch (IOException e) {
 			System.out.println("Error: " + e.getMessage());

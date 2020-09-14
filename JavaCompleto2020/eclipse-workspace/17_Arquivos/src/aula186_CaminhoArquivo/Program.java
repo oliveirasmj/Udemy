@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Program {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { //classe para ver caminhos do arquivo
 		
 		Scanner sc = new Scanner(System.in);
 		
