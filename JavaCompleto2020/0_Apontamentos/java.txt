@@ -89,8 +89,8 @@ private static int numAlunos = 0; //mesmo valor	para todas os objetos
 
 ---------------------MEMÓRIA/ARRAYS/LISTAS(AGRUPAMENTO DE OBJETOS)-----------------------------
 Tipos de variáveis:
--Tipos de Referência - classes (através de ponteiros) - posição da memória fica lá dentro - Stack ------> Heap
 -Tipos de Valor (primitivos) - caixas em que valor fica lá dentro - boolean, byte, char, short, int, long, float, double
+-Tipos de Referência - classes (através de ponteiros) - posição da memória fica lá dentro - Stack ------> Heap
 
 Garbage collector - monitoriza os objetos alocados pelo programa (no heap) e desaloca os que não estão a ser utilizados
 Ou seja - se o ponteiro desaparecer o que está no solto no Heap desaparece
@@ -117,7 +117,7 @@ Matriz - é o nome dado a arranjos bidimensionais (do mesmo tipo, odenada)
 Vantagens: acesso imediato aos elementos pela posição
 Desvantagens: tamanho fixo, dificuldade para inserir e eliminar
 
-private int mat[][] = new int[n][n]; //criacao de vetor com n elementos
+private int[][] mat = new int[n][n]; //criacao de vetor com n elementos
 
 //Percorrer matriz	
 for(int i=0; i<n; i++) {
@@ -382,6 +382,64 @@ public class DomainException extends Exception { // Exception - tem de tratar ex
 	public DomainException(String msg) {
 		super(msg); // passar para o construtor da superclasse
 	}
+}
+
+-------------------------------ARQUIVOS---------------------------------
+File - Representação abstrata de um arquivo e seu caminho
+FileReader (stream de leitura de caracteres a partir de arquivos)
+BufferedReader (mais rápido - utiliza buffer de memória) - instanciado a partir do FileReader
+
+Bloco try-with-resources - é um bloco try que declara recursos e garante que eles serão fechados no final(não é preciso fecho manual)
+
+FileWriter (stream de escrita de caracteres em de arquivos)
+BufferedWriter (mais rápido) - instanciado a partir do FileWriter
+
+-----
+File file = new File("C:\\Users\\luisp\\Downloads\\Estudo\\Udemy\\JavaCompleto2020\\17_Arquivos\\in.txt"); //criar objeto do tipo file passando o caminho
+Scanner sc = null;
+
+//Classe para ler arquivo	
+try { 								//é preciso try porque o programa vai tentar abrir o arquivo
+	sc = new Scanner(file); 				//instanciar scanner a partir do arquivo
+	while(sc.hasNextLine())	{				//enquanto existir proxima linha
+		System.out.println(sc.nextLine());		//imprimir a linha
+	}
+} 
+catch (IOException e) {
+	System.out.println("Error: " + e.getMessage());
+}
+finally {
+	if(sc != null) { //apenas se tiver sido instanciado fechar do scanner
+		sc.close();
+	}
+}
+------
+
+//Classe para ler arquivo com FileReader
+String path = "C:\\Users\\luisp\\Downloads\\Estudo\\Udemy\\JavaCompleto2020\\17_Arquivos\\in.txt"; 	// caminho do arquivo
+try(BufferedReader br = new BufferedReader(new FileReader(path))) {
+	String line = br.readLine(); // se arquivo estiver no final é devolvido nulo
+		while (line != null) { // enquanto nao estiver no final
+			System.out.println(line); // escrever a linha
+			line = br.readLine(); // ler a linha
+		}
+} catch (IOException e) {
+	System.out.println("Error: " + e.getMessage());
+}
+------
+
+//Classe para gerar um arquivo
+String[] lines = new String[] { "Good morning", "Good afternoon", "Good night" };
+String path = "C:\\Users\\luisp\\Downloads\\Estudo\\Udemy\\JavaCompleto2020\\17_Arquivos\\out.txt"; // caminho final para o arquivo
+		
+//try(BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
+try(BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) { //true - indicar que não é para recriar arquivo
+	for(String line : lines) { 	//para cada linha do array
+		bw.write(line); 		//escrever na linha o texto da posicao do array
+		bw.newLine(); 			//dar quebra de linha
+	}
+} catch (IOException e) {
+	e.printStackTrace();
 }
 
 -------------------------------OUTROS---------------------------------

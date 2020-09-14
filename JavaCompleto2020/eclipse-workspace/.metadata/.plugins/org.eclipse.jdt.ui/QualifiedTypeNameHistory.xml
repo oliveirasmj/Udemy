@@ -24,7 +24,6 @@
     <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.enums.Color"/>
     <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.Rectangle"/>
     <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.Shape"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.Company"/>
     <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.TaxPlayer"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.TaxPayer"/>
     <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.Individual"/>
     <fullyQualifiedTypeName name="boardgame.Position"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
