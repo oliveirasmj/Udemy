@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="aula125_UpCastingDownCasting.entities.Account"/>
     <fullyQualifiedTypeName name="aula000_teste.Carro"/>
     <fullyQualifiedTypeName name="aula000_teste.Veiculo"/>
     <fullyQualifiedTypeName name="aula126_Sobreposicao.entities.Account"/>
@@ -14,7 +13,6 @@
     <fullyQualifiedTypeName name="aula131_ClassesAbstratas.entities.SavingsAccounts"/>
     <fullyQualifiedTypeName name="aula131_ClassesAbstratas.entities.BusinessAccount"/>
     <fullyQualifiedTypeName name="aula131_ClassesAbstratas.entities.Account"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.enums.Color"/>
     <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.Rectangle"/>
     <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.Shape"/>
@@ -35,7 +33,6 @@
     <fullyQualifiedTypeName name="boardgame.Board"/>
     <fullyQualifiedTypeName name="chess.ChessMatch"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.graph.Position"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="application.UI"/>
     <fullyQualifiedTypeName name="aula124_Heranca.entities.Account"/>
     <fullyQualifiedTypeName name="chess.Color"/>
@@ -50,7 +47,6 @@
     <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.TaxPayer"/>
     <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.Individual"/>
     <fullyQualifiedTypeName name="boardgame.Position"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
@@ -60,4 +56,8 @@
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="aula187_Exercicio.entities.Product"/>
 </qualifiedTypeNameHistroy>
