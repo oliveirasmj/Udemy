@@ -170,6 +170,7 @@ add, get, size, remove, etc...
 ***Datas***
 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy"); 
 //private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy"); //static - para que nao seja instanciado
+SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:ss");
 
 System.out.print("Bith date (DD/MM/YYY): "); //inserir data
 Date birthDate = sdf.parse(sc.next()); //instanciar data
@@ -324,7 +325,9 @@ public abstract class Shape { //Classe abstrata - nao pode ser instanciada
 
 
 -------------------INTERFACES---------------------------
-é um conjunto de métodos vazios que são implementados noutra classe
+É um conjunto de métodos vazios que são implementados noutra classe
+A interface estabelece um contrato que a classe deve cumprir
+Todas as classes que implementam uma interface sao subtipos dessa interface
 
 VS: https://www.devmedia.com.br/interfaces-x-classes-abstratas/13337
 
