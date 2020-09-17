@@ -169,8 +169,8 @@ add, get, size, remove, etc...
 ------
 ***Datas***
 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy"); 
-//private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy"); //static - para que nao seja instanciado
 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:ss");
+private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy"); //static - para que nao seja instanciado
 
 System.out.print("Bith date (DD/MM/YYY): "); //inserir data
 Date birthDate = sdf.parse(sc.next()); //instanciar data
@@ -329,7 +329,45 @@ public abstract class Shape { //Classe abstrata - nao pode ser instanciada
 A interface estabelece um contrato que a classe deve cumprir
 Todas as classes que implementam uma interface sao subtipos dessa interface
 
-VS: https://www.devmedia.com.br/interfaces-x-classes-abstratas/13337
+public interface TaxService {
+	double tax(double amount);
+}
+
+public class BrazilTaxService implements TaxService{
+	public double tax(double amount) { 
+		if (amount <= 100.0) {
+			return amount * 0.2;
+		}
+		else {
+			return amount * 0.15;
+		}
+	}
+}
+
+-----------------
+Inversao de controlo - padrao de desenvolvimento que consiste em retirar as dependências
+Injeção de dependência - é uma forma de realizar inversão de controlo: através do construtor por exemplo
+
+public class Program {
+	public static void main(String[] args){
+		RentalService rentalService = new RentalService(pricePerDay, pricePerHour, new BrazilTaxService()); //BrazilTaxService - injecao de dependencia por meio de construtor - classe RentalService
+	}
+}
+
+public class RentalService {
+	private Double pricePerDay;
+	private Double pricePerHour;
+	private TaxService taxService; //tem uma associacao com a interface TaxService (em vez de BrazilTaxService)
+
+public RentalService(Double pricePerDay, Double pricePerHour, TaxService taxService) { //Upcasting - injeção de dependência por meio de construtor
+		this.pricePerDay = pricePerDay;
+		this.pricePerHour = pricePerHour;
+		this.taxService = taxService; //TaxService - aqui é recebida uma classe que implemente uma TaxService - upcasting
+	}
+}
+-----------------------------
+
+https://www.devmedia.com.br/interfaces-x-classes-abstratas/13337
 
 -------------------------------EXCEPÇÕES---------------------------------
 Excepção - é uma condição de erro - programação defensiva

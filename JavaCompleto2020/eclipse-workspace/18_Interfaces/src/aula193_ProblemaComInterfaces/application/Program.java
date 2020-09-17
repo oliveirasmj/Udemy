@@ -32,7 +32,7 @@ public class Program {
 		System.out.print("Enter price per day: ");
 		double pricePerDay = sc.nextDouble();
 		//instanciar objeto RentalService
-		RentalService rentalService = new RentalService(pricePerDay, pricePerHour, new BrazilTaxService());
+		RentalService rentalService = new RentalService(pricePerDay, pricePerHour, new BrazilTaxService()); //BrazilTaxService - injecao de dependencia por meio de construtor - classe RentalService
 		
 		//gerar a nota de pagamento do CarRental
 		rentalService.processInvoice(cr);

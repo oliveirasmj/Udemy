@@ -8,16 +8,16 @@ public class RentalService {
 	private Double pricePerDay;
 	private Double pricePerHour;
 	
-	private TaxService taxService; //tem uma associacao com a interface TaxService
+	private TaxService taxService; //tem uma associacao com a interface TaxService (em vez de BrazilTaxService)
 	
 	public RentalService() {
 		
 	}
 
-	public RentalService(Double pricePerDay, Double pricePerHour, TaxService taxService) {
+	public RentalService(Double pricePerDay, Double pricePerHour, TaxService taxService) { //Upcasting - injeção de dependência por meio de construtor
 		this.pricePerDay = pricePerDay;
 		this.pricePerHour = pricePerHour;
-		this.taxService = taxService;
+		this.taxService = taxService; //TaxService - aqui é recebida uma classe que implemente uma TaxService - upcasting
 	}
 	
 	public void processInvoice(CarRental carRental) { //gerar a nota de pagamento do CarRental
