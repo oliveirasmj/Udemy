@@ -1,8 +1,8 @@
-package aula197_Exemplo1SemInterface.model.entities;
+package aula197_Ex2HerancaComInterface.model.entities;
 
 import java.awt.Color;
 
-public class Circle extends Shape {
+public class Circle extends AbstractShape {
 
 	private Double radius;
 

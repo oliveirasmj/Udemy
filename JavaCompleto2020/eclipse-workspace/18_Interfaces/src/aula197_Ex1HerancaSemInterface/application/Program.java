@@ -1,10 +1,10 @@
-package aula197_Exemplo1SemInterface.application;
+package aula197_Ex1HerancaSemInterface.application;
 
 import java.awt.Color;
 
-import aula197_Exemplo1SemInterface.model.entities.Circle;
-import aula197_Exemplo1SemInterface.model.entities.Rectangle;
-import aula197_Exemplo1SemInterface.model.entities.Shape;
+import aula197_Ex1HerancaSemInterface.model.entities.Circle;
+import aula197_Ex1HerancaSemInterface.model.entities.Rectangle;
+import aula197_Ex1HerancaSemInterface.model.entities.Shape;
 
 public class Program {
 

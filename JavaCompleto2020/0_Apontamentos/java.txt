@@ -384,14 +384,50 @@ Nao é permitida na maioria das linguagens
 
 1)
 public class ComboDevice extends Scanner, Printer
-DÁ ERRO
+-->DÁ ERRO
 
 2)
-public interface Printer
-public class ConcretePrinter extends Device implements Printer
-public class ComboDevice extends Device implements Scanner, Printer
-ConcretePrinter p = new ConcretePrinter("1080");
+public class Program {
+	ComboDevice c = new ComboDevice("2081"); //Este implementa o Printer e o Scanner
+}
+public class ComboDevice extends Device implements Scanner, Printer {...}
+public interface Printer {...} public interface Scanner {...}
 ASSIM JÁ É POSSÍVEL
+
+-------------------DEFAULT METHODS---------------------------
+A partir do Java 8 é possível definir métodos com código dentro de interfaces fornecendo uma implementação default.
+Assim evita-se que em cada classe que implemente a interface se esteja a repetir o código
+
+public interface InterestService {
+
+	double getInterestRate();
+
+	default double payment(double amount, int months) {
+		if (months < 1) {
+			throw new InvalidParameterException("Months must be greater than zero");
+		}
+		return amount * Math.pow(1.0 + getInterestRate() / 100.0, months);
+	}
+}
+
+public class BrazilInterestService implements InterestService {
+
+	private double interestRate;
+
+	public BrazilInterestService(double interestRate) {
+		this.interestRate = interestRate;
+	}
+
+	@Override
+	public double getInterestRate() {
+		return interestRate;
+	}
+}
+
+public class Program {
+	InterestService is = new BrazilInterestService(2.0);
+	double payment = is.payment(amount, months);
+}
 
 -------------------------------EXCEPÇÕES---------------------------------
 Excepção - é uma condição de erro - programação defensiva
@@ -533,4 +569,6 @@ System.out.print("Product name: "); sc.nextLine(); String nomeProduto = sc.nextL
 // ---OU----
 list.add(new Rectangle(color, width, height)); // é feito upcasting para shape
 
-java application/Program
+java application/Program //linha de comandos
+
+Collections.sort(list); //FORMA DE ORDENAR UMA COLEÇÃO ------> list tem de ser do tipo COMPARABLE ------> Employee implements Comparable

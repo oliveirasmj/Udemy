@@ -1,8 +1,8 @@
-package aula197_Exemplo2ComInterface.model.entities;
+package aula197_Ex1HerancaSemInterface.model.entities;
 
 import java.awt.Color;
 
-public class Rectangle extends AbstractShape {
+public class Rectangle extends Shape {
 
 	private Double width;
 	private Double height;

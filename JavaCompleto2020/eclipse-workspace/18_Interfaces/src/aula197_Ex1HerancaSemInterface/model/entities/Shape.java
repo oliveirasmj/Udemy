@@ -1,4 +1,4 @@
-package aula197_Exemplo1SemInterface.model.entities;
+package aula197_Ex1HerancaSemInterface.model.entities;
 
 import java.awt.Color;
 

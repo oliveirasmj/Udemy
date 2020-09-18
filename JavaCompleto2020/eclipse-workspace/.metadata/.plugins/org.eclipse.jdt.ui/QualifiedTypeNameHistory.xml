@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.Rectangle"/>
-    <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.Shape"/>
-    <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.Company"/>
-    <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.TaxPlayer"/>
-    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.File"/>
-    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
-    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
-    <fullyQualifiedTypeName name="aula142_PrimeiraSolucao_MtRuim.entities.Reservation"/>
-    <fullyQualifiedTypeName name="java.text.ParseException"/>
-    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
-    <fullyQualifiedTypeName name="aula145_ExercicioFixacao.entities.Account"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="aula144_TerceiraSolucao_Boa.exceptions.DomainException"/>
     <fullyQualifiedTypeName name="aula145_ExercicioFixacao.exceptions.DomainException"/>
@@ -60,4 +48,16 @@
     <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.services.ContractService"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.entities.Installment"/>
+    <fullyQualifiedTypeName name="model.entities.Circle"/>
+    <fullyQualifiedTypeName name="model.entities.AbstractShape"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="aula197_ExemploSemInterface.model.entities.Circle"/>
+    <fullyQualifiedTypeName name="aula197_ExemploSemInterface.model.entities.AbstractShape"/>
+    <fullyQualifiedTypeName name="aula197_ExemploSemInterface.model.entities.Rectangle"/>
+    <fullyQualifiedTypeName name="aula197_Exemplo1SemInterface.model.entities.Shape"/>
+    <fullyQualifiedTypeName name="aula197_Exemplo1SemInterface.model.entities.Circle"/>
+    <fullyQualifiedTypeName name="aula197_Exemplo1SemInterface.model.entities.Rectangle"/>
+    <fullyQualifiedTypeName name="aula198_HerancaMultipla.devices.ConcretePrinter"/>
+    <fullyQualifiedTypeName name="aula198_HerancaMultipla.devices.ConcreteScanner"/>
+    <fullyQualifiedTypeName name="aula198_HerancaMultipla.devices.ComboDevice"/>
 </qualifiedTypeNameHistroy>

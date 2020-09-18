@@ -1,12 +1,12 @@
-package aula197_Exemplo2ComInterface.application;
+package aula197_Ex2HerancaComInterface.application;
 
 import java.awt.Color;
 
-import aula197_Exemplo2ComInterface.model.entities.AbstractShape;
-import aula197_Exemplo2ComInterface.model.entities.Circle;
-import aula197_Exemplo2ComInterface.model.entities.Rectangle;
+import aula197_Ex2HerancaComInterface.model.entities.AbstractShape;
+import aula197_Ex2HerancaComInterface.model.entities.Circle;
+import aula197_Ex2HerancaComInterface.model.entities.Rectangle;
 
-public class Program { //Neste exercicio pretende-se que a Classe Shape tenha apenas o metodo area() sem a cor
+public class Program { //Neste exercicio pretende-se que a Classe Shape tenha apenas o metodo area() sem a cor --> Herança com interface
 
 	public static void main(String[] args) {
 
