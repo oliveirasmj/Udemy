@@ -57,7 +57,7 @@ private String txt; //txt = null
 
 
 ---------------------DEFINICAO CLASSES-----------------------------
-Construtor - é o que é executado na instânciação do objeto (iniciar valores) - método para iniciar os objetos
+Construtor - é o que é executado na instânciação do objeto (iniciar valores) - método para iniciar os objetos (receber valores)
 Sobrecarga/Overloading - mais de um construtor (varios parametros) - com o mesmo nome
 Encapsulamento - consiste em esconder detalhes de implementação (getters e setters e modificadores private)
 
@@ -365,9 +365,33 @@ public RentalService(Double pricePerDay, Double pricePerHour, TaxService taxServ
 		this.taxService = taxService; //TaxService - aqui é recebida uma classe que implemente uma TaxService - upcasting
 	}
 }
------------------------------
+
+-----------------
+---Herdar vs Cumprir Contrato---
+
+Herança: Existe uma classe abstrata com as subclasses que a herdam (reuso de código)
+Interface: existe umma interface com as as classes concretas implementando a interface (contrato a ser cumprido)
+Em ambos existe a relação É UM 
+Em ambos existe Tipos Generico e Tipo Especifico
+Em ambos existe Polimorfismo
 
 https://www.devmedia.com.br/interfaces-x-classes-abstratas/13337
+
+
+---Herança Multipla---
+A herança múltipla pode gerar o problema do diamante
+Nao é permitida na maioria das linguagens
+
+1)
+public class ComboDevice extends Scanner, Printer
+DÁ ERRO
+
+2)
+public interface Printer
+public class ConcretePrinter extends Device implements Printer
+public class ComboDevice extends Device implements Scanner, Printer
+ConcretePrinter p = new ConcretePrinter("1080");
+ASSIM JÁ É POSSÍVEL
 
 -------------------------------EXCEPÇÕES---------------------------------
 Excepção - é uma condição de erro - programação defensiva

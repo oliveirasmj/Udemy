@@ -7,8 +7,8 @@ public class Installment {
 
 	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
-	private Date dueDate;
-	private Double amount;
+	private Date dueDate; //data de cada mensalidade
+	private Double amount; //valor de cada mensalidade
 	
 	public Installment(Date dueDate, Double amount) {
 		this.dueDate = dueDate;

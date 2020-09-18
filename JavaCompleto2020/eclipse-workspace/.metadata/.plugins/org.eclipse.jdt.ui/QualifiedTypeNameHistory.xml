@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="aula130_ExercicioFixacao.entities.ImportedProduct"/>
-    <fullyQualifiedTypeName name="aula130_ExercicioFixacao.entities.UsedProduct"/>
-    <fullyQualifiedTypeName name="aula130_ExercicioFixacao.entities.Product"/>
-    <fullyQualifiedTypeName name="aula131_ClassesAbstratas.entities.SavingsAccounts"/>
-    <fullyQualifiedTypeName name="aula131_ClassesAbstratas.entities.BusinessAccount"/>
-    <fullyQualifiedTypeName name="aula131_ClassesAbstratas.entities.Account"/>
-    <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.enums.Color"/>
     <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.Rectangle"/>
     <fullyQualifiedTypeName name="aula132_MetodosAbstratos.entities.Shape"/>
     <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.Company"/>
@@ -47,17 +40,24 @@
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="aula187_Exercicio.entities.Product"/>
     <fullyQualifiedTypeName name="aula190_ProblemaParte1.model.entities.Invoice"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="aula190_ProblemaParte1.model.entities.CarRental"/>
     <fullyQualifiedTypeName name="aula190_ProblemaParte1.model.entities.Vehicle"/>
     <fullyQualifiedTypeName name="aula190_ProblemaParte1.model.services.RentalService"/>
     <fullyQualifiedTypeName name="aula190_ProblemaParte1.model.services.BrazilTaxService"/>
     <fullyQualifiedTypeName name="aula193_ProblemaComInterfaces.model.services.TaxService"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.services.PaypalService"/>
+    <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.services.OnlinePaymentService"/>
+    <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.entities.Contract"/>
+    <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.entities.Prestacao"/>
+    <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.services.ContractService"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.entities.Installment"/>
 </qualifiedTypeNameHistroy>

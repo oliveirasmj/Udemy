@@ -30,14 +30,15 @@ public class Program {
 		System.out.print("Enter number of installments: ");
 		int n = sc.nextInt();
 		
-		ContractService contractService = new ContractService(new PaypalService());
+		ContractService contractService = new ContractService(new PaypalService()); //injecao de dependencia - conforme o contrutor dessa classe
 		
 		contractService.processContract(contract, n);
 		
-		System.out.println("Installments:");
-		for (Installment x : contract.getInstallments()) {
-			System.out.println(x);
-		}
+//		System.out.println("Installments:");
+//		for (Installment x : contract.getInstallments()) {
+//			System.out.println(x);
+//		}
+		contract.listar();
 		
 		sc.close();
 	}

@@ -42,9 +42,9 @@ public class Contract {
 		this.totalValue = totalValue;
 	}
 
-	public List<Installment> getInstallments() {
-		return installments;
-	}
+//	public List<Installment> getInstallments() {
+//		return installments;
+//	}
 
 	public void addInstallment(Installment installment) {
 		installments.add(installment);
@@ -52,5 +52,12 @@ public class Contract {
 
 	public void removeInstallment(Installment installment) {
 		installments.remove(installment);
+	}
+	
+	public void listar() {
+		System.out.println("Installments:");
+		for(Installment i : installments) {
+			System.out.println(i);
+		}
 	}
 }
