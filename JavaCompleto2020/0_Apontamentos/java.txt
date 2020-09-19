@@ -1,4 +1,4 @@
----------------------JAVA BASICO-----------------------------
+----------------------JAVA BASICO-----------------------------
 HelloWorld.class (depois de compilados dao origem a class)
 HelloWorld.java (source code)
 Compiler (é compilado para bytecode e executado no JVM) - compilador - transforma em linguagem maquina
