@@ -428,6 +428,17 @@ public class Program {
 	InterestService is = new BrazilInterestService(2.0);
 	double payment = is.payment(amount, months);
 }
+-------------------------------------
+
+public class Employee implements Comparable<Employee> {
+(....)
+@Override
+	public int compareTo(Employee o) { //compara um objeto com outro - devolve negativo, 0 ou positivo se for alfabeticamente menor, iigual ou maior
+		return name.compareTo(o.getName()); //ordenar por nome
+		//return salary.compareTo(o.getSalary()); //ordenar por salario
+		//return -salary.compareTo(o.getSalary()); //ordenar por salario descrescente
+	}
+}
 
 -------------------------------EXCEPÇÕES---------------------------------
 Excepção - é uma condição de erro - programação defensiva
@@ -541,6 +552,40 @@ try(BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) { //true
 	}
 } catch (IOException e) {
 	e.printStackTrace();
+}
+
+-------------------------------GENERICS, SET, MAP---------------------------------
+Permite que classes, interfaces e métodos possam ser parametrizados por tipo
+Uso comum: coleções
+Principal vantagem: reuso do código independentemente do seu tipo (não é necessário um código para String, Integer, ...)
+Se for necessário mudar o tipo de variável de uma lista no main, não é preciso alterar código da outra classe porque é do tipo <T>
+
+public class PrintService<T> { //Tipo T
+	
+	private List<T> list = new ArrayList<>(); //Tipo T - pode ser de todos os tipos(String, Integer,...)
+
+	public void addValue(T value) {
+		list.add(value);
+	}
+}
+------
+
+public class Program {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		//agora é do tipo Integer - sendo que a classe PrintService é Generics <T> pode ser de todos os tipos
+		PrintService<Integer> ps = new PrintService<>(); //posso mudar de Integer para o que for desejável
+
+		System.out.print("How many values? ");
+		int n = sc.nextInt();
+		
+		//ps.addValue("Maria"); //agora já não é permitido porque só pode aceitar inteiros
+
+		for (int i = 0; i < n; i++) {
+			int value = sc.nextInt();
+			ps.addValue(value);
+		}
 }
 
 -------------------------------OUTROS---------------------------------
