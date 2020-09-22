@@ -16,20 +16,20 @@ public class Program {
 
 		Locale.setDefault(Locale.US);
 		
-		List<Product> list = new ArrayList<>();
+		List<Product> list = new ArrayList<>(); //criar uma lista de produtos
 
-		String path = "C:\\Users\\luisp\\Downloads\\Estudo\\Udemy\\JavaCompleto2020\\19_GenericsSetMaps\\exercicio\\file2.txt";
+		String path = "C:\\Users\\luisp\\Downloads\\Estudo\\Udemy\\JavaCompleto2020\\19_GenericsSetMaps\\exercicio\\file2.txt"; //ficheiro de texto
 
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 
 			String line = br.readLine();
-			while (line != null) {
+			while (line != null) { //percorrer o ficheiro até ao fim
 				String[] fields = line.split(",");
-				list.add(new Product(fields[0], Double.parseDouble(fields[1])));
+				list.add(new Product(fields[0], Double.parseDouble(fields[1]))); //adicionar cada linha à lista de produtos
 				line = br.readLine();
 			}
 			
-			Product x = CalculationService.max(list);
+			Product x = CalculationService.max(list); // x = maior da lista
 			System.out.println("Most expensive:");
 			System.out.println(x);
 

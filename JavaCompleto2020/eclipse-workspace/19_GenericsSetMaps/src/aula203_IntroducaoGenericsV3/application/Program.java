@@ -11,7 +11,7 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		
 		//agora é do tipo Integer - sendo que a classe PrintService é Generics <T> pode ser de todos os tipos
-		PrintService<Integer> ps = new PrintService<>(); //posso mudar de Integer para o que for desejável
+		PrintService<Integer> ps = new PrintService<>(); //instanciar a classe - posso mudar de Integer para o que for desejável
 
 		System.out.print("How many values? ");
 		int n = sc.nextInt();

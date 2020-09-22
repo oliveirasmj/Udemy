@@ -588,6 +588,51 @@ public class Program {
 		}
 }
 
+---> Outro exemplo: aula204_GenericsDelimitadosV2
+
+---------------
+List<Object> não é o supertipo de qualquer tipo de lista:
+	List<Object> myObjs = new ArrayList<Object>();
+	List<Integer> myNumbers = new ArrayList<Integer>();
+	myObjs = myNumbers; // erro de compilação
+
+O supertipo de qualquer tipo de lista é List<?>. Este é um tipo curinga:
+	List<?> myObjs = new ArrayList<Object>();
+	List<Integer> myNumbers = new ArrayList<Integer>();
+	myObjs = myNumbers;
+
+---------------
+//Imprimir lista de qualquer tipo - Curinga
+public static void main(String[] args) {
+	List<Integer> myInts = Arrays.asList(5, 2, 10);
+	printList(myInts);
+	
+	List<String> myStrs = Arrays.asList("A", "B", "C");
+	printList(myStrs);
+}
+
+//public static void printList(List<Integer> list) {
+public static void printList(List<?> list) { //assim imprime uma lista de qualquer tipo ---> <?>  MAS NÃO É POSSÍVEL ADICIONAR, SÓ LISTAR
+	for (Object obj : list) {
+		System.out.println(obj);
+	}
+}
+-------------
+//COVARIANCIA: get - OK; put - ERROR
+List<Integer> intList = new ArrayList<Integer>();
+List<? extends Number> list = intList; //Criar list (de qualquer tipo que seja SUBTIPO de Number) e copiar para inList
+//Subtipo de Number é Integer, Byte, Long, Short, Float e Double
+Number x = list.get(0);
+//list.add(20.2); //erro de compilacao - nao da para adicionar a uma lista generica pois o valor pode nao ser Integer e neste caso é double
+
+//CONTRAVARIANCIA: get - ERROR; put - OK
+List<Object> myObjs = new ArrayList<Object>();
+List<? super Number> myNums = myObjs; //Criar myNums (de qualquer tipo que seja SUPERTIPO de Number) e copiar para myObjs
+//Supertipo de Number é Object
+myNums.add(10); //já é possível adicionar
+myNums.add(3.14); //já é possível adicionar
+//Number x = myNums.get(0); // erro de compilacao - Number é SUBTIPO de object
+
 -------------------------------OUTROS---------------------------------
 JAVA DOC - documentação do java
 nome da classe, descrição, constrotores e metodos, valores de retorno
