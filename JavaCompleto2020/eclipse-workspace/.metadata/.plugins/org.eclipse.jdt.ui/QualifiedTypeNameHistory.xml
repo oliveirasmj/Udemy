@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="boardgame.Piece"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-    <fullyQualifiedTypeName name="boardgame.BoardException"/>
-    <fullyQualifiedTypeName name="chess.ChessPosition"/>
-    <fullyQualifiedTypeName name="chess.ChessPiece"/>
-    <fullyQualifiedTypeName name="chess.ChessException"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.TaxPayer"/>
-    <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.Individual"/>
     <fullyQualifiedTypeName name="boardgame.Position"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
@@ -18,7 +11,6 @@
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="aula187_Exercicio.entities.Product"/>
     <fullyQualifiedTypeName name="aula190_ProblemaParte1.model.entities.Invoice"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
@@ -54,10 +46,18 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="aula203_IntroducaoGenerics.services.PrintService"/>
     <fullyQualifiedTypeName name="aula203_IntroducaoGenerics.services.PrintServiceString"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="aula203_IntroducaoGenerics2.services.PrintService"/>
     <fullyQualifiedTypeName name="aula203_IntroducaoGenerics3.services.PrintService"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="sun.security.mscapi.CKeyStore.MY"/>
+    <fullyQualifiedTypeName name="aula206_CuringasDelimitados.entities.Shape"/>
+    <fullyQualifiedTypeName name="aula206_CuringasDelimitados.entities.Circle"/>
+    <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.Individual"/>
+    <fullyQualifiedTypeName name="aula129_Exercicio.entities.OutsourcedEmployee"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="aula206_CuringasDelimitados.entities.Rectangle"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.Number"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
 </qualifiedTypeNameHistroy>

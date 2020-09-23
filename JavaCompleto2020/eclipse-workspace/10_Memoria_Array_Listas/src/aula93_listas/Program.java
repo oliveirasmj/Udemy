@@ -7,7 +7,9 @@ import java.util.stream.Collectors;
 public class Program {
 
 	public static void main(String[] args) {
-		List<String> list = new ArrayList<>();
+		List<String> list = new ArrayList<>(); //List é uma interface portanto preciso de uma classe que implemente uma interface(ArrayList)
+		//private List<String> list = new List<>(); -- ERRADO nao se pode instanciar uma interface
+		
 		list.add("Maria");
 		list.add("Alex");
 		list.add("Bob");

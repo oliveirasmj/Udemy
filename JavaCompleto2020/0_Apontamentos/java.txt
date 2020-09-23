@@ -633,6 +633,69 @@ myNums.add(10); //já é possível adicionar
 myNums.add(3.14); //já é possível adicionar
 //Number x = myNums.get(0); // erro de compilacao - Number é SUBTIPO de object
 
+
+------HashCode e Equals------
+São operações da classe Object para comparar se um objeto é igual a outro (retorna true ou false)
+Equals: lento, resposta 100%
+HashCode: ráido mas reposta não é 100%
+
+String a = "Maria";
+String b = "Alex";
+System.out.println(a.equals(b)); //retorna false porque não são iguais
+System.out.println(a.hashCode()); //gera um código de 32bits para cada texto
+System.out.println(b.hashCode()); //gera um código de 32bits para cada texto
+//mas se os códigos forem iguais certamente os objetos são iguais
+//se forem diferentes há uma pequena probabiblidade de serem iguais
+-----------
+
+//Foi gerado na classe Client um metodo hashCode e equals de modo a comparar com o nome e email
+//Botão Direito - Source - Generate HashCode() and Equals()... - Selecionar os que se pretende comparar
+
+Client c1 = new Client("Maria", "maria@gmail.com");
+Client c2 = new Client("Maria", "alex@gmail.com");
+
+System.out.println(c1.hashCode());
+System.out.println(c2.hashCode());
+System.out.println(c1.equals(c2));
+
+System.out.println(c1 == c2); //retorna falso porque as posicoes de memoria sao diferentes, mesmo que sejam iguais
+
+---------Set---------
+Set: é um tipo genérico(igual à lista) e não admite repetições
+Não possuem posição
+
+Principais implementações: 
+-HashSet: mais rápido e não ordenado alfabeticamente
+-TreeSet: mais lento e ordenado alfabeticamente pelo CompareTo
+-LinkedHashSet: velocidade intermédia e elemntos não ordem em que são adicionados
+
+Alguns métodos:
+• add(obj), remove(obj), contains(obj) - Baseado em equals e hashCode
+• clear()
+• size()
+• removeIf(predicate)
+• addAll(other) - união: adiciona no conjunto os elementos do outro conjunto, sem repetição
+• retainAll(other) - interseção: remove do conjunto os elementos não contitos em other
+• removeAll(other) - diferença: remove do conjunto os elementos contidos em other
+
+--------
+//Set<String> set = new HashSet<>(); //instanciar um Set usando a implementação HashSet (mais rápida) mas NÃO GARANTE ORDEM
+//Set<String> set = new TreeSet<>(); //instanciar um Set usando a implementação TreeSet (mais lento) e GARANTE ORDEM ALFABÉTICA
+Set<String> set = new LinkedHashSet<>(); //instanciar um Set usando a implementação LinkedHashSet (velocidade meia) e GARANTE ORDEM COLOCADA
+
+set.add("Tv");
+set.add("Tablet");
+set.add("Notebook");
+
+set.remove("Tablet"); //remover o "Tablet"
+set.removeIf(x -> x.length()>3); //remover todos os que têm mais do que 3 caracteres
+set.removeIf(x -> x.charAt(0) == 'T'); //remover todos os que têm a primeira letra T
+System.out.println(set.contains("Notebook")); //ver se existe o elemento "Noteboook" no conjunto
+
+for (String p : set) {
+	System.out.println(p);
+}
+
 -------------------------------OUTROS---------------------------------
 JAVA DOC - documentação do java
 nome da classe, descrição, constrotores e metodos, valores de retorno
