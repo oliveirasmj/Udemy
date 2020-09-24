@@ -764,8 +764,8 @@ Uso comum: cookies, local storage, qualquer modelo chave-valor
 
 Principais implementações: 
 -HashMap: mais rápido e não ordenado alfabeticamente
--TreeSet: mais lento e ordenado alfabeticamente pelo CompareTo
--LinkedHashSet: velocidade intermédia e elementos na ordem em que são adicionados
+-TreeMap: mais lento e ordenado alfabeticamente pelo CompareTo
+-LinkedHashMap: velocidade intermédia e elementos na ordem em que são adicionados
 
 Alguns métodos:
 • add(obj), remove(obj), contains(obj) - Baseado em equals e hashCode (senão é usada comparação de ponteiros)
@@ -804,6 +804,13 @@ System.out.println("Email: " + cookies.get("email"));
 //Ver tamanho
 System.out.println();
 System.out.println("Size: " + cookies.size());
+
+
+------------ Set, List e Map ------------------
+Set, List e Map são três interfaces(que possuem implementações):
+Uma Lista é uma coleção ordenada de itens
+Um Set é uma coleção não ordenado de itens sem registos duplicados
+Um Map é uma coleção de pares chave/valor sem registos duplicados
 
 -------------------------------OUTROS---------------------------------
 JAVA DOC - documentação do java
