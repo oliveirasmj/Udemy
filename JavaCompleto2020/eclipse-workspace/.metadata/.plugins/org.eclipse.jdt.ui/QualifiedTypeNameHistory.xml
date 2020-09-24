@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
-    <fullyQualifiedTypeName name="aula133_ExercicioFixacao.entities.TaxPayer"/>
-    <fullyQualifiedTypeName name="boardgame.Position"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.io.FileReader"/>
-    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
-    <fullyQualifiedTypeName name="aula184_FileWriterBufferedWriter.Program"/>
-    <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="aula187_Exercicio.entities.Product"/>
@@ -19,13 +10,11 @@
     <fullyQualifiedTypeName name="aula190_ProblemaParte1.model.services.RentalService"/>
     <fullyQualifiedTypeName name="aula190_ProblemaParte1.model.services.BrazilTaxService"/>
     <fullyQualifiedTypeName name="aula193_ProblemaComInterfaces.model.services.TaxService"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.services.PaypalService"/>
     <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.services.OnlinePaymentService"/>
     <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.entities.Contract"/>
     <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.entities.Prestacao"/>
     <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.services.ContractService"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.entities.Installment"/>
     <fullyQualifiedTypeName name="model.entities.Circle"/>
     <fullyQualifiedTypeName name="model.entities.AbstractShape"/>
@@ -43,13 +32,11 @@
     <fullyQualifiedTypeName name="aula199_InterfaceComparable.entities.Employee"/>
     <fullyQualifiedTypeName name="aula200_DefaultMethods.services.BrazilInterestService"/>
     <fullyQualifiedTypeName name="aula200_DefaultMethods.services.InterestService"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="aula203_IntroducaoGenerics.services.PrintService"/>
     <fullyQualifiedTypeName name="aula203_IntroducaoGenerics.services.PrintServiceString"/>
     <fullyQualifiedTypeName name="aula203_IntroducaoGenerics2.services.PrintService"/>
     <fullyQualifiedTypeName name="aula203_IntroducaoGenerics3.services.PrintService"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="sun.security.mscapi.CKeyStore.MY"/>
     <fullyQualifiedTypeName name="aula206_CuringasDelimitados.entities.Shape"/>
     <fullyQualifiedTypeName name="aula206_CuringasDelimitados.entities.Circle"/>
@@ -57,7 +44,20 @@
     <fullyQualifiedTypeName name="aula129_Exercicio.entities.OutsourcedEmployee"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="aula206_CuringasDelimitados.entities.Rectangle"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.lang.Number"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="aula207_HashCodeEqualsPart2.entities.Client"/>
+    <fullyQualifiedTypeName name="java.util.TreeSet"/>
+    <fullyQualifiedTypeName name="aula209_SetPart2.entities.Product"/>
+    <fullyQualifiedTypeName name="aula204_GenericsDelimitados.entities.Product"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="aula210_TreeSetCompare.entities.Product"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.time.Instant"/>
+    <fullyQualifiedTypeName name="aula211_ExercicioResolvido.entities.LogEntry"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

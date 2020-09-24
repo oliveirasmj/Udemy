@@ -554,8 +554,26 @@ try(BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) { //true
 	e.printStackTrace();
 }
 
+-----
+//Ler ficheiro CSV
+String line = br.readLine();
+while (line != null) { //percorrer o ficheiro até ao fim
+	String[] fields = line.split(","); //parar quando encontra virgula
+	list.add(new Product(fields[0], Double.parseDouble(fields[1]))); //adicionar cada linha à lista de produtos
+	line = br.readLine();
+}
+
 -------------------------------GENERICS, SET, MAP---------------------------------
-Permite que classes, interfaces e métodos possam ser parametrizados por tipo
+Permite que classes, interfaces e métodos possam ser parametrizados por tipo:
+List<T> list = new ArrayList<>(); //Tipo T - pode ser de todos os tipos(String, Integer,...)
+
+Vantagens: 
+- evitar casting excessivos
+- reuso/reaproveitamento: devolver o primeiro item de uma lista independentemente do tipo(String, Integer,...): 
+	public T first() { 
+		return list.get(0); 
+	}
+
 Uso comum: coleções
 Principal vantagem: reuso do código independentemente do seu tipo (não é necessário um código para String, Integer, ...)
 Se for necessário mudar o tipo de variável de uma lista no main, não é preciso alterar código da outra classe porque é do tipo <T>
@@ -637,7 +655,7 @@ myNums.add(3.14); //já é possível adicionar
 ------HashCode e Equals------
 São operações da classe Object para comparar se um objeto é igual a outro (retorna true ou false)
 Equals: lento, resposta 100%
-HashCode: ráido mas reposta não é 100%
+HashCode: rápido mas reposta não é 100%
 
 String a = "Maria";
 String b = "Alex";
@@ -661,7 +679,9 @@ System.out.println(c1.equals(c2));
 System.out.println(c1 == c2); //retorna falso porque as posicoes de memoria sao diferentes, mesmo que sejam iguais
 
 ---------Set---------
-Set: é um tipo genérico(igual à lista) e não admite repetições
+Set<T>
+Set: é um tipo genérico
+Não admite repetições
 Não possuem posição
 
 Principais implementações: 
@@ -670,7 +690,7 @@ Principais implementações:
 -LinkedHashSet: velocidade intermédia e elemntos não ordem em que são adicionados
 
 Alguns métodos:
-• add(obj), remove(obj), contains(obj) - Baseado em equals e hashCode
+• add(obj), remove(obj), contains(obj) - Baseado em equals e hashCode (senão é usada comparação de ponteiros)
 • clear()
 • size()
 • removeIf(predicate)
@@ -678,7 +698,7 @@ Alguns métodos:
 • retainAll(other) - interseção: remove do conjunto os elementos não contitos em other
 • removeAll(other) - diferença: remove do conjunto os elementos contidos em other
 
---------
+--------Set Exemplo--------
 //Set<String> set = new HashSet<>(); //instanciar um Set usando a implementação HashSet (mais rápida) mas NÃO GARANTE ORDEM
 //Set<String> set = new TreeSet<>(); //instanciar um Set usando a implementação TreeSet (mais lento) e GARANTE ORDEM ALFABÉTICA
 Set<String> set = new LinkedHashSet<>(); //instanciar um Set usando a implementação LinkedHashSet (velocidade meia) e GARANTE ORDEM COLOCADA
@@ -695,6 +715,62 @@ System.out.println(set.contains("Notebook")); //ver se existe o elemento "Notebo
 for (String p : set) {
 	System.out.println(p);
 }
+
+--------Set(HashSet)--------
+
+Set<Product> set = new HashSet<>();
+
+set.add(new Product("TV", 900.0));
+set.add(new Product("Notebook", 1200.0));
+set.add(new Product("Tablet", 400.0));
+
+Product prod = new Product("Notebook", 1200.0); //instanciar um novo produto igual a um do conjunto
+
+System.out.println(set.contains(prod)); //testar se o produto existe no conjunto
+//da falso porque a classe produto nao contem os metodos HashCode e Equals - compara por referencia de ponteiros e não por conteudo
+//SOLUCAO: colocar os metodos hacode e equals nao classe Produto - pois assim compara pelos valores
+
+set.add(prod); //ele vai portanto colocar porque pensa ser diferente - se tiver HashCode e Equals na classe Product já não adiciona, pois compara pelos valores
+System.out.println();
+for(Product p : set) {
+	System.out.println(p.getName() + " - " + p.getPrice());
+}
+
+--------Set(TreeSet)--------
+
+Set<Product> set = new TreeSet<>(); //mais lento e ordenado alfabeticamente pelo CompareTo
+
+set.add(new Product("Tv", 900.0));
+set.add(new Product("Notebook", 1200.0));
+set.add(new Product("Tablet", 400.0));
+
+for (Product p : set) {
+	System.out.println(p);
+}
+
+//Na classe produto
+@Override
+public int compareTo(Product other) {
+	return name.toUpperCase().compareTo(other.getName().toUpperCase());
+}
+
+--------Map--------
+Map<K,V>
+É uma estrutura de dados genérica
+Não admite repetições do objeto chave
+Não possuem posição
+Tem 2 tipos: Tipo Chave e Tipo Valor
+Uso comum: cookies, local storage, qualquer modelo chave-valor
+Principais implementações(igual ao SET): HashMap, TreeMap, LinkedHashMap
+
+Alguns métodos:
+• add(obj), remove(obj), contains(obj) - Baseado em equals e hashCode (senão é usada comparação de ponteiros)
+• clear()
+• size()
+• removeIf(predicate)
+• addAll(other) - união: adiciona no conjunto os elementos do outro conjunto, sem repetição --> igual ao SET
+• retainAll(other) - interseção: remove do conjunto os elementos não contitos em other --> igual ao SET
+• removeAll(other) - diferença: remove do conjunto os elementos contidos em other --> igual ao SET
 
 -------------------------------OUTROS---------------------------------
 JAVA DOC - documentação do java

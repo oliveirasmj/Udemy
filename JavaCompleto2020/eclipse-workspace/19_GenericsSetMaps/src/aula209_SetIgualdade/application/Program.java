@@ -19,7 +19,13 @@ public class Program {
 		
 		System.out.println(set.contains(prod)); //testar se o produto existe no conjunto
 		//da falso porque a classe produto nao contem os metodos HashCode e Equals - compara por referencia de ponteiros e não por conteudo
-		//SOLUCAO: colocar os metodos nao classe Produto
+		//SOLUCAO: colocar os metodos hacode e equals nao classe Produto - pois assim compara pelos valores
+		
+		set.add(prod); //ele vai portanto colocar porque pensa ser diferente - se tiver HashCode e Equals na classe Product já não adiciona
+		System.out.println();
+		for(Product p : set) {
+			System.out.println(p.getName() + " - " + p.getPrice());
+		}
 	}
 
 }
