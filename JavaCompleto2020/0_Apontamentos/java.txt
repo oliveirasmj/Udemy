@@ -687,7 +687,7 @@ Não possuem posição
 Principais implementações: 
 -HashSet: mais rápido e não ordenado alfabeticamente
 -TreeSet: mais lento e ordenado alfabeticamente pelo CompareTo
--LinkedHashSet: velocidade intermédia e elemntos não ordem em que são adicionados
+-LinkedHashSet: velocidade intermédia e elementos na ordem em que são adicionados
 
 Alguns métodos:
 • add(obj), remove(obj), contains(obj) - Baseado em equals e hashCode (senão é usada comparação de ponteiros)
@@ -761,7 +761,11 @@ Não admite repetições do objeto chave
 Não possuem posição
 Tem 2 tipos: Tipo Chave e Tipo Valor
 Uso comum: cookies, local storage, qualquer modelo chave-valor
-Principais implementações(igual ao SET): HashMap, TreeMap, LinkedHashMap
+
+Principais implementações: 
+-HashMap: mais rápido e não ordenado alfabeticamente
+-TreeSet: mais lento e ordenado alfabeticamente pelo CompareTo
+-LinkedHashSet: velocidade intermédia e elementos na ordem em que são adicionados
 
 Alguns métodos:
 • add(obj), remove(obj), contains(obj) - Baseado em equals e hashCode (senão é usada comparação de ponteiros)
@@ -771,6 +775,35 @@ Alguns métodos:
 • addAll(other) - união: adiciona no conjunto os elementos do outro conjunto, sem repetição --> igual ao SET
 • retainAll(other) - interseção: remove do conjunto os elementos não contitos em other --> igual ao SET
 • removeAll(other) - diferença: remove do conjunto os elementos contidos em other --> igual ao SET
+
+------Exemplo-----
+Map<String, String> cookies = new TreeMap<>(); //Tipo Chave e Tipo Valor | TreeMap: ordem alfabetica
+
+cookies.put("username", "Maria");
+cookies.put("email", "maria@gmail.com");
+cookies.put("phone", "918463726");
+
+cookies.remove("email");
+cookies.put("phone", "911111111"); //Vai apenas atualizar - pois nao admite repetições
+
+//Listar todos os cookies
+System.out.println("----ALL COOKIES----");
+for(String key : cookies.keySet()) {
+	System.out.println(key + ": " + cookies.get(key));
+}
+
+//Ver se existe alguma chave com um determinado valor
+System.out.println();
+System.out.println("Contains 'phone' key: " + cookies.containsKey("phone"));
+
+//Ver o valor de uma chave
+System.out.println();
+System.out.println("Phone number: " + cookies.get("phone"));
+System.out.println("Email: " + cookies.get("email"));
+
+//Ver tamanho
+System.out.println();
+System.out.println("Size: " + cookies.size());
 
 -------------------------------OUTROS---------------------------------
 JAVA DOC - documentação do java

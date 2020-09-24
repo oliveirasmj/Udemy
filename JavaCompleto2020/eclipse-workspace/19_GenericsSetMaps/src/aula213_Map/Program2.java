@@ -22,7 +22,7 @@ public class Program2 {
 		Product ps = new Product("Tv", 900.0); //criar um produto igual ao de cima
 		
 		//Ver se no map existe o ps
-		System.out.println("Contains 'ps' key: " + stock.containsKey(ps)); //Não existe porque é usada referencia de pontarios porque nao ha hash e equals
+		System.out.println("Contains 'ps' key: " + stock.containsKey(ps)); //Não existe porque é usada referencia de ponteiros porque nao ha hash e equals
 		//ps aponta para outro espaço na memória 
 		//mas se tiver HashCode e Equals na classe Product já não adiciona pois já vai comparar pelo valor em vez dos ponteiros
 	}
