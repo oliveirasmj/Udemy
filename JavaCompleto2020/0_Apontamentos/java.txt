@@ -761,6 +761,15 @@ public int compareTo(Product other) {
 	return name.toUpperCase().compareTo(other.getName().toUpperCase());
 }
 
+----Converter list em set------
+List<Product> list = new ArrayList<>();
+list.add(new Product("TV", 900.0));
+list.add(new Product("Notebook", 1200.0));
+list.add(new Product("Tablet", 400.0));
+list.add(new Product("Tablet", 400.0));
+Set<Product> foo = new HashSet<Product>(list);
+
+
 --------Map--------
 Map<K,V>
 É uma estrutura de dados genérica
@@ -819,6 +828,21 @@ Uma Lista é uma coleção ordenada de itens
 Um Set é uma coleção não ordenado de itens sem registos duplicados
 Um Map é uma coleção de pares chave/valor sem registos duplicados
 
+
+-------------------------------PROG FUNCIONAL E EXPRESSÕES LAMBDA---------------------------------
+
+O que são "expressões lambda"?
+Em programação funcional, expressão lambda corresponde a uma função anônima de primeira classe.
+OU SEJA... é uma função sem nome(nao foi declarada) e pode ser passada como argumento para outras funções
+
+public class Program {
+
+public static void main(String[] args) {
+	(...)
+	list.sort((p1, p2) -> p1.getPrice().compareTo(p2.getPrice())); //Expressão lambda com cálculo lambda
+	(...)
+}
+
 -------------------------------OUTROS---------------------------------
 JAVA DOC - documentação do java
 nome da classe, descrição, constrotores e metodos, valores de retorno
@@ -847,4 +871,5 @@ list.add(new Rectangle(color, width, height)); // é feito upcasting para shape
 
 java application/Program //linha de comandos
 
+HashCode e Equals //FORMA DE VER SE SÃO IGUAIS
 Collections.sort(list); //FORMA DE ORDENAR UMA COLEÇÃO ------> list tem de ser do tipo COMPARABLE ------> Employee implements Comparable
