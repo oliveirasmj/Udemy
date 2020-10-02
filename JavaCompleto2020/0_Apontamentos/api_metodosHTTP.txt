@@ -16,6 +16,7 @@ exemplo: enviar informações de clientes
 --> DELETE: usado para remover o recurso
 --> PUT: para editar o recurso
 --> PATCH: editar o recurso sem a necessidade de enviar todos os atributos
+(entre outros...)
 ----------------------------------------------------------------------------------
 
 API - retorno de dados (BD ou JSON)
