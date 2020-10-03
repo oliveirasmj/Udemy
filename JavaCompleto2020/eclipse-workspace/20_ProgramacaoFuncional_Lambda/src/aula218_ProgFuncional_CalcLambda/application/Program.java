@@ -17,7 +17,7 @@ public class Program { //Existe programação imperativa e programação funcional -
 	public static void changeOddValues(int[] numbers) {
 		for (int i = 0; i < numbers.length; i++) {
 			if (numbers[i] % 2 != 0) {
-				numbers[i] += globalValue; //Não é referencialmente transparente pois não depende exclusivamente dos valores de entrada (globalValue) - programaçãoo imperativa
+				numbers[i] += globalValue; //Não é referencialmente transparente pois não depende exclusivamente dos valores de entrada (globalValue está fora do método) - programação imperativa
 			}
 		}
 	}

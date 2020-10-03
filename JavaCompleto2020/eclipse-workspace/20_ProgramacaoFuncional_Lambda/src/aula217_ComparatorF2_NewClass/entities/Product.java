@@ -33,7 +33,7 @@ public class Product /*implements Comparable<Product>*/ {
 
 //	@Override
 //	public int compareTo(Product p) {
-//		return name.toUpperCase().compareTo(p.getName().toUpperCase());
+//		return name.toUpperCase().compareTo(p.getName().toUpperCase()); //compara um objeto com outro - devolve negativo, 0 ou positivo se for alfabeticamente menor, iigual ou maior
 //	}
 	
 }

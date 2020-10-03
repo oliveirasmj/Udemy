@@ -429,7 +429,7 @@ public class Program {
 	double payment = is.payment(amount, months);
 }
 
-----------------ComparareTo---------------------
+----------------Comparable---------------------
 public class Program {
 public static void main(String[] args) {
 	List<Employee> list = new ArrayList<>();
@@ -758,7 +758,7 @@ for (Product p : set) {
 //Na classe produto
 @Override
 public int compareTo(Product other) {
-	return name.toUpperCase().compareTo(other.getName().toUpperCase());
+	return name.toUpperCase().compareTo(other.getName().toUpperCase()); //compara um objeto com outro - devolve negativo, 0 ou positivo se for alfabeticamente menor, iigual ou maior
 }
 
 ----Converter list em set------
@@ -842,6 +842,12 @@ public static void main(String[] args) {
 	list.sort((p1, p2) -> p1.getPrice().compareTo(p2.getPrice())); //Expressão lambda com cálculo lambda
 	(...)
 }
+
+
+Interface Funcional - é uma interface que possui um único método abstrato 
+(ex: MyComparator - aula217_ComparatorF2_NewClass)
+outros: Predicate, Funcion, Consumer
+
 
 -------------------------------OUTROS---------------------------------
 JAVA DOC - documentação do java

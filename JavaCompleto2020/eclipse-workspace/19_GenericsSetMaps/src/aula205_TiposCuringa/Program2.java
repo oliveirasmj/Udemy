@@ -14,7 +14,7 @@ public class Program2 {
 	}
 	
 	//public static void printList(List<Integer> list) {
-	public static void printList(List<?> list) { //assim imprime uma lista de qualquer tipo ---> <?>
+	public static void printList(List<?> list) { //assim imprime uma lista de qualquer tipo ---> <?>     MAS NÃO É POSSÍVEL ADICIONAR, SÓ LISTAR
 		for (Object obj : list) {
 			System.out.println(obj);
 		}

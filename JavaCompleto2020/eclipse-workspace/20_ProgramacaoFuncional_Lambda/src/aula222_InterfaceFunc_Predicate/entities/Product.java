@@ -1,6 +1,6 @@
-package aula217_ComparableF1.entities;
+package aula222_InterfaceFunc_Predicate.entities;
 
-public class Product implements Comparable<Product> {
+public class Product{
 
 	private String name;
 	private Double price;
@@ -30,10 +30,15 @@ public class Product implements Comparable<Product> {
 	public String toString() {
 		return "Product [name=" + name + ", price=" + price + "]";
 	}
-
-	@Override
-	public int compareTo(Product p) {
-		return name.toUpperCase().compareTo(p.getName().toUpperCase()); //compara um objeto com outro - devolve negativo, 0 ou positivo se for alfabeticamente menor, iigual ou maior
+	
+	//FORMA 4
+	public static boolean staticProductPredicate(Product p) { //static trabalha com o produto que se passa
+		return p.getPrice() >= 100.0; //retorna os produtos a remover como true
+	}
+	
+	//FORMA 5
+	public boolean nonstaticProductPredicate() { //non static - trabalha com o objeto onde está
+		return price >= 100.0; //retorna os produtos a remover como true
 	}
 	
 }
