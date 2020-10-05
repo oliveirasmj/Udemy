@@ -1,4 +1,4 @@
-package aula222_InterfaceFunc_Predicate.entities;
+package aula220_InterfaceFunc_Predicate.entities;
 
 public class Product{
 

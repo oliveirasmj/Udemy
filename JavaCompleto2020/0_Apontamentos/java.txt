@@ -761,15 +761,6 @@ public int compareTo(Product other) {
 	return name.toUpperCase().compareTo(other.getName().toUpperCase()); //compara um objeto com outro - devolve negativo, 0 ou positivo se for alfabeticamente menor, iigual ou maior
 }
 
-----Converter list em set------
-List<Product> list = new ArrayList<>();
-list.add(new Product("TV", 900.0));
-list.add(new Product("Notebook", 1200.0));
-list.add(new Product("Tablet", 400.0));
-list.add(new Product("Tablet", 400.0));
-Set<Product> foo = new HashSet<Product>(list);
-
-
 --------Map--------
 Map<K,V>
 É uma estrutura de dados genérica
@@ -827,6 +818,24 @@ Set, List e Map são três interfaces(que possuem implementações):
 Uma Lista é uma coleção ordenada de itens
 Um Set é uma coleção não ordenado de itens sem registos duplicados
 Um Map é uma coleção de pares chave/valor sem registos duplicados
+
+
+----Converter list em set------
+List<Product> list = new ArrayList<>();
+list.add(new Product("TV", 900.0));
+list.add(new Product("Notebook", 1200.0));
+list.add(new Product("Tablet", 400.0));
+list.add(new Product("Tablet", 400.0));
+Set<Product> foo = new HashSet<Product>(list);
+System.out.println("List  : " + list); 
+
+----Converter list em Hashmap------
+Map<String, Double> map = new HashMap<>(); 
+// put every value list to Map 
+for (Product p : list) { 
+    map.put(p.getName(), p.getPrice()); 
+} 
+System.out.println("Map  : " + map); 
 
 
 -------------------------------PROG FUNCIONAL E EXPRESSÕES LAMBDA---------------------------------
