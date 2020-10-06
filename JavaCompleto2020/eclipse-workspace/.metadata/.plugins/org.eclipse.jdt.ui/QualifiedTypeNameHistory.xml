@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="aula197_ExemploSemInterface.model.entities.AbstractShape"/>
-    <fullyQualifiedTypeName name="aula197_ExemploSemInterface.model.entities.Rectangle"/>
     <fullyQualifiedTypeName name="aula197_Exemplo1SemInterface.model.entities.Shape"/>
     <fullyQualifiedTypeName name="aula197_Exemplo1SemInterface.model.entities.Circle"/>
     <fullyQualifiedTypeName name="aula197_Exemplo1SemInterface.model.entities.Rectangle"/>
@@ -16,7 +14,6 @@
     <fullyQualifiedTypeName name="aula203_IntroducaoGenerics.services.PrintServiceString"/>
     <fullyQualifiedTypeName name="aula203_IntroducaoGenerics2.services.PrintService"/>
     <fullyQualifiedTypeName name="aula203_IntroducaoGenerics3.services.PrintService"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="sun.security.mscapi.CKeyStore.MY"/>
     <fullyQualifiedTypeName name="aula206_CuringasDelimitados.entities.Shape"/>
     <fullyQualifiedTypeName name="aula206_CuringasDelimitados.entities.Circle"/>
@@ -53,11 +50,14 @@
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.util.Context.Key"/>
     <fullyQualifiedTypeName name="java.util.function.Function"/>
-    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="aula222_InterfaceFunc_Function.entities.Product"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="aula223_FuncoesComoParametro.util.ProductService"/>
     <fullyQualifiedTypeName name="aula223_FuncoesComoParametro.entities.Product"/>
     <fullyQualifiedTypeName name="aula223_FuncoesComoParametroV2.util.ProductService"/>
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.stream.Stream"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 </qualifiedTypeNameHistroy>

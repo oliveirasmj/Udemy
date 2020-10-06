@@ -14,7 +14,7 @@ public class Program {
 		System.out.println(Arrays.toString(st1.toArray())); //imprimir stream - chamar o toArray(op. intermediaria - converte stream para vetor)
 		
 		
-		int sum = list.stream().reduce(0, (x, y) -> x + y); //somar todos os elementos da stream | reduce - (pega no elmento inicial, funcao de soma)
+		int sum = list.stream().reduce(0, (x, y) -> x + y); //somar todos os elementos da stream | reduce - (começa com valor 0, funcao de soma)
 		System.out.println("Sum: " + sum);
 		
 		
