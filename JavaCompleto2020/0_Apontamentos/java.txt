@@ -166,6 +166,7 @@ https://www.guj.com.br/t/por-favor-qual-e-a-diferenca-dentre-arraylist-e-list/69
 NAO PODE SER TIPO DADOS PRIMITIVO
 add, get, size, remove, etc...
 
+Adicionar elementos de forma imediata: List<Integer> list = Arrays.asList(3, 4, 5, 10, 7);
 ------
 ***Datas***
 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy"); 
@@ -856,6 +857,35 @@ public static void main(String[] args) {
 Interface Funcional - é uma interface que possui um único método abstrato 
 (ex: MyComparator - aula217_ComparatorF2_NewClass)
 outros: Predicate, Funcion, Consumer
+
+//Receber funcao lambda como parametro
+double sum = ps.filteredSumm(list, p -> p.getName().charAt(0) == 'T'); //recebe a lista e o predicado como argumento
+
+------
+Stream - é uma sequência de elementos de uma fonte de dados que oferece suporte a operações agregadas. Operações em stream geram novas streams
+Caracteristicas: declarativa, imutável, sem efeitos colaterais, sob demanda, não há índices e só pode ser usada uma vez
+exemplos: a partir de uma lista gerar uma nova com os nomes em maisculas (aula222)
+	Function<Product, String> func = p -> p.getName().toUpperCase();
+	List<String> names = list.stream().map(func).collect(Collectors.toList()); //no map colocar a funcao lambda
+	//Funcao map so funciona para stream, portanto temos de converter a lista para stream e depois voltar a colocar para stream
+
+Pipeline - linha de montagem
+Pipeline é composto por 0 ou mais operações intermediárias e uma terminal
+
+Operação Intermediária:
+- produz uma nova stream(encadeamento)
+- só executa quando uma operação terminal é invocada
+exemplos: filter, map, flatmap, peek, distinct, sorted, skip, limit (*)
+* short-circuit (quando encontra primeira ocorrência o processamento pára)
+
+Operação terminal:
+- produz um objeto não-stream (coleção ou outro)
+- determina o fim do processamento da stream
+exemplos: forEach, forEachOrdered, toArray, reduce, collect, min, max, count, anyMatch (*), allMatch (*), noneMatch (*), findFirst (*), findAny (*), 
+* short-circuit (quando encontra primeira ocorrência o processamento pára)
+
+Criar uma stream: basta chamar o método stream() ou parallelStream() a partir de qualquer objeto Collection
+
 
 
 -------------------------------OUTROS---------------------------------

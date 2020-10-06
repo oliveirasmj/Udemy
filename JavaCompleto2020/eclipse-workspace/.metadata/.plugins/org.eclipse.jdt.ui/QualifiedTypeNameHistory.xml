@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="aula190_ProblemaParte1.model.services.BrazilTaxService"/>
-    <fullyQualifiedTypeName name="aula193_ProblemaComInterfaces.model.services.TaxService"/>
-    <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.services.PaypalService"/>
-    <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.services.OnlinePaymentService"/>
-    <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.entities.Contract"/>
-    <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.entities.Prestacao"/>
-    <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.services.ContractService"/>
-    <fullyQualifiedTypeName name="aula195_ExercicioFixacao.model.entities.Installment"/>
-    <fullyQualifiedTypeName name="model.entities.Circle"/>
-    <fullyQualifiedTypeName name="model.entities.AbstractShape"/>
-    <fullyQualifiedTypeName name="java.awt.Color"/>
-    <fullyQualifiedTypeName name="aula197_ExemploSemInterface.model.entities.Circle"/>
     <fullyQualifiedTypeName name="aula197_ExemploSemInterface.model.entities.AbstractShape"/>
     <fullyQualifiedTypeName name="aula197_ExemploSemInterface.model.entities.Rectangle"/>
     <fullyQualifiedTypeName name="aula197_Exemplo1SemInterface.model.entities.Shape"/>
@@ -44,7 +32,6 @@
     <fullyQualifiedTypeName name="aula204_GenericsDelimitados.entities.Product"/>
     <fullyQualifiedTypeName name="aula210_TreeSetCompare.entities.Product"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
@@ -56,8 +43,21 @@
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="aula217_ComparatorF2_NewClass.application.MyComparator"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="aula222_InterfaceFunc_Predicate.util.ProductPredicate"/>
     <fullyQualifiedTypeName name="aula222_InterfaceFunc_Predicate.entities.Product"/>
+    <fullyQualifiedTypeName name="aula222_InterfaceFunc_Predicate.util.ProductPredicate"/>
+    <fullyQualifiedTypeName name="java.util.function.Consumer"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="aula221_InterfaceFunc_Consumer.entities.Product"/>
+    <fullyQualifiedTypeName name="aula222_InterfaceFunc_Function.util.UpperCaseName"/>
+    <fullyQualifiedTypeName name="aula221_InterfaceFunc_Consumer.util.PriceUpdate"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.Context.Key"/>
+    <fullyQualifiedTypeName name="java.util.function.Function"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="aula222_InterfaceFunc_Function.entities.Product"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="aula223_FuncoesComoParametro.util.ProductService"/>
+    <fullyQualifiedTypeName name="aula223_FuncoesComoParametro.entities.Product"/>
+    <fullyQualifiedTypeName name="aula223_FuncoesComoParametroV2.util.ProductService"/>
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
 </qualifiedTypeNameHistroy>
