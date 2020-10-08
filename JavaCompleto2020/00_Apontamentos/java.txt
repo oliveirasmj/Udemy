@@ -887,6 +887,11 @@ exemplos: forEach, forEachOrdered, toArray, reduce, collect, min, max, count, an
 Criar uma stream: basta chamar o método stream() ou parallelStream() a partir de qualquer objeto Collection
 
 
+-------------------------------BASE DADOS - JDBC---------------------------------
+
+JDBC - API padrão do JAVA para acesso a dados (biblioteca que vem no java para aceder a base de dados)
+Pacotes: java.sql e javax.sql(suplementar para servidores)
+
 
 -------------------------------OUTROS---------------------------------
 JAVA DOC - documentação do java
