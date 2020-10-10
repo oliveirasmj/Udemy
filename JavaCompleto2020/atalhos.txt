@@ -1,18 +1,17 @@
 Indentar - Ctrl Shift F
 Import - Ctrl Shift O
-
-
+---------------------------
 Reset perspective --> Window - Perspective - Reset Perspective 
 Perspective JAVA --> Window - Open Perspective - Java
 Console --> Windows - Show View - Console
-
+---------------------------
 Comentarios
 Ctrl Shift C
 Ctrl Shift /
-
+---------------------------
 Link:
 https://blog.algaworks.com/atalhos-e-configuracoes-para-ganhar-produtividade-com-eclipse/
-
+---------------------------
 Neatbeans JDK:
 https://blog.idrsolutions.com/2012/09/netbeans-cannot-locate-java-installation-in-specified-jdkhome/
-
+---------------------------
