@@ -892,6 +892,19 @@ Criar uma stream: basta chamar o método stream() ou parallelStream() a partir d
 JDBC - API padrão do JAVA para acesso a dados (biblioteca que vem no java para aceder a base de dados)
 Pacotes: java.sql e javax.sql(suplementar para servidores)
 
+Classes importantes do JDBC para Recuperar Dados:
+-Statement - serve para montar um comando sql para ser montado
+-ResultSet - representa um objeto com o resultado da consulta em forma de tabela
+	o first() [move para posição 1, se houver]
+	o beforeFirst() [move para posição 0]
+	o next() [move para o próximo, retorna false se já estiver no último]
+	o absolute(int) [move para a posição dada, lembrando que dados reais começam em 1]
+
+Classes importantes do JDBC para Inserir Dados:
+-PreparedStatement - objeto que permite montar consulta SQL, deixando os parametros para colocar depois
+-executeUpdate
+-Statement.RETURN_GENERATED_KEYS - recuperar ID do novo objeto inserido
+-getGeneratedKeys
 
 -------------------------------OUTROS---------------------------------
 JAVA DOC - documentação do java
