@@ -34,7 +34,8 @@ public class Program2 {
 			st.setDouble(4, 3000.0);
 			st.setInt(5, 4);
 
-			/*// EXAMPLE 2:
+			/*
+			// EXAMPLE 2:
 			st = conn.prepareStatement("insert into department (Name) values ('D1'), ('D2')",
 					Statement.RETURN_GENERATED_KEYS);
 			*/
