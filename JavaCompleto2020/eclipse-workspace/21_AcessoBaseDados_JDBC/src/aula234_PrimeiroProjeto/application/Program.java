@@ -2,7 +2,7 @@ package aula234_PrimeiroProjeto.application;
 
 import java.sql.Connection;
 
-import db.DB;
+import aula234_PrimeiroProjeto.db.DB;
 
 public class Program {
 

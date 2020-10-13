@@ -1,4 +1,4 @@
-package db;
+package aula234_PrimeiroProjeto.db;
 
 public class DbException extends RuntimeException{
 

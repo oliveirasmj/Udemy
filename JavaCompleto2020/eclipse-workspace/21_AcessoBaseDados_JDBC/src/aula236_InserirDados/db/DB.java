@@ -1,4 +1,4 @@
-package db;
+package aula236_InserirDados.db;
 
 import java.io.FileInputStream;
 import java.io.IOException;

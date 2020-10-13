@@ -1,11 +1,12 @@
-package aula235_RecuperarDados;
+package aula235_RecuperarDados.application;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import db.DB;
+import aula235_RecuperarDados.db.DB;
+
 
 public class Program {
 
