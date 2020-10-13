@@ -450,11 +450,12 @@ public class Employee implements Comparable<Employee> {
 
 -------------------------------EXCEPÇÕES---------------------------------
 Excepção - é uma condição de erro - programação defensiva
-Herdado da Classe: 
-- Exception: obriga a tratar
-- RuntimeException: não obriga a tratar
 Lançamento e tratamento de exceções
 Reporte de erros
+
+Herdado da Classe: 
+- Exception: obriga a tratar excepção com try catch ou throws
+- RuntimeException: não obriga a tratar
 
 Objetivo: prevenir que erros afectem o sistema
 
@@ -466,6 +467,14 @@ finally - bloco executado independentemente de ter ocorrido ou não uma excepç�
 RuntimeException - compilador nao obriga a tratar - programa termina
 Exception - compilador obriga a tratar - programa não termina
 Cláusula throws: lança a exceção verificada ao invés de trata-la (caso nao se faça try catch)
+
+-----
+A palavra reservada throws vai na assinatura do método e indica que este método poderá lançar uma exceção que deve ou ser relançada ou capturada pelo método que a está chamando.
+public void foo (int x, int y) throws Exception 
+
+A palavra reservada throw new serve para lançar a exceção de dentro do corpo do método como em:
+try { // Faz algo } catch(Exception e){ throw new Exeption(); }
+-----
 
 ***Program***
 try {

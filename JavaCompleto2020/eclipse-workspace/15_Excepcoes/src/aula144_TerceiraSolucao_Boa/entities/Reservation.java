@@ -14,7 +14,7 @@ public class Reservation {
 	
 	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy"); //static - para que nao seja instanciado um SimpleDateFormat para cada objeto
 	
-	public Reservation(Integer roomNumber, Date checkIn, Date checkOut) throws DomainException {
+	public Reservation(Integer roomNumber, Date checkIn, Date checkOut) throws DomainException { //podera ser lançado o DomainException
 		if (checkOut.before(checkIn)) { //se checkin/checkout for inferior a data atual
 			throw new DomainException("Check-out date must be after check-in date"); //lança DomainException - é necessário trata-la colocando o throws em cima
 		}
@@ -44,7 +44,7 @@ public class Reservation {
 		return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS); //converte para dias
 	}
 	
-	public void updateDates(Date checkIn, Date checkOut) throws DomainException {
+	public void updateDates(Date checkIn, Date checkOut) throws DomainException { //podera ser lançado o DomainException
 		Date now = new Date();
 		if (checkIn.before(now) || checkOut.before(now)) { //se checkin/checkout for inferior a data atual
 			throw new DomainException("Reservation dates for update must be future dates"); //lança DomainException - é necessário trata-la colocando o throws a seguir ao nome deste metodo
