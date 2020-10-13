@@ -19,6 +19,7 @@ public class Program {
 		
 		//SellerDao sellerDao = new SellerDaoJDBC(DB.getConnection()); // com injecao de dependencia v1 (igual a v2)
 		SellerDao sellerDao = DaoFactory.createSellerDao(); // com injecao de dependencia v2
+		System.out.println("=== Test 1: seller findById ===");
 		System.out.println(sellerDao.findById(3));
 	}
 
