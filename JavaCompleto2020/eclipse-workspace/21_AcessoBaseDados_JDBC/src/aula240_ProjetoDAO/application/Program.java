@@ -11,7 +11,7 @@ import aula240_ProjetoDAO.model.entities.Seller;
 
 public class Program {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { //Este Program é responsavel por consultas reclacionadas com a tabela de Vendedores
 		
 		Scanner sc = new Scanner(System.in);
 		
