@@ -4,13 +4,14 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import aula239_Transacoes.db.DbException;
 import aula240_ProjetoDAO.db.DB;
+import aula240_ProjetoDAO.db.DbException;
 import aula240_ProjetoDAO.model.dao.SellerDao;
 import aula240_ProjetoDAO.model.entities.Department;
 import aula240_ProjetoDAO.model.entities.Seller;
@@ -21,24 +22,6 @@ public class SellerDaoJDBC implements SellerDao {
 
 	public SellerDaoJDBC(Connection conn) { // recebe a conexao no construtor
 		this.conn = conn;
-	}
-
-	@Override
-	public void insert(Seller obj) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void update(Seller obj) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void deleteById(Integer id) {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
@@ -215,6 +198,100 @@ public class SellerDaoJDBC implements SellerDao {
 		finally {
 			DB.closeStatement(st);
 			DB.closeResultSet(rs);
+		}
+	}
+	
+	@Override
+	public void insert(Seller obj) {
+		PreparedStatement st = null;
+		try {
+			st = conn.prepareStatement(
+							"INSERT INTO seller " + 
+							"(Name, Email, BirthDate, BaseSalary, DepartmentId) " + 
+							"VALUES " + 
+							"(?, ?, ?, ?, ?)",
+							Statement.RETURN_GENERATED_KEYS);//retornar o id do ultimo vendedor inserido
+			
+			st.setString(1, obj.getName()); // dizer que o primeiro ponto de interrogação é o valor do Nome
+			st.setString(2, obj.getEmail());
+			st.setDate(3, new java.sql.Date(obj.getBirthDate().getTime()));
+			st.setDouble(4, obj.getBaseSalary());
+			st.setInt(5, obj.getDepartment().getId());
+			
+			//saber numero de linhas afetadas e executar
+			int rowsAffected = st.executeUpdate();
+			
+			if(rowsAffected > 0) { //se houver inserção de dados
+				ResultSet rs = st.getGeneratedKeys(); //Criar um ResultSet com os ultimos dados inseridos
+				if(rs.next()) { //se existir poximo
+					int id = rs.getInt(1); //id = id da tabela do ResultSet
+					obj.setId(id); //forma de no main conseguir saber o id do ultimo vendedor inserido
+				}
+				DB.closeResultSet(rs);
+			}
+			else {
+				throw new DbException("No rows affected");
+			}
+			
+		} catch (SQLException e) {
+			throw new DbException(e.getMessage());
+		}
+		finally {
+			DB.closeStatement(st);
+		}
+	}
+	
+	@Override
+	public void update(Seller obj) {
+		PreparedStatement st = null;
+		try {
+			st = conn.prepareStatement(
+							"UPDATE seller " + 
+							"SET Name = ?, Email = ?, BirthDate = ?, BaseSalary = ?, DepartmentId = ? " + 
+							"WHERE Id = ?");
+			
+			st.setString(1, obj.getName()); // dizer que o primeiro ponto de interrogação é o valor do Nome
+			st.setString(2, obj.getEmail());
+			st.setDate(3, new java.sql.Date(obj.getBirthDate().getTime()));
+			st.setDouble(4, obj.getBaseSalary());
+			st.setInt(5, obj.getDepartment().getId());
+			
+			st.setInt(6, obj.getId());
+			
+			//executar
+			st.executeUpdate();
+			
+		} catch (SQLException e) {
+			throw new DbException(e.getMessage());
+		}
+		finally {
+			DB.closeStatement(st);
+		}
+	}
+
+	@Override
+	public void deleteById(Integer id) {
+		PreparedStatement st = null;
+		try {
+			st = conn.prepareStatement(
+							"DELETE FROM seller " + 
+							"WHERE Id = ?");//retornar o id do ultimo vendedor inserido
+			
+			st.setInt(1, id); // dizer que o primeiro ponto de interrogação é o valor do id recebido
+			
+			//saber numero de linhas afetadas e executar
+			int rows = st.executeUpdate();
+			
+			//se nao houver modificação então o id não foi eliminado porque nao existe
+			if(rows == 0) {
+				throw new DbException("Id não existente");
+			}
+			
+		} catch (SQLException e) {
+			throw new DbException(e.getMessage());
+		}
+		finally {
+			DB.closeStatement(st);
 		}
 	}
 

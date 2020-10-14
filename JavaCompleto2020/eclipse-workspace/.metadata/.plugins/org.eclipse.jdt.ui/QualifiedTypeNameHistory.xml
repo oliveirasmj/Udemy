@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="aula222_InterfaceFunc_Predicate.entities.Product"/>
     <fullyQualifiedTypeName name="aula222_InterfaceFunc_Predicate.util.ProductPredicate"/>
     <fullyQualifiedTypeName name="java.util.function.Consumer"/>
     <fullyQualifiedTypeName name="aula221_InterfaceFunc_Consumer.entities.Product"/>
     <fullyQualifiedTypeName name="aula222_InterfaceFunc_Function.util.UpperCaseName"/>
     <fullyQualifiedTypeName name="aula221_InterfaceFunc_Consumer.util.PriceUpdate"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.util.Context.Key"/>
     <fullyQualifiedTypeName name="java.util.function.Function"/>
     <fullyQualifiedTypeName name="aula222_InterfaceFunc_Function.entities.Product"/>
@@ -18,7 +16,6 @@
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="aula226_ExercicioResolvido.entities.Product"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
@@ -48,16 +45,19 @@
     <fullyQualifiedTypeName name="aula239_Transacoes.db.DbIntegrityException"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="aula240_ProjetoDAO.model.dao.SellerDao"/>
     <fullyQualifiedTypeName name="aula240_ProjetoDAO.model.dao.DaoFactory"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
-    <fullyQualifiedTypeName name="aula240_ProjetoDAO.model.entities.Department"/>
-    <fullyQualifiedTypeName name="aula240_ProjetoDAO.model.entities.Seller"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="aula239_Transacoes.db.DbException"/>
     <fullyQualifiedTypeName name="aula240_ProjetoDAO.db.DB"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="aula240_ProjetoDAO.model.dao.impl.SellerDaoJDBC"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="aula240_ProjetoDAO.model.entities.Department"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="aula240_ProjetoDAO.model.entities.Seller"/>
 </qualifiedTypeNameHistroy>
