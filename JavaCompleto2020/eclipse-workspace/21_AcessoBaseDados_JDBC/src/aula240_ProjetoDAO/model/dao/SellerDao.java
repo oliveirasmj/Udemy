@@ -2,6 +2,7 @@ package aula240_ProjetoDAO.model.dao;
 
 import java.util.List;
 
+import aula240_ProjetoDAO.model.entities.Department;
 import aula240_ProjetoDAO.model.entities.Seller;
 
 public interface SellerDao {
@@ -11,5 +12,5 @@ public interface SellerDao {
 	void deleteById(Integer id);
 	Seller findById(Integer id);
 	List<Seller> findAll();
-	
+	List<Seller> findByDepartment(Department department);
 }
