@@ -8,9 +8,10 @@ json é rest
 -----------
 rota - manda para o controlador/view
 
-modelo é onde tem as querys
-controlador - parte logica de programação
-view - parte visual
+MVC - padrão de desenvolvimento de aplicações gráficas no qual a aplicação é divida em 3 partes
+- Model - consiste nos dados de domínio(classes entidades e serviços) e a sua lógica de transformação + querys
+- Views - são telas de interação com o utlizador (UI)
+- Controllers - classes reponsáveis por tratar as interações do utilizador com as views - manipulação de eventos
 
 ----------------------------------------------------------------------
 Testes: (é o processo que consiste em encontrar erros)

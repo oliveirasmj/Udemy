@@ -915,6 +915,22 @@ Classes importantes do JDBC para Inserir Dados:
 -Statement.RETURN_GENERATED_KEYS - recuperar ID do novo objeto inserido
 -getGeneratedKeys
 
+-------------------------------JAVAFX---------------------------------
+
+JAVAFX é o sucessor do Swing e JAVA AWT para interfaces gráficas com Java
+Usado para Desktop, web e mobile
+Não faz parte do JDK, precisa de ser configurado separadamente
+É projeto sobre o padrão MVC
+
+MVC - padrão de desenvolvimento de aplicações gráficas no qual a aplicação é divida em 3 partes
+- Model - consiste nos dados de domínio(classes entidades e serviços) e a sua lógica de transformação
+- Views - são telas de interação com o utlizador (UI)
+- Controllers - classes reponsáveis por tratar as interações do utilizador com as views - manipulação de eventos
+
+Exemplo de um registar cliente:
+Tem uma tela de desenho com o formulário - VIEW
+Quando clico num botão submit vai ter um método no CONTROLLER que vai chamar um serviço/classe do MODEL para registar
+
 -------------------------------OUTROS---------------------------------
 JAVA DOC - documentação do java
 nome da classe, descrição, constrotores e metodos, valores de retorno

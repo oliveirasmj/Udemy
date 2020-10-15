@@ -15,3 +15,11 @@ https://blog.algaworks.com/atalhos-e-configuracoes-para-ganhar-produtividade-com
 Neatbeans JDK:
 https://blog.idrsolutions.com/2012/09/netbeans-cannot-locate-java-installation-in-specified-jdkhome/
 ---------------------------
+
+
+Quando tiver pc
+Instalar Git
+Instalar Eclipse
+Instalar Java...
+Instalar MySQL
+Instalar cenas do JAVAFX
