@@ -3,7 +3,7 @@ Normalização - eliminar redundanica e ficar consistente
 Voltar atras --> Transações - caso haja falhas - rollback
 INNER JOIN
 
-Transação - É uma operação que tem de manter a consistênca do banco de dados
+Transação - É uma operação que tem de manter a consistênca do banco de dados.
 Tem de ser Atómica, Consistente, Isolada, Durável
 
 API:
