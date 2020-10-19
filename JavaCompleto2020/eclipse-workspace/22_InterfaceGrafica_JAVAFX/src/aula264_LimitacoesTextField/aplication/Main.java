@@ -1,4 +1,4 @@
-package application;
+package aula264_LimitacoesTextField.aplication;
 
 import java.io.IOException;
 
@@ -26,7 +26,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage stage) {
 		try {
-			Parent parent = FXMLLoader.load(getClass().getResource("/gui/View.fxml")); //carregar a tela(chamando o ficheiro View.xml), num objeto tipo Parent 
+			Parent parent = FXMLLoader.load(getClass().getResource("/aula264_LimitacoesTextField/gui/View.fxml")); //carregar a tela(chamando o ficheiro View.xml), num objeto tipo Parent 
 			Scene scene = new Scene(parent); //criar cena com o View como Cena
 			stage.setScene(scene); //Palco vai ter a Cena criada
 			stage.show(); //Mostrar palco
@@ -39,3 +39,14 @@ public class Main extends Application {
 		launch(args); // metodo estatico quem tem na aplication para executar a aplicação
 	}
 }
+
+//Colocar a linha abaixo em: botao direito em Main -> Run As... -> Run Configurations -> Arguments -> VM arguments -> --module-path C:\java-libs\javafx-sdk\lib --add-modules=javafx.fxml,javafx.controls
+//--module-path C:\java-libs\javafx-sdk\lib --add-modules=javafx.fxml,javafx.controls
+
+/*
+- Associar a view ao controller (aba Controller)
+- Selecione o controle e associe a ele o id (aba Code)
+- Selecione o controle e associe o método ao evento desejado (aba Code)
+ * */
+
+//Project -> Clean
