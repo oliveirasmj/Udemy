@@ -12,7 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class ViewController implements Initializable { //implements Initializable - para usar a classe Constraints
+public class ViewController implements Initializable { //implements Initializable - para usar o metodo initialize
 
 	@FXML
 	private TextField txtNumber1;
@@ -41,7 +41,7 @@ public class ViewController implements Initializable { //implements Initializabl
 	}
 
 	@Override
-	public void initialize(URL url, ResourceBundle rb) { //controlar valores das textFields
+	public void initialize(URL url, ResourceBundle rb) { //controlar valores das textFields através da Classe Constraints
 		Constraints.setTextFieldDouble(txtNumber1); //Assim já não deixa digitar letras em txtNumber1
 		Constraints.setTextFieldDouble(txtNumber2); //Assim já não deixa digitar letras em txtNumber2
 		Constraints.setTextFieldMaxLength(txtNumber1, 12); //Máximo de caracteres de txtNumber1 é 12
