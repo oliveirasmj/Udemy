@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sun.net.httpserver.Filter"/>
     <fullyQualifiedTypeName name="aula227_ExercicioFixacao.application.Program"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
@@ -38,7 +37,6 @@
     <fullyQualifiedTypeName name="aula240_ProjetoDAO.db.DbException"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="aula240_ProjetoDAO.db.DbIntegrityException"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="aula240_ProjetoDAO.model.dao.DepartmentDao"/>
     <fullyQualifiedTypeName name="aula240_ProjetoDAO.model.dao.impl.DepartmentDaoJDBC"/>
     <fullyQualifiedTypeName name="java.io.File"/>
@@ -47,7 +45,6 @@
     <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="javafx.scene.control.Alert.AlertType"/>
-    <fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
     <fullyQualifiedTypeName name="aula264_LimitacoesTextField.gui.util.Constraints"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="javafx.scene.control.ComboBox"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="aula265_ComboBox.model.entities.Person"/>
     <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
     <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.ScrollPane"/>
+    <fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

@@ -38,6 +38,7 @@ self documenting code: conjunto de regras para melhor entender o codigo
 mock:
 spy:
 coverage:
+
 ----------------------------------------------------------------------
 Desenvolvimento
 
