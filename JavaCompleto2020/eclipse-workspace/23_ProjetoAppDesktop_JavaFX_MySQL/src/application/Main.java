@@ -11,6 +11,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 	
+	private static Scene mainScene; //Para poder ser usado noutras classes - é privado mas criamos um metodo para retornar
+	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
@@ -22,13 +24,17 @@ public class Main extends Application {
 			scrollPane.setFitToHeight(true); //ajustar janela verticalmente
 			scrollPane.setFitToWidth(true); //ajustar janela horizontalmente
 			
-			Scene mainScene = new Scene(scrollPane); //Criar uma cena
+			mainScene = new Scene(scrollPane); //Criar uma cena       --> Antes: Scene mainScene = new Scene(scrollPane);
 			primaryStage.setScene(mainScene); //instanciar a cena do palco com argumento da View
 			primaryStage.setTitle("Sample JavaFX application"); //Titulo do palco
 			primaryStage.show(); //Mostrar
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static Scene getMainScene() { //metodo para retornar Cena
+		return mainScene;
 	}
 
 	public static void main(String[] args) {
