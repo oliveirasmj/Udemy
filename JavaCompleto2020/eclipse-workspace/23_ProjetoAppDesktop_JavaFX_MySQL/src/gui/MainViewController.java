@@ -3,6 +3,7 @@ package gui;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.function.Consumer;
 
 import application.Main;
 import gui.util.Alerts;
@@ -36,15 +37,23 @@ public class MainViewController implements Initializable{
 	}
 	
 	@FXML
-	public void onMenuItemDepartmentAction() {
+	public void onMenuItemDepartmentAction() { //Chamar View DepartmentList
 		//System.out.println("onMenuItemDepartmentAction");
-		loadView2("/gui/DepartmentList.fxml"); //Chamar View DepartmentList
+		//loadView2("/gui/DepartmentList.fxml"); //Chamar View DepartmentList
+		
+		//em vez de chamar loadView2
+		loadView("/gui/DepartmentList.fxml", (DepartmentListController controller) -> { //Chamar View DepartmentList e levar no segundo parametro o codigo para atualizar a tabela
+			controller.setDepartmentService(new DepartmentService()); //definir já quem é o DepartmentService --> private DepartmentService service (esta na classe)
+			controller.updateTableView(); //atualizar os dados
+		}); 
 	}
 	
 	@FXML
 	public void onMenuItemAboutAction() {
 		//System.out.println("onMenuItemAboutAction");
-		loadView("/gui/About.fxml"); //Chamar View About
+		//loadView("/gui/About.fxml"); //Chamar View About
+		
+		loadView("/gui/About.fxml", x -> {}); //Chamar View About e levar funcao vazia no segundo parametro
 	}
 	
 	@Override
@@ -52,7 +61,12 @@ public class MainViewController implements Initializable{
 		
 	}
 	
-	private synchronized void loadView(String absoluteName) { //Carregar nova View dentro de VBox
+	private synchronized <T> void loadView(String absoluteName, Consumer<T> initializingAction) { //Carregar nova View dentro de VBox - como 2argumento é passado uma funcao - para nao criar loadView2
+	//pois no caso da View DepartmentList é necessário executar uma funcao para "atualizar os dados na tela da TableView" e na View About nao
+	//por isso em vez de criarmos um loadView() para cada fazemos um generico e passamos sempre uma funcao mesmo que no About nao haja
+	//a funcao serve para atualizar a tabela da View DepartmentList
+	//senao seria: private synchronized void loadView(String absoluteName) { //Carregar nova View dentro de VBox
+	// + no fim desta classe o outro método loadView2
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName)); //Carregar nova View
 			VBox newVBox = loader.load(); //Criar nova VBox
@@ -73,11 +87,16 @@ public class MainViewController implements Initializable{
 			mainVBox.getChildren().add(mainMenu); //Adicionar o mainMenu
 			mainVBox.getChildren().addAll(newVBox.getChildren()); //Adicionar todos os filhos da nova VBox - labels
 			
+			//executar a funcao quem vem como argumento neste método
+			T controller = loader.getController();
+			initializingAction.accept(controller);
+			
 		} catch (IOException e) {
 			Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR); //Caso haja erro emitir alert
 		}
 	}
 	
+	/*
 	private synchronized void loadView2(String absoluteName) { //Carregar nova View dentro de VBox
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName)); //Carregar nova View
@@ -107,5 +126,5 @@ public class MainViewController implements Initializable{
 		} catch (IOException e) {
 			Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR); //Caso haja erro emitir alert
 		}
-	}
+	}*/
 }
