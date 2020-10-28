@@ -17,6 +17,7 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.VBox;
 import model.services.DepartmentService;
+import model.services.SellerService;
 
 
 public class MainViewController implements Initializable{
@@ -31,12 +32,6 @@ public class MainViewController implements Initializable{
 	private MenuItem menuItemAbout;
 	
 	@FXML
-	public void onMenuItemSellerAction() {
-		System.out.println("onMenuItemSellerAction"); 
-		//Chamar View Seller
-	}
-	
-	@FXML
 	public void onMenuItemDepartmentAction() { //Chamar View DepartmentList
 		//System.out.println("onMenuItemDepartmentAction");
 		//loadView2("/gui/DepartmentList.fxml"); //Chamar View DepartmentList
@@ -44,6 +39,18 @@ public class MainViewController implements Initializable{
 		//em vez de chamar loadView2
 		loadView("/gui/DepartmentList.fxml", (DepartmentListController controller) -> { //Chamar View DepartmentList e levar no segundo parametro o codigo para atualizar a tabela
 			controller.setDepartmentService(new DepartmentService()); //definir já quem é o DepartmentService --> private DepartmentService service (esta na classe)
+			controller.updateTableView(); //atualizar os dados
+		}); 
+	}
+	
+	@FXML
+	public void onMenuItemSellerAction() { //Chamar View Seller
+		//System.out.println("onMenuItemSellerAction"); 
+		//loadView2("/gui/SellerList.fxml"); //Chamar View DepartmentList
+		
+		//em vez de chamar loadView2
+		loadView("/gui/SellerList.fxml", (SellerListController controller) -> { //Chamar View SellerList e levar no segundo parametro o codigo para atualizar a tabela
+			controller.setSellerService(new SellerService()); //definir já quem é o SellerService --> private SellerService service (esta na classe)
 			controller.updateTableView(); //atualizar os dados
 		}); 
 	}
