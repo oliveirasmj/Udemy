@@ -7,7 +7,7 @@ import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
 import model.entities.Department;
 
-public class DepartmentService {
+public class SellerService {
 	
 	private DepartmentDao dao = DaoFactory.createDepartmentDao();
 	

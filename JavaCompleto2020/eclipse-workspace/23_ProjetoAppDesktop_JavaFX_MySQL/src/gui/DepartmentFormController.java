@@ -3,7 +3,9 @@ package gui;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.ResourceBundle;
+import java.util.Set;
 
 import db.DbException;
 import gui.listeners.DataChangeListener;
@@ -18,6 +20,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import model.entities.Department;
+import model.exceptions.ValidationException;
 import model.services.DepartmentService;
 
 public class DepartmentFormController implements Initializable {
@@ -73,7 +76,11 @@ public class DepartmentFormController implements Initializable {
 			notifyDataChaneListeners();
 			
 			Utils.currentStage(event).close(); //fechar a janela de formulario
-		} catch (DbException e) {
+		}
+		catch (ValidationException e) {
+			setErrorMessages(e.getErrors());
+		}
+		catch (DbException e) {
 			Alerts.showAlert("Error saving object", null, e.getMessage(), AlertType.ERROR);
 		}
 	}
@@ -86,8 +93,20 @@ public class DepartmentFormController implements Initializable {
 
 	private Department getFormData() { // metodo que guarda o que está nas txt do form e instancia um departamento
 		Department obj = new Department(); // instanciar departamento
-		obj.setId(Utils.tryParsetoInt(txtId.getText())); // guardar os dados da txt no objeto
-		obj.setName(txtName.getText()); // guardar os dados da txt no objeto
+		
+		ValidationException exception = new ValidationException("Validation error"); //instanciar excepcao - opcional
+		
+		obj.setId(Utils.tryParsetoInt(txtId.getText())); // GUARDAR OS DADOS DA TXT NO OBJETO
+		
+		if(txtName.getText() == null || txtName.getText().trim().equals("")) { //se for vazio,,,, trim=elimina espaços em branco
+			exception.addError("name", "Field can't be empty");
+		}
+		
+		obj.setName(txtName.getText()); // GUARDAR OS DADOS DA TXT NO OBJETO
+		
+		if(exception.getErrors().size() > 0) { //se tiver sido adicionado algum erro na coleção
+			throw exception; //lançar excepcao
+		}
 
 		return obj; // retornar objeto
 	}
@@ -114,7 +133,15 @@ public class DepartmentFormController implements Initializable {
 		}
 
 		txtId.setText(String.valueOf(entity.getId())); // definir novo valor na txt
-		txtId.setText(String.valueOf(entity.getName())); // definir novo valor na txt
+		txtName.setText(String.valueOf(entity.getName())); // definir novo valor na txt
+	}
+	
+	private void setErrorMessages(Map<String, String> errors) { //metodo responsavel por escrever a mensagem de erros nos campos do form
+		Set<String> fields = errors.keySet();
+		
+		if(fields.contains("name")) {
+			labelErrorName.setText(errors.get("name"));
+		}
 	}
 
 }
