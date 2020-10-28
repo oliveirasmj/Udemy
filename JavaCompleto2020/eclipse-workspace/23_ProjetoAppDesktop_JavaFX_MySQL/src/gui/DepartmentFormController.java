@@ -133,7 +133,7 @@ public class DepartmentFormController implements Initializable {
 		}
 
 		txtId.setText(String.valueOf(entity.getId())); // definir novo valor na txt
-		txtName.setText(String.valueOf(entity.getName())); // definir novo valor na txt
+		txtName.setText(entity.getName()); // definir novo valor na txt
 	}
 	
 	private void setErrorMessages(Map<String, String> errors) { //metodo responsavel por escrever a mensagem de erros nos campos do form
