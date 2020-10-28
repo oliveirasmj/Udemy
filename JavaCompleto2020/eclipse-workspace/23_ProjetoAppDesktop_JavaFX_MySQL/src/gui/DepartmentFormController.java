@@ -101,7 +101,6 @@ public class DepartmentFormController implements Initializable {
 		if(txtName.getText() == null || txtName.getText().trim().equals("")) { //se for vazio,,,, trim=elimina espaços em branco
 			exception.addError("name", "Field can't be empty");
 		}
-		
 		obj.setName(txtName.getText()); // GUARDAR OS DADOS DA TXT NO OBJETO
 		
 		if(exception.getErrors().size() > 0) { //se tiver sido adicionado algum erro na coleção

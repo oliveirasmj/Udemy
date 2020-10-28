@@ -31,6 +31,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.entities.Seller;
+import model.services.DepartmentService;
 import model.services.SellerService;
 
 public class SellerListController implements Initializable, DataChangeListener {
@@ -124,7 +125,8 @@ public class SellerListController implements Initializable, DataChangeListener {
 			SellerFormController controller = loader.getController(); // pegar o controlador do form para poder
 																			// alterar os seus valores
 			controller.setSeller(obj); // atualizar os dados de Seller
-			controller.setSellerService(new SellerService()); // atualizar os dados de SellerService
+			controller.setServices(new SellerService(), new DepartmentService()); // atualizar os dados de SellerService
+			controller.loadAssociatedObjects(); //carregar objetos associados - Departamento do Seller
 			controller.subscriveDataChangeListener(this); // quando dados forem alterados - Atualizar tabela
 			controller.updateFormData(); // aparecer escrito os valores nas txt do formulario
 
@@ -137,6 +139,7 @@ public class SellerListController implements Initializable, DataChangeListener {
 			dialogStage.initModality(Modality.WINDOW_MODAL); // janela fica travada enquanto não fechar a nova
 			dialogStage.showAndWait();
 		} catch (IOException e) {
+			e.printStackTrace();
 			Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR);
 		}
 	}
