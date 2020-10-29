@@ -23,3 +23,4 @@ Instalar Eclipse
 Instalar Java...
 Instalar MySQL
 Instalar cenas do JAVAFX
+-------
