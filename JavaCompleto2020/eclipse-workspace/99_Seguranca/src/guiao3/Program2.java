@@ -31,7 +31,7 @@ public class Program2 {
 			System.out.println("Insira o nome do ficheiro: ");
 			String fileName = sc.nextLine();
 			
-			String path = "C:\\Users\\luisp\\Downloads\\" + fileName +".txt"; // caminho final para o arquivo
+			String path = "C:\\Users\\miguel.oliveira\\Downloads\\" + fileName +".txt"; // caminho final para o arquivo
 			
 			KeyGenerator keygenerator = KeyGenerator.getInstance("DES"); //implementa um gerador de chaves simétricas --> DES - cifra simetrica por blocos
 			SecretKey chaveDES = keygenerator.generateKey(); //implementa uma chave simétrica

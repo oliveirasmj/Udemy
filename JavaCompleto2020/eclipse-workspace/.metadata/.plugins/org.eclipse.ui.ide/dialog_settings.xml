@@ -19,6 +19,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\miguel.oliveira\Downloads\Udemy\Udemy\JavaCompleto2020\eclipse-workspace"/>
 			<item value="C:\Users\luisp\Downloads\Estudo\Udemy\JavaCompleto2020\eclipse-workspace"/>
 			<item value="C:\Users\luisp\Downloads\Estudo\Projetos\Udemy\JavaCompleto2020"/>
 			<item value="C:\Users\olive\Downloads\Projetos\Udemy\JavaCompleto2020"/>
