@@ -17,10 +17,9 @@ https://blog.idrsolutions.com/2012/09/netbeans-cannot-locate-java-installation-i
 ---------------------------
 
 
-Quando tiver pc
+Quando mudar de pc:
 Instalar Git
 Instalar Eclipse
 Instalar Java...
 Instalar MySQL
 Instalar cenas do JAVAFX
--------
