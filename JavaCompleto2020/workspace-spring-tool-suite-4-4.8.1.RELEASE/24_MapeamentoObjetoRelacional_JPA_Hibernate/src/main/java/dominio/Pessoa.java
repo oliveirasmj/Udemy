@@ -1,4 +1,4 @@
-package aula301_PequenoProjeto.dominio;
+package dominio;
 
 import java.io.Serializable;
 
