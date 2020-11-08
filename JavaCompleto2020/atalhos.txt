@@ -22,5 +22,5 @@ Instalar Java...
 Instalar MySQL
 Instalar cenas do JAVAFX
 
----
+-------
 Ctrl + Shift - Esquema teclado
