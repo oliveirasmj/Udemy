@@ -17,7 +17,7 @@ public class Programa1_Inserir { //CRIAR BD E INSERIR DADOS
 		
 		//Conexao com a BD
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo-jpa"); //nome que está na linha 7 da classe src/main/resources/META-INF/persistence.xml
-		EntityManager em= emf.createEntityManager();
+		EntityManager em = emf.createEntityManager();
 		
 		em.getTransaction().begin(); //iniciar transacao
 		
