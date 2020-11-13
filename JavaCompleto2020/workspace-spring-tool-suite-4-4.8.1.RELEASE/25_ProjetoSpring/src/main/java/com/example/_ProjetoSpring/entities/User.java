@@ -1,13 +1,20 @@
 package com.example._ProjetoSpring.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
+@Table(name = "tb_user")
 public class User implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
@@ -19,6 +26,10 @@ public class User implements Serializable{
 	private String email;
 	private String phone;
 	private String password;
+	
+	@JsonIgnore //porque é um para muitos - Senao Json aparece em loop - JPA nao carrega o lado do muitos
+	@OneToMany(mappedBy = "client") //Chave estrangeira (nome da chave estrangeira do outro lado)
+	private List<Order> orders = new ArrayList<>(); //um cliente tem muitos pedidos
 	
 	public User() {	
 	}
@@ -70,6 +81,10 @@ public class User implements Serializable{
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public List<Order> getOrders() {
+		return orders;
 	}
 
 	@Override
