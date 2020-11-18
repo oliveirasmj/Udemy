@@ -26,7 +26,6 @@
     <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.dv.util.Base64"/>
     <fullyQualifiedTypeName name="java.nio.charset.StandardCharsets"/>
     <fullyQualifiedTypeName name="java.util.Base64"/>
-    <fullyQualifiedTypeName name="javax.crypto.spec.SecretKeySpec"/>
     <fullyQualifiedTypeName name="javafx.collections.ObservableList"/>
     <fullyQualifiedTypeName name="javafx.collections.FXCollections"/>
     <fullyQualifiedTypeName name="gui.DepartmentListController"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="gui.listeners.DataChangeListener"/>
+    <fullyQualifiedTypeName name="javax.crypto.spec.SecretKeySpec"/>
 </qualifiedTypeNameHistroy>
