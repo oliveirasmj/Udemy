@@ -21,6 +21,8 @@ Instalar Eclipse
 Instalar Java...
 Instalar MySQL
 Instalar cenas do JAVAFX
-
--------
+Postman e STS(spring)
+PostgreSQL
+Heroku
+-----------
 Ctrl + Shift - Esquema teclado
