@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.example._ProjetoSpring.domain.Post;
 import com.example._ProjetoSpring.domain.User;
 import com.example._ProjetoSpring.dto.UserDTO;
 import com.example._ProjetoSpring.services.UserService;
@@ -61,6 +62,12 @@ public class UserResource {
 		
 		obj = service.update(obj);
 		return ResponseEntity.noContent().build();
+	}
+	
+	@RequestMapping(value="/{id}/posts", method = RequestMethod.GET) //este metodo tem ainda o id a procurar por url
+	public ResponseEntity<List<Post>> findPosts(@PathVariable String id){ //metodo recebe um id como parametro da URL (@PathVariable)
+		User obj = service.findById(id);
+		return ResponseEntity.ok().body(obj.getPosts()); //retornar dentro de ResponseEntity no seu body
 	}
 }
 
