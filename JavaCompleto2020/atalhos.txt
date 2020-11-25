@@ -24,5 +24,6 @@ Instalar cenas do JAVAFX
 Postman e STS(spring)
 PostgreSQL
 Heroku
+MongoDB
 -----------
 Ctrl + Shift - Esquema teclado

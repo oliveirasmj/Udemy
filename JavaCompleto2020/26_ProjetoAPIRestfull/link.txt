@@ -1,1 +1,2 @@
 https://www.mongodb.com/try/download/community?tck=docs_server
+https://www.mongodb.com/try/download/compass
