@@ -19,9 +19,8 @@ Quando mudar de pc:
 Instalar Git
 Instalar Eclipse
 Instalar Java...
-JDBC
+Instalar JDBC
 Instalar cenas do JAVAFX
-Instalar MySQL
 Postman e STS(spring)
 PostgreSQL
 Heroku
