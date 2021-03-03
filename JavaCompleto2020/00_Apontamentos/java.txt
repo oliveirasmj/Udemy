@@ -72,7 +72,25 @@ Modificadores - public, private, protected
 
 public String toString() {
 	return getId() + ", " + getName() + ", " + String.format("%.2f", getSalary());
-}	
+}
+
+Imutabilidade
+
+String nome = "Rafael Augusto"; //Primeira String
+adicionaSobrenome(nome); // É criada uma nova String
+System.out.printlnn(nome);	
+
+Os objetos do tipo String são imutáveis. Ou seja, qualquer mudança em uma String causa a criação de um novo objeto String.
+Quando criamos uma string em java como String s1="hello";um objeto será criado no pool de strings (hello) e s1 apontará para hello. 
+Agora, se fizermos novamente, String s2="hello"; outro objeto NÃO será criado, mas s2 apontará para hello
+Agora, suponhamos que permite mutável, em seguida, se mudariamos s2 para "hello world" então s1 também ficaria "hello world" em vez de ser criada uma nova.
+
+Para que uma classe seja considerada imutável em java ela deve seguir as seguintes características:
+-Métodos não podem modificar seu estado
+-Definida como final
+-Atributos devem ser privados
+-Atributos devem ser final
+-Caso sua classe tenha composição com objetos mutáveis, eles devem ter acesso exclusivo pela sua classe, devolvendo cópias defensivas
 
 ---------------------INTERACAO ENTRE OBJETOS-----------------------------
 -Triangle x = new Triangle(); x.area()-> 6 --> Membros de instância (valor para cada objeto - correto)
@@ -940,7 +958,6 @@ nome da classe, descrição, constrotores e metodos, valores de retorno
 Funções puras e alta ordem
 funções que não possuem efeitos colaterais, que não dependam de nenhuma informação externa a elas além de seus parâmetros
 
-Imutabilidade - var nao altera
 
 public static void main(String[] args) {
 	boolean x = true;
