@@ -10,7 +10,7 @@ public class Program {
 	public static void main(String[] args) {
 		//File - Representação abstrata de um arquivo e seu caminho
 		
-		File file = new File("C:\\Users\\luisp\\Downloads\\Estudo\\Udemy\\JavaCompleto2020\\17_Arquivos\\in.txt"); //criar objeto do tipo file passando o caminho
+		File file = new File("C:\\Git\\Java_Course\\JavaCompleto2020\\17_Arquivos\\in.txt"); //criar objeto do tipo file passando o caminho
 		Scanner sc = null;
 		
 		try { 										//é preciso try porque o programa vai tentar abrir o arquivo
@@ -29,5 +29,4 @@ public class Program {
 			}
 		}
 	}
-
 }

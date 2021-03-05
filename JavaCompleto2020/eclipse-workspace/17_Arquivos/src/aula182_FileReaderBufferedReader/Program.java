@@ -10,7 +10,7 @@ public class Program {
 		//FileReader (stream de leitura de caracteres a partir de arquivos)
 		//BufferedReader (mais rápido)
 		
-		String path = "C:\\Users\\luisp\\Downloads\\Estudo\\Udemy\\JavaCompleto2020\\17_Arquivos\\in.txt"; //caminho do arquivo
+		String path = "C:\\Git\\Java_Course\\JavaCompleto2020\\17_Arquivos\\in.txt"; //caminho do arquivo
 		FileReader fr = null;
 		BufferedReader br = null;
 		

@@ -6,7 +6,7 @@ public class Program {
 		
 		Veiculo v = new Veiculo();
 		Carro c = new Carro();
-		Veiculo xpto = new Carro();
+		Veiculo xpto = new Carro(); //Outra forma: Veiculo xpto = c;
 		
 		v.getNumRodas(); // o que v consegue ver
 		c.getNumRodas(); c.getNumCavalos(); // o que c consegue ver
@@ -25,5 +25,4 @@ public class Program {
 			System.out.println("É um carro");
 		}
 	}
-
 }

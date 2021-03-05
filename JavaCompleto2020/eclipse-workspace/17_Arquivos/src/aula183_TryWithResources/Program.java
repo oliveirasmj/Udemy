@@ -10,7 +10,7 @@ public class Program {
 		
 		// Bloco try-with-resources - é um bloco try que declara recursos e garante que eles serão fechados no final(não é preciso fecho manual)
 		
-		String path = "C:\\Users\\luisp\\Downloads\\Estudo\\Udemy\\JavaCompleto2020\\17_Arquivos\\in.txt"; // caminho do arquivo
+		String path = "C:\\Git\\Java_Course\\JavaCompleto2020\\17_Arquivos\\in.txt"; // caminho do arquivo
 
 		try(BufferedReader br = new BufferedReader(new FileReader(path))) { //Não é preciso mais declarações a seguir
 			

@@ -22,7 +22,23 @@ public class Pessoa {
 		this.name = name;
 	}
 	
+	
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
 	public void imprime() {
 		System.out.println("Dados: " + this.name + " - " + this.age);
 	}
+
+	@Override
+	public String toString() {
+		return "Pessoa [name=" + name + ", age=" + age + "]";
+	}
+	
+	
 }
