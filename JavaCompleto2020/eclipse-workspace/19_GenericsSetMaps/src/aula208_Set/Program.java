@@ -9,9 +9,9 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		//Set<String> set = new HashSet<>(); //instanciar um Set usando a implementação HashSet (mais rápida) mas NÃO GARANTE ORDEM
+		Set<String> set = new HashSet<>(); //instanciar um Set usando a implementação HashSet (mais rápida) mas NÃO GARANTE ORDEM
 		//Set<String> set = new TreeSet<>(); //instanciar um Set usando a implementação TreeSet (mais lento) e GARANTE ORDEM ALFABÉTICA pelo CompareTo
-		Set<String> set = new LinkedHashSet<>(); //instanciar um Set usando a implementação LinkedHashSet (velocidade meia) e GARANTE ORDEM COLOCADA
+		//Set<String> set = new LinkedHashSet<>(); //instanciar um Set usando a implementação LinkedHashSet (velocidade meia) e GARANTE ORDEM COLOCADA
 		
 		set.add("Tv");
 		set.add("Tablet");

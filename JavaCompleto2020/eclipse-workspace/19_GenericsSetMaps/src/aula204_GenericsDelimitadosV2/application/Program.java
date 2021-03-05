@@ -18,7 +18,7 @@ public class Program {
 		
 		List<Product> list = new ArrayList<>(); //criar uma lista de produtos
 
-		String path = "C:\\Users\\luisp\\Downloads\\Estudo\\Udemy\\JavaCompleto2020\\19_GenericsSetMaps\\exercicio\\file2.txt"; //ficheiro de texto
+		String path = "C:\\Git\\Java_Course\\JavaCompleto2020\\19_GenericsSetMaps\\exercicio\\file2.txt"; //ficheiro de texto
 
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 

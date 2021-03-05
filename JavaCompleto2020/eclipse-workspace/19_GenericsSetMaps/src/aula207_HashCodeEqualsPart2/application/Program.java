@@ -18,6 +18,10 @@ public class Program {
 		
 		System.out.println(c1 == c2); //retorna falso porque as posicoes de memoria sao diferentes, mesmo que sejam iguais
 		String s1 = "Test"; String s2 = "Test"; System.out.println(s1 == s2); //aqui retorna true porque o compilador trata a funcao literal de outra forma
+		
+		String a = "Mike";
+		String m = "Mike";
+		System.out.println("Resultado: " + a.equals(m)); //Resultado é true
 	}
 
 }
