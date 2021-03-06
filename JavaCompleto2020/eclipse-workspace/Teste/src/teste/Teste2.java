@@ -1,27 +1,33 @@
 package teste;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Teste2 {
-	
-	private static int soma=0;
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Introduza o numero de posicoes: ");
-		int n = sc.nextInt();
-
+		List<Product> list = new ArrayList<>();
 		
-		Integer[] vect = new Integer[n];
+		list.add(new Product("TV", 900.0));
+		list.add(new Product("Notebook", 1200.0));
+		list.add(new Product("Tablet", 400.0));
+		list.add(new Product("Tablet", 400.0));
 		
-		for(int i=0; i<n; i++) {
-			vect[i] = sc.nextInt();
-			soma += vect[i];
-		}
+		Map<String, Double> map = new HashMap<>(); 
 		
-		System.out.println("Soma: " + soma);
+		// put every value list to Map 
+		for (Product p : list) { 
+		    map.put(p.getName(), p.getPrice()); 
+		} 
+		System.out.println("Map  : " + map); 
 	}
 
 }
