@@ -56,6 +56,4 @@ public class Product {
 			return false;
 		return true;
 	}
-	
-	
 }
