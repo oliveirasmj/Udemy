@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="gui.DepartmentFormController"/>
-    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
-    <fullyQualifiedTypeName name="model.entities.Department"/>
-    <fullyQualifiedTypeName name="gui.util.Utils"/>
-    <fullyQualifiedTypeName name="model.services.DepartmentService"/>
-    <fullyQualifiedTypeName name="java.lang.IllegalAccessError"/>
-    <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
-    <fullyQualifiedTypeName name="db.DbException"/>
-    <fullyQualifiedTypeName name="gui.util.Alerts"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Alert.AlertType"/>
-    <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
-    <fullyQualifiedTypeName name="gui.listeners.DataChangeListener"/>
-    <fullyQualifiedTypeName name="javax.crypto.spec.SecretKeySpec"/>
     <fullyQualifiedTypeName name="membrosEstaticosV3.Calculator"/>
     <fullyQualifiedTypeName name="Teste"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -60,4 +47,17 @@
     <fullyQualifiedTypeName name="java.net.ServerSocket"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.net.UnknownHostException"/>
+    <fullyQualifiedTypeName name="java.net.SocketException"/>
+    <fullyQualifiedTypeName name="java.net.DatagramSocket"/>
+    <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
+    <fullyQualifiedTypeName name="java.net.InetAddress"/>
+    <fullyQualifiedTypeName name="java.rmi.Remote"/>
+    <fullyQualifiedTypeName name="java.rmi.server.UnicastRemoteObject"/>
+    <fullyQualifiedTypeName name="aula2.Server.Saudacao"/>
+    <fullyQualifiedTypeName name="java.rmi.Naming"/>
+    <fullyQualifiedTypeName name="java.rmi.RemoteException"/>
+    <fullyQualifiedTypeName name="aula2.Interface.InterfaceSaudacao"/>
+    <fullyQualifiedTypeName name="java.rmi.registry.LocateRegistry"/>
 </qualifiedTypeNameHistroy>

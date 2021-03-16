@@ -1,4 +1,4 @@
-package teste;
+package diversos;
 
 import java.util.ArrayList;
 import java.util.List;

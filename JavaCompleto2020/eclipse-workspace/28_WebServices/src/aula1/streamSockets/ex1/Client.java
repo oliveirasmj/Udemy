@@ -29,6 +29,7 @@ public class Client {
                 OOS.writeUTF(mensagem);
                 OOS.flush();
 
+                System.out.println("Mensagem a enviar:" + mensagem);
                 String r = OIS.readUTF();
                 System.out.println("Mensagem do servidor: " + r);
             }

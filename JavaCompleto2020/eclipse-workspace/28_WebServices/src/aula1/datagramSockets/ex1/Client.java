@@ -19,7 +19,7 @@ public class Client {
             String mensagem = JOptionPane.showInputDialog("Digite..");
             String str = mensagem + "";
             if (str.equalsIgnoreCase("null")) {
-                System.out.println("Fim do cliente!");
+                //System.out.println("Fim do cliente!");
                 System.out.println("Mensagem a enviar:" + str);
                 DatagramPacket dp = new DatagramPacket(str.getBytes(), str.length(), ip, 1000);
                 ds.send(dp);
@@ -28,14 +28,14 @@ public class Client {
                 System.out.println("Mensagem a enviar:" + str);
                 DatagramPacket dp = new DatagramPacket(str.getBytes(), str.length(), ip, 1000);
                 ds.send(dp);
-                System.out.println("Enviado!");
+                //System.out.println("Enviado!");
 
                 byte[] bt = new byte[1024];
                 DatagramPacket ddp = new DatagramPacket(bt, 1024);
                 ds.receive(ddp);
                 String recebe = new String(ddp.getData(), 0, ddp.getLength());
 
-                System.out.println("Mensagem vinda do servidor:" + recebe);
+                System.out.println("Mensagem do servidor:" + recebe);
             }
 
         }

@@ -1,4 +1,4 @@
-package retangulo;
+package testeUnitario;
 
 public class Retangulo {
 	

@@ -1,4 +1,4 @@
-package teste;
+package diversos;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +10,7 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class Teste2 {
+public class ListToMap {
 
 	public static void main(String[] args) {
 

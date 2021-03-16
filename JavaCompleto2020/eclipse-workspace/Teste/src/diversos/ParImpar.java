@@ -1,7 +1,7 @@
-package teste;
+package diversos;
 import java.util.Scanner;
 
-public class Teste {
+public class ParImpar {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -16,9 +16,9 @@ public class Server {
             DatagramPacket dp = new DatagramPacket(buf, 1024);
             ds.receive(dp);
             String str = new String(dp.getData(), 0, dp.getLength());
-            System.out.println("Mensagem recebe: " + str);
+            System.out.println("Recebe do cliente:" + str);
             if (str.equalsIgnoreCase("null")) {
-                System.out.println("Fim do servidor!");
+                //System.out.println("Fim do servidor!");
                 ds.close();
             } else {
                 String mensagem = str;

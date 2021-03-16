@@ -1,4 +1,4 @@
-package retangulo;
+package testeUnitario;
 
 import static org.junit.jupiter.api.Assertions.*;
 
