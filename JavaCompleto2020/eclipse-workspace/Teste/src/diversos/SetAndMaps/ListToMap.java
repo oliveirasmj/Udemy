@@ -1,4 +1,4 @@
-package diversos;
+package diversos.SetAndMaps;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,6 +9,8 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
+
+import diversos.Product;
 
 public class ListToMap {
 

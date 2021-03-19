@@ -1,4 +1,4 @@
-package diversos;
+package diversos.anagrama;
 
 import java.util.HashMap;
 import java.util.Scanner;
