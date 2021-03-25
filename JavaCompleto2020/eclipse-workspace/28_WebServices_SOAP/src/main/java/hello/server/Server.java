@@ -8,7 +8,8 @@ import hello.world.IMC;
 import hello.world.Matematica;
 import hello.world.exercicio5.Escola;
 
-//criar projeto maven: https://www.simplilearn.com/tutorials/maven-tutorial/maven-project-in-eclipse
+//	criar projeto maven: 
+//	https://www.simplilearn.com/tutorials/maven-tutorial/maven-project-in-eclipse
 
 public class Server {
 
