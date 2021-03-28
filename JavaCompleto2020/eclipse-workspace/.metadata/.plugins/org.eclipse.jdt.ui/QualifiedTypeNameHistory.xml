@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sun.tools.javac.util.Log"/>
-    <fullyQualifiedTypeName name="teste.Product"/>
-    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
-    <fullyQualifiedTypeName name="com.sun.org.slf4j.internal.LoggerFactory"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.net.Socket"/>
-    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
     <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
     <fullyQualifiedTypeName name="java.net.ServerSocket"/>
@@ -29,7 +20,6 @@
     <fullyQualifiedTypeName name="ttt.Aluguer"/>
     <fullyQualifiedTypeName name="ttt.Empregado"/>
     <fullyQualifiedTypeName name="com.sun.tools.jdeprscan.scan.Scan"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.ListIterator"/>
@@ -43,10 +33,8 @@
     <fullyQualifiedTypeName name="abstractTeste.entities.Shape"/>
     <fullyQualifiedTypeName name="abstractTeste.entities.Rectangle"/>
     <fullyQualifiedTypeName name="aula88_vetores.Product"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="aula94_exercicio.Restaurante"/>
     <fullyQualifiedTypeName name="aula94_exercicio.Empregado"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -60,4 +48,16 @@
     <fullyQualifiedTypeName name="hello.world.Matematica"/>
     <fullyQualifiedTypeName name="javax.jws.WebMethod"/>
     <fullyQualifiedTypeName name="javax.jws.WebParam"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="hello.world.exercicio5.Turma"/>
+    <fullyQualifiedTypeName name="hello.world.exercicio5.Aluno"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="hello.world.exercicio5.DB"/>
+    <fullyQualifiedTypeName name="hello.world.exercicio5.Escola"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="hello.world.IMC"/>
 </qualifiedTypeNameHistroy>
