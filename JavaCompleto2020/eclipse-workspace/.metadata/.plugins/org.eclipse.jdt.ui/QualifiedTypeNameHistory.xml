@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.net.ServerSocket"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.net.UnknownHostException"/>
     <fullyQualifiedTypeName name="java.net.SocketException"/>
@@ -35,7 +33,6 @@
     <fullyQualifiedTypeName name="aula94_exercicio.Empregado"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="javax.xml.ws.Endpoint"/>
     <fullyQualifiedTypeName name="hello.world.Helloworld"/>
     <fullyQualifiedTypeName name="hello.world.DataHora"/>
@@ -46,7 +43,6 @@
     <fullyQualifiedTypeName name="hello.world.Matematica"/>
     <fullyQualifiedTypeName name="javax.jws.WebMethod"/>
     <fullyQualifiedTypeName name="javax.jws.WebParam"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="hello.world.exercicio5.Turma"/>
     <fullyQualifiedTypeName name="hello.world.exercicio5.Aluno"/>
@@ -60,4 +56,8 @@
     <fullyQualifiedTypeName name="hello.world.IMC"/>
     <fullyQualifiedTypeName name="client.hello.HelloworldService"/>
     <fullyQualifiedTypeName name="client.hello.Helloworld"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
 </qualifiedTypeNameHistroy>
