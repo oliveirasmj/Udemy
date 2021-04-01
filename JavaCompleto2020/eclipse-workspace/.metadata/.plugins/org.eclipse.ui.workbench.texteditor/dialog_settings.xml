@@ -12,6 +12,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="exame"/>
 			<item value="sdf2"/>
 			<item value="calc"/>
 			<item value="tempo"/>
@@ -26,7 +27,6 @@
 			<item value="chaveDES"/>
 			<item value="DES"/>
 			<item value="lines"/>
-			<item value="allLines"/>
 		</list>
 		<list key="replacehistory">
 			<item value="cifra"/>

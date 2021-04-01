@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.net.UnknownHostException"/>
-    <fullyQualifiedTypeName name="java.net.SocketException"/>
-    <fullyQualifiedTypeName name="java.net.DatagramSocket"/>
-    <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
-    <fullyQualifiedTypeName name="java.net.InetAddress"/>
-    <fullyQualifiedTypeName name="java.rmi.Remote"/>
-    <fullyQualifiedTypeName name="java.rmi.server.UnicastRemoteObject"/>
     <fullyQualifiedTypeName name="aula2.Server.Saudacao"/>
     <fullyQualifiedTypeName name="java.rmi.Naming"/>
     <fullyQualifiedTypeName name="java.rmi.RemoteException"/>
@@ -56,8 +48,16 @@
     <fullyQualifiedTypeName name="hello.world.IMC"/>
     <fullyQualifiedTypeName name="client.hello.HelloworldService"/>
     <fullyQualifiedTypeName name="client.hello.Helloworld"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
+    <fullyQualifiedTypeName name="client.datahora.DataHoraService"/>
+    <fullyQualifiedTypeName name="client.datahora.DataHora"/>
+    <fullyQualifiedTypeName name="client.matematica.MatematicaService"/>
+    <fullyQualifiedTypeName name="client.matematica.Matematica"/>
+    <fullyQualifiedTypeName name="client.imc.IMCService"/>
+    <fullyQualifiedTypeName name="client.imc.IMC"/>
+    <fullyQualifiedTypeName name="client.escola.EscolaService"/>
+    <fullyQualifiedTypeName name="client.escola.Escola"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
