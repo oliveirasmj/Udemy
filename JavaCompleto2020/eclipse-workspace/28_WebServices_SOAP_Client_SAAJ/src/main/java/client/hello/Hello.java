@@ -31,7 +31,7 @@ public class Hello {
         //Remove o header da mensagem
         sh.detachNode();
         //Namespace URI , localpart , namespace prefix
-        QName bodyName = new QName("http://world.hello/", "sayHello", "m");//o m é o que envia do genero <m></m>
+        QName bodyName = new QName("http://world.hello/", "sayHello", "m");//m é o que envia do genero <m></m>
         //Associação do obje to QName ao elemento Body
         SOAPBodyElement be = sb.addBodyElement(bodyName);
         //Criação de um objeto do tipo QName
