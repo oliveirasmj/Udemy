@@ -3236,3 +3236,63 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-04-08 20:43:57.409
 !MESSAGE No repository found at http://download.eclipse.org/windowbuilder/WB/integration/4.2/.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-04-08 20:46:08.718
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-04-08 20:46:08.722
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.egit.core 4 0 2021-04-08 20:46:30.128
+!MESSAGE An exception occurred during push on URI https://github.com/oliveirasmj/Java_Course.git: https://github.com/oliveirasmj/Java_Course.git: connection failed
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/oliveirasmj/Java_Course.git: connection failed
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:147)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/oliveirasmj/Java_Course.git: connection failed
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:584)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:436)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:127)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1335)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:137)
+	... 4 more
+Caused by: java.net.ConnectException: Connect to github.com:443 [github.com/140.82.121.3] failed: Connection timed out: connect github.com
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:216)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:509)
+	... 8 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2021-04-08 20:46:30.131
+!MESSAGE Can't connect to any repository: https://github.com/oliveirasmj/Java_Course.git (https://github.com/oliveirasmj/Java_Course.git: connection failed)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-04-08 20:47:01.661
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-04-08 20:47:01.663
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.egit.core 4 0 2021-04-08 20:47:22.588
+!MESSAGE An exception occurred during push on URI https://github.com/oliveirasmj/Java_Course.git: https://github.com/oliveirasmj/Java_Course.git: connection failed
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/oliveirasmj/Java_Course.git: connection failed
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:147)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/oliveirasmj/Java_Course.git: connection failed
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:584)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:436)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:127)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1335)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:137)
+	... 4 more
+Caused by: java.net.ConnectException: Connect to github.com:443 [github.com/140.82.121.3] failed: Connection timed out: connect github.com
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:216)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:509)
+	... 8 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2021-04-08 20:47:22.589
+!MESSAGE Can't connect to any repository: https://github.com/oliveirasmj/Java_Course.git (https://github.com/oliveirasmj/Java_Course.git: connection failed)
