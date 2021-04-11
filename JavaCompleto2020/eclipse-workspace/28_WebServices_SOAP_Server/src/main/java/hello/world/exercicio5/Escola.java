@@ -99,7 +99,7 @@ public class Escola {
 
 	public static void main(String[] args) {
 		Escola e = new Escola();
-		//e.listarAlunos();
+		e.listarAlunos();
 		//e.inserirAluno("Joao", 4, "Trabalhador");
 		//e.removerAluno(5);
 	}

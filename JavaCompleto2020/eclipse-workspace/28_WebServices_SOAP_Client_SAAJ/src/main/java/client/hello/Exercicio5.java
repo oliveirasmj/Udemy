@@ -15,9 +15,9 @@ import javax.xml.soap.SOAPException;
 import javax.xml.soap.SOAPHeader;
 import javax.xml.soap.SOAPMessage;
 
-public class Hello {
+public class Exercicio5 {
 
-	public static void main(String[] args) throws SOAPException, MalformedURLException {
+public static void main(String[] args) throws SOAPException, MalformedURLException {
 		
 		//Instanciação do objeto que permite a criação de mensagens
         MessageFactory mf = MessageFactory.newInstance();
@@ -31,18 +31,18 @@ public class Hello {
         //Remove o header da mensagem
         sh.detachNode();
         //Namespace URI , localpart , namespace prefix
-        QName bodyName = new QName("http://world.hello/", "sayHello", "m");//m é o que envia do genero <m></m>
+        QName bodyName = new QName("http://exercicio5.world.hello/", "listarAlunos", "m");//m é o que envia do genero <m></m>
         //Associação do obje to QName ao elemento Body
         SOAPBodyElement be = sb.addBodyElement(bodyName);
         //Criação de um objeto do tipo QName
-        QName name = new QName("a"); //nome da variavel para o exterior no Server
+        //QName name = new QName("a"); //nome da variavel para o exterior no Server
         
         //Adiciona um novo subelemento ao elemento Body
-        SOAPElement arg0 = be.addChildElement(name);
+        //SOAPElement arg0 = be.addChildElement(name);
         //Adiciona um valor ao subelemento criado
-        arg0.addTextNode("Miguel");
+        //arg0.addTextNode("Miguel");
         //Identificação do Endpoint
-        URL ep = new URL(String.format("http://localhost:9999/helloworld"));
+        URL ep = new URL(String.format("http://localhost:9999/escola"));
         //Criar um objeto SOAPConnectionFactory para instanciar uma ligação
         SOAPConnectionFactory scf = SOAPConnectionFactory.newInstance();
         //Criao objeto para estabelecer a ligação
