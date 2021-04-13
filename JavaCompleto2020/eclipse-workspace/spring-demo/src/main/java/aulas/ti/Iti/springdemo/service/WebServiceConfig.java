@@ -29,7 +29,7 @@ public class WebServiceConfig {
 		return new SimpleXsdSchema(new ClassPathResource("tasks.xsd"));
 	}
 	
-	@Bean
+	@Bean(name ="tasks")
 	public DefaultWsdl11Definition defaultWsdl11Definition (XsdSchema tasksSchema) {
 		DefaultWsdl11Definition definition = new DefaultWsdl11Definition();
 		definition.setPortTypeName("TaskPort");
