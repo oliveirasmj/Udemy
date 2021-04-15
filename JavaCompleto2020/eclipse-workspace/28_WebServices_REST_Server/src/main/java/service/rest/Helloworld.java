@@ -4,7 +4,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
-@Path("7helloworld")
+@Path("/helloworld")
 public class Helloworld {
 	
 	@GET
