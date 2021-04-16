@@ -11,7 +11,7 @@ public class VerRepetidos {
 		
 		List<Integer> numbers = Arrays.asList(new Integer[]{1,2,1,3,4,4});  
 		
-		numbers.stream().filter(i -> Collections.frequency(numbers, i) <1)
+		numbers.stream().filter(i -> Collections.frequency(numbers, i) >1)
         .collect(Collectors.toSet()).forEach(System.out::println);
 	}
 
