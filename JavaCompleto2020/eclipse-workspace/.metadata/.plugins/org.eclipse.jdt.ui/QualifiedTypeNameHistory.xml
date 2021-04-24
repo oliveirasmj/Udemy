@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
-    <fullyQualifiedTypeName name="java.util.ListIterator"/>
-    <fullyQualifiedTypeName name="ttt.Pessoa"/>
-    <fullyQualifiedTypeName name="aula126_SobreposicaoPalavraSuper.entities.BusinessAccount"/>
     <fullyQualifiedTypeName name="aula145_ExercicioFixacao.exceptions.DomainException"/>
     <fullyQualifiedTypeName name="ttt.Product"/>
     <fullyQualifiedTypeName name="diversos.SetAndMaps.Product"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="abstractTeste.entities.Shape"/>
     <fullyQualifiedTypeName name="abstractTeste.entities.Rectangle"/>
     <fullyQualifiedTypeName name="aula88_vetores.Product"/>
@@ -25,7 +20,6 @@
     <fullyQualifiedTypeName name="hello.world.Matematica"/>
     <fullyQualifiedTypeName name="javax.jws.WebMethod"/>
     <fullyQualifiedTypeName name="javax.jws.WebParam"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="hello.world.exercicio5.Turma"/>
     <fullyQualifiedTypeName name="hello.world.exercicio5.Aluno"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
@@ -48,8 +42,6 @@
     <fullyQualifiedTypeName name="client.imc.IMC"/>
     <fullyQualifiedTypeName name="client.escola.EscolaService"/>
     <fullyQualifiedTypeName name="client.escola.Escola"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="db.DB"/>
@@ -60,4 +52,12 @@
     <fullyQualifiedTypeName name="javax.ws.rs.GET"/>
     <fullyQualifiedTypeName name="javax.ws.rs.Path"/>
     <fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="entities.Atividades"/>
+    <fullyQualifiedTypeName name="entities.Atividade"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="service.rest.PessoaService"/>
+    <fullyQualifiedTypeName name="entities.Pessoa"/>
 </qualifiedTypeNameHistroy>
