@@ -30,7 +30,7 @@ public class Atividades {
 	}
 	
 	public void listarAtividades() {
-		System.out.println("Nome: " + pessoa.getName());
+		System.out.println("Nome: " + pessoa.getName() + " - ID: " + pessoa.getId());
 		for(Atividade a : atividades) {
 			System.out.println(" - " + a.getNameActivity());
 		}

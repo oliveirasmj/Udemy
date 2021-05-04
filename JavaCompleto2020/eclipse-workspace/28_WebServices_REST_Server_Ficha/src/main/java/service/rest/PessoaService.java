@@ -17,8 +17,8 @@ public class PessoaService {
 
 	//Utilizadores
 	static Pessoa p1 = new Pessoa(1, "Miguel", 26);
-	static Pessoa p2 = new Pessoa(2, "Tiago", 22);
-	static Pessoa p3 = new Pessoa(3, "Ana", 23);
+	static Pessoa p2 = new Pessoa(2, "Ana", 20);
+	static Pessoa p3 = new Pessoa(3, "Tiago", 28);
 	static List<Pessoa> pessoas = Arrays.asList(p1, p2, p3);
 	
 	//Atividades
@@ -36,7 +36,28 @@ public class PessoaService {
 	public String getName(@PathParam("id") int id) {
 		for(Pessoa p : pessoas) {
 			if(p.getId() == id) {
-				return pessoas.get(id).getName();
+				return p.getName().toString();
+			}
+		}
+		return null;
+	}
+	
+//	@GET
+//	@Path("/names")
+//	public String getName() {
+//		StringBuilder str = new StringBuilder();
+//		for(Pessoa p : pessoas) {
+//			str.append(p.toString());
+//		}
+//		return str.toString();
+//	}
+	
+	@GET
+	@Path("/{id}/age")
+	public String getAge(@PathParam("id") int id) {
+		for(Pessoa p : pessoas) {
+			if(p.getId() == id) {
+				return p.getAge().toString();
 			}
 		}
 		return null;
