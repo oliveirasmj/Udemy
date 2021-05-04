@@ -12,6 +12,9 @@ public class Program {
 		c.getNumRodas(); c.getNumCavalos(); // o que c consegue ver
 		xpto.getNumRodas(); // o que xpto consegue ver
 		
+		//xpto.getNumCavalos(); // dá erro e é preciso fazer o cast
+		Carro carro = (Carro) xpto; carro.getNumCavalos();
+		
 		// UPCASTING - converter veiculo em carro
 		Veiculo v2 = c; // não dá erro porque carro é um veículo
 		Veiculo v3 = new Carro(); //outra forma - não dá erro porque carro é um veículo

@@ -29,4 +29,8 @@ public class SavingsAccounts extends Account{
 	public void withdraw(double amount) { //SOBREPOSICAO(chamar metodo da superclasse e fazer de forma diferente) - levantamento de dinheiro sem taxa
 		balance -= amount; //a conta é feita de forma diferente
 	}
+	
+	public void teste() {
+		
+	}
 }
