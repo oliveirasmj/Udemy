@@ -17,7 +17,7 @@ public class Program {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		String path = "C:\\Git\\Java_Course\\JavaCompleto2020\\19_GenericsSetMaps\\exercicio\\file3.txt";
+		String path = "C:\\Users\\olive\\Git\\Java_Course\\JavaCompleto2020\\19_GenericsSetMaps\\exercicio\\file3.txt";
 //		System.out.println("Enter file full pah: ");
 //		String path = sc.nextLine();
 

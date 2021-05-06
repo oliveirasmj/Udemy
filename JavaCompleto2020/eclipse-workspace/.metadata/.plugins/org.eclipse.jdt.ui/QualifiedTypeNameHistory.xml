@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="aula145_ExercicioFixacao.exceptions.DomainException"/>
-    <fullyQualifiedTypeName name="ttt.Product"/>
-    <fullyQualifiedTypeName name="diversos.SetAndMaps.Product"/>
-    <fullyQualifiedTypeName name="abstractTeste.entities.Shape"/>
     <fullyQualifiedTypeName name="abstractTeste.entities.Rectangle"/>
     <fullyQualifiedTypeName name="aula88_vetores.Product"/>
     <fullyQualifiedTypeName name="aula94_exercicio.Restaurante"/>
     <fullyQualifiedTypeName name="aula94_exercicio.Empregado"/>
-    <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="javax.xml.ws.Endpoint"/>
     <fullyQualifiedTypeName name="hello.world.Helloworld"/>
@@ -54,10 +49,15 @@
     <fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="entities.Atividade"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="service.rest.PessoaService"/>
     <fullyQualifiedTypeName name="entities.Pessoa"/>
     <fullyQualifiedTypeName name="entities.Atividades"/>
+    <fullyQualifiedTypeName name="aula117_exercicio.HourContract"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="aula000_teste.Veiculo"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="aula130_ExercicioFixacao.entities.ImportedProduct"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.TreeSet"/>
 </qualifiedTypeNameHistroy>
