@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="abstractTeste.entities.Rectangle"/>
-    <fullyQualifiedTypeName name="aula88_vetores.Product"/>
-    <fullyQualifiedTypeName name="aula94_exercicio.Restaurante"/>
-    <fullyQualifiedTypeName name="aula94_exercicio.Empregado"/>
-    <fullyQualifiedTypeName name="java.util.HashSet"/>
-    <fullyQualifiedTypeName name="javax.xml.ws.Endpoint"/>
-    <fullyQualifiedTypeName name="hello.world.Helloworld"/>
-    <fullyQualifiedTypeName name="hello.world.DataHora"/>
     <fullyQualifiedTypeName name="java.text.DateFormat"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
@@ -23,7 +15,6 @@
     <fullyQualifiedTypeName name="hello.world.exercicio5.DB"/>
     <fullyQualifiedTypeName name="hello.world.exercicio5.Escola"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="hello.world.IMC"/>
     <fullyQualifiedTypeName name="client.hello.HelloworldService"/>
     <fullyQualifiedTypeName name="client.hello.Helloworld"/>
@@ -54,10 +45,19 @@
     <fullyQualifiedTypeName name="entities.Pessoa"/>
     <fullyQualifiedTypeName name="entities.Atividades"/>
     <fullyQualifiedTypeName name="aula117_exercicio.HourContract"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="aula000_teste.Veiculo"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="aula130_ExercicioFixacao.entities.ImportedProduct"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.TreeSet"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.nimbus.NimbusStyle"/>
+    <fullyQualifiedTypeName name="aula131_ClassesAbstratas.entities.BusinessAccount"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="com.exchange.ForexEngine"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.time.ZonedDateTime"/>
+    <fullyQualifiedTypeName name="com.devskiller.orders.OrdersAnalyzer.Order"/>
+    <fullyQualifiedTypeName name="com.devskiller.orders.OrdersAnalyzer.Order.OrderLine"/>
 </qualifiedTypeNameHistroy>
