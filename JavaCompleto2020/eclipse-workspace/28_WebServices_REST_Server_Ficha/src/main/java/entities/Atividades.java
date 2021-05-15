@@ -25,15 +25,29 @@ public class Atividades {
 		return atividades;
 	}
 
-	public void addPessoa(Atividade a) {
+	public void addAtividade(Atividade a) {
 		atividades.add(a);
 	}
 	
 	public void listarAtividades() {
-		System.out.println("Nome: " + pessoa.getName() + " - ID: " + pessoa.getId());
+		//System.out.println("Nome: " + pessoa.getName() + " - ID: " + pessoa.getId());
 		for(Atividade a : atividades) {
-			System.out.println(" - " + a.getNameActivity());
+			System.out.println(a.getNameActivity());
 		}
+	}
+	
+	public void listarAtividadesID(int id) {
+		//System.out.println("Nome: " + pessoa.getName() + " - ID: " + pessoa.getId());
+		for(Atividade a : atividades) {
+			if(a.getIdActivity() == id) {
+				System.out.println(a.getNameActivity());
+			}
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Atividades [pessoa=" + pessoa + ", atividades=" + atividades + "]";
 	}
 	
 }
