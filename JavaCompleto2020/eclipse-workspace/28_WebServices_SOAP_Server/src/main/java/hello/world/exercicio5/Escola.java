@@ -36,7 +36,7 @@ public class Escola {
 		} finally { // fechar os recursos necessários
 			DB.closeResultSet(rs);
 			DB.closeStatement(st);
-//			DB.closeConnection();
+			DB.closeConnection();
 		}
 		return lista;
 	}
@@ -67,7 +67,7 @@ public class Escola {
 		}
 		finally {
 			DB.closeStatement(st);
-//			DB.closeConnection();
+			DB.closeConnection();
 		}
 	}
 	
@@ -93,14 +93,14 @@ public class Escola {
 		}
 		finally {
 			DB.closeStatement(st);
-//			DB.closeConnection();
+			DB.closeConnection();
 		}
 	}
 
 	public static void main(String[] args) {
 		Escola e = new Escola();
 		e.listarAlunos();
-		//e.inserirAluno("Joao", 4, "Trabalhador");
+		//e.inserirAluno("Joao2", 4, "Trabalhador");
 		//e.removerAluno(5);
 	}
 
