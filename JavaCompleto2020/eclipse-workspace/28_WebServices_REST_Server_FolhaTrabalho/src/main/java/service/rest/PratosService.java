@@ -9,8 +9,11 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.MediaType;
@@ -101,8 +104,13 @@ public class PratosService {
 	}
 	
 	@POST
+	@Consumes(MediaType.APPLICATION_JSON) // vai ler json
 	@Path("/addpratos")
-	public void adicionarPrato(@PathParam("nome") String nome, @PathParam("quantidade") int quantidade, @PathParam("preco") double preco) {
+	public void adicionarPrato(String jsonFromUrl) {
+		Gson g = new Gson();
+		Prato prato = g.fromJson(jsonFromUrl, Prato.class); // colocar jsonFromUrl numa variavel
+		String jsonResp = g.toJson(g.toString()); //colocar json para string
+		
 		Connection conn = null; // conectar com BD
 		PreparedStatement st = null; // permite montar consulta SQL
 		
@@ -115,9 +123,75 @@ public class PratosService {
 					+ "VALUES "
 					+ "(?, ?, ?)");
 			
-			st.setString(1, nome);
-			st.setInt(2, quantidade);
-			st.setDouble(3, preco);
+			st.setString(1,prato.getNome());
+			st.setInt(2, prato.getQuantidade());
+			st.setDouble(3, prato.getPreco());
+
+			int rowsAffected = st.executeUpdate(); //saber numero de linhas afetadas e executar
+			System.out.println("Done! Rows affected: " + rowsAffected);
+		}
+		catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			DB.closeStatement(st);
+			DB.closeConnection();
+		}
+	}
+	
+	@DELETE
+	@Path("/delete/{id}")
+	public Response deletePrato(@PathParam("id") int id) {
+		
+		Connection conn = null; // conectar com BD
+		PreparedStatement st = null; // permite montar consulta SQL
+		
+		try {
+			conn = DB.getConnection();
+			// EXAMPLE 1:
+			st = conn.prepareStatement(
+					"DELETE FROM pratos "
+					+ "WHERE id="
+					+ "(?)");
+			
+			st.setInt(1, id);
+
+			int rowsAffected = st.executeUpdate(); //saber numero de linhas afetadas e executar
+			System.out.println("Done! Rows affected: " + rowsAffected);
+		}
+		catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			DB.closeStatement(st);
+			DB.closeConnection();
+		}
+		
+		return Response.ok("OK").build();
+	}
+	
+	@PUT
+	@Consumes(MediaType.APPLICATION_JSON) // vai ler json
+	@Path("/update/{id}")
+	public void updatePrato(@PathParam("id") int id, String jsonFromUrl) {
+		Gson g = new Gson();
+		Prato prato = g.fromJson(jsonFromUrl, Prato.class); // colocar jsonFromUrl numa variavel
+		//String jsonResp = g.toJson(g.toString()); //colocar json para string
+		Connection conn = null; // conectar com BD
+		PreparedStatement st = null; // permite montar consulta SQL
+		System.out.println(prato);
+		
+		try {
+			conn = DB.getConnection();
+			// EXAMPLE 1:
+			st = conn.prepareStatement(
+					"UPDATE pratos "
+					+ "SET nome=?, quantidade=?, preco=? "
+					+ "WHERE id = " + id);
+			
+			st.setString(1,prato.getNome());
+			st.setInt(2, prato.getQuantidade());
+			st.setDouble(3, prato.getPreco());
 
 			int rowsAffected = st.executeUpdate(); //saber numero de linhas afetadas e executar
 			System.out.println("Done! Rows affected: " + rowsAffected);
