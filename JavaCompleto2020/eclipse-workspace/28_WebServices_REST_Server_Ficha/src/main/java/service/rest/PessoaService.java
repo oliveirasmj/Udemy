@@ -142,11 +142,12 @@ public class PessoaService {
 	public Response deletePerson(@PathParam("id") int id) {
 		Gson g = new Gson();
 
-		for (Pessoa p : allPessoas) {
-			if (p.getId().equals(id)) {
-				allPessoas.remove(p);
+		for(int i=0; i<allPessoas.size(); i++) {
+			if (allPessoas.get(i).getId() == id) {
+				allPessoas.remove(i);
 			}
 		}
+			
 		String jsonResp = g.toJson(allPessoas);
 		return Response.ok(jsonResp).build();
 	}

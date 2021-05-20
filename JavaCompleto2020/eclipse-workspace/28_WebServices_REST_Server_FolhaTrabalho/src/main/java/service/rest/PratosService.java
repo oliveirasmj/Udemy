@@ -109,7 +109,7 @@ public class PratosService {
 	public void adicionarPrato(String jsonFromUrl) {
 		Gson g = new Gson();
 		Prato prato = g.fromJson(jsonFromUrl, Prato.class); // colocar jsonFromUrl numa variavel
-		String jsonResp = g.toJson(g.toString()); //colocar json para string
+		//String jsonResp = g.toJson(g.toString()); //colocar json para string
 		
 		Connection conn = null; // conectar com BD
 		PreparedStatement st = null; // permite montar consulta SQL
