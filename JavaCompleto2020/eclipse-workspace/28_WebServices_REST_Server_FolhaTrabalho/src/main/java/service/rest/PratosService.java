@@ -179,7 +179,6 @@ public class PratosService {
 		//String jsonResp = g.toJson(g.toString()); //colocar json para string
 		Connection conn = null; // conectar com BD
 		PreparedStatement st = null; // permite montar consulta SQL
-		System.out.println(prato);
 		
 		try {
 			conn = DB.getConnection();

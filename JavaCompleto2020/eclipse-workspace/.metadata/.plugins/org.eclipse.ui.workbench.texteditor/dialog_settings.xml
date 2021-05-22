@@ -12,6 +12,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="jsonResp"/>
 			<item value="hour"/>
 			<item value="id"/>
 			<item value="inte"/>
@@ -26,7 +27,6 @@
 			<item value="pass"/>
 			<item value="des"/>
 			<item value="cifraDES"/>
-			<item value="keyDes"/>
 		</list>
 		<list key="replacehistory">
 			<item value="ID"/>

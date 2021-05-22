@@ -42,7 +42,7 @@ public class DB {
 
 	// metodo para carregar ao propriedades do arquivo db.properties
 	private static Properties loadProperties() {
-		try (FileInputStream fs = new FileInputStream("db.properties")) {
+		try (FileInputStream fs = new FileInputStream("src/main/java/db/db.properties")) {
 			Properties props = new Properties();
 			props.load(fs);
 			return props;

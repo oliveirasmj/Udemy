@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.jws.WebMethod"/>
-    <fullyQualifiedTypeName name="javax.jws.WebParam"/>
-    <fullyQualifiedTypeName name="hello.world.exercicio5.Turma"/>
-    <fullyQualifiedTypeName name="hello.world.exercicio5.Aluno"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="hello.world.exercicio5.DB"/>
@@ -54,10 +49,15 @@
     <fullyQualifiedTypeName name="com.devskiller.orders.OrdersAnalyzer.Order"/>
     <fullyQualifiedTypeName name="com.devskiller.orders.OrdersAnalyzer.Order.OrderLine"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="javax.ws.rs.POST"/>
     <fullyQualifiedTypeName name="javax.ws.rs.DELETE"/>
     <fullyQualifiedTypeName name="entities.Atividades"/>
     <fullyQualifiedTypeName name="ws.Pessoa"/>
     <fullyQualifiedTypeName name="ws.Atividade"/>
     <fullyQualifiedTypeName name="ws.Atividades"/>
+    <fullyQualifiedTypeName name="com.google.gson.JsonArray"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.POST"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.FormParam"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.PUT"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
 </qualifiedTypeNameHistroy>
