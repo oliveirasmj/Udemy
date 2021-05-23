@@ -48,7 +48,7 @@ public class PratosService {
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
-		} finally { // fechar os recursos necessários
+		} finally { // fechar os recursos necessÃ¡rios
 			DB.closeResultSet(rs);
 			DB.closeStatement(st);
 			DB.closeConnection();
@@ -68,39 +68,36 @@ public class PratosService {
 	@GET
 	@Path("/pratos/{id}")
 	public Response pratoID(@PathParam("id") int id) {
-		Connection conn = null; // conectar com BD
-		Statement st = null; // preparar uma consulta sql
-		ResultSet rs = null; // guardar o resultado da consulta
-		List<Prato> pratos = new ArrayList<Prato>();
+        Connection conn = null; // conectar com BD
+        Statement st = null; // preparar uma consulta sql
+        ResultSet rs = null; // guardar o resultado da consulta
+        List<Prato> pratos = new ArrayList<Prato>();
 
-		try {
-			conn = DB.getConnection(); // conectar com a BD
-			st = conn.createStatement(); // iniciar um statement
-			rs = st.executeQuery("select * from pratos"); // escrever a query e atribuir ao rs
+        try {
+            conn = DB.getConnection(); // conectar com a BD
+            st = conn.createStatement(); // iniciar um statement
+            rs = st.executeQuery("select * from pratos WHERE id=" + id); // escrever a query e atribuir ao rs
 
-			// Imprimir dados
-			while (rs.next()) { // enquanto existir uma proxima linha na tabela rs
-				Prato prato = new Prato(rs.getInt("id"), rs.getString("nome"), rs.getInt("quantidade"), rs.getDouble("preco"));
-				pratos.add(prato);
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} finally { // fechar os recursos necessários
-			DB.closeResultSet(rs);
-			DB.closeStatement(st);
-			DB.closeConnection();
-		}
+            // Imprimir dados
+            while (rs.next()) { // enquanto existir uma proxima linha na tabela rs
+                Prato prato = new Prato(rs.getInt("id"), rs.getString("nome"), rs.getInt("quantidade"), rs.getDouble("preco"));
+                pratos.add(prato);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally { // fechar os recursos necessï¿½rios
+            DB.closeResultSet(rs);
+            DB.closeStatement(st);
+            DB.closeConnection();
+        }
 
-		for (Prato p : pratos) {
-			if (p.getId() == id) {
-				Gson gson = new Gson();
-				String jsonResp = gson.toJson(p);
-				return Response.ok(jsonResp, MediaType.APPLICATION_JSON).build();
-			}
+        Gson gson = new Gson();
+        String jResp = "";
 
-			// return p.toString(); //Alterar assinatura do metodo para String
-		}
-		return null;
+        for (Prato p : pratos) {
+            jResp += gson.toJson(p);
+        }
+        return Response.ok(jResp, MediaType.APPLICATION_JSON).build();
 	}
 	
 	@POST
