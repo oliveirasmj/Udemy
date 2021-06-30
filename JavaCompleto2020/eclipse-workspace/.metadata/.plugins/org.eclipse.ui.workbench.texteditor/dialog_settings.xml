@@ -5,13 +5,15 @@
 		<item key="DIALOG_Y_ORIGIN" value="354"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="hour"/>
+		<item key="selection" value=""/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="true"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="sys"/>
+			<item value="colunaMenor"/>
 			<item value="jsonResp"/>
 			<item value="hour"/>
 			<item value="id"/>
@@ -25,8 +27,6 @@
 			<item value="nic"/>
 			<item value="new files"/>
 			<item value="pass"/>
-			<item value="des"/>
-			<item value="cifraDES"/>
 		</list>
 		<list key="replacehistory">
 			<item value="ID"/>

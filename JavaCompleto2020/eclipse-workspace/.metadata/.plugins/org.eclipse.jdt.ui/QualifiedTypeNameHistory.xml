@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.sql.Statement"/>
-    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="hello.world.exercicio5.DB"/>
-    <fullyQualifiedTypeName name="hello.world.exercicio5.Escola"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="hello.world.IMC"/>
-    <fullyQualifiedTypeName name="client.hello.HelloworldService"/>
     <fullyQualifiedTypeName name="client.hello.Helloworld"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
     <fullyQualifiedTypeName name="client.datahora.DataHoraService"/>
     <fullyQualifiedTypeName name="client.datahora.DataHora"/>
@@ -28,7 +20,6 @@
     <fullyQualifiedTypeName name="javax.ws.rs.GET"/>
     <fullyQualifiedTypeName name="javax.ws.rs.Path"/>
     <fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="entities.Atividade"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="service.rest.PessoaService"/>
@@ -41,14 +32,12 @@
     <fullyQualifiedTypeName name="javax.swing.plaf.nimbus.NimbusStyle"/>
     <fullyQualifiedTypeName name="aula131_ClassesAbstratas.entities.BusinessAccount"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.math.BigDecimal"/>
     <fullyQualifiedTypeName name="com.exchange.ForexEngine"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.time.ZonedDateTime"/>
     <fullyQualifiedTypeName name="com.devskiller.orders.OrdersAnalyzer.Order"/>
     <fullyQualifiedTypeName name="com.devskiller.orders.OrdersAnalyzer.Order.OrderLine"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.ws.rs.DELETE"/>
     <fullyQualifiedTypeName name="entities.Atividades"/>
     <fullyQualifiedTypeName name="ws.Pessoa"/>
@@ -60,4 +49,15 @@
     <fullyQualifiedTypeName name="javax.ws.rs.PUT"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="com.sun.java.swing.plaf.windows.WindowsInternalFrameTitlePane.ScalableIconUIResource"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="application.Program"/>
 </qualifiedTypeNameHistroy>
