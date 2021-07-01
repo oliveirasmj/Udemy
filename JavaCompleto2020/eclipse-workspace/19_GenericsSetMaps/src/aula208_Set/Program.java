@@ -16,6 +16,12 @@ public class Program {
 		set.add("Tv");
 		set.add("Tablet");
 		set.add("Notebook");
+		set.add("Notebook");
+		for(String p : set) {
+			System.out.println(p);
+		}
+		System.out.println("--------------------");
+		
 		
 		set.remove("Tablet"); //remover o "Tablet"
 		set.removeIf(x -> x.length()>3); //remover todos os que têm mais do que 3 caracteres
