@@ -12,7 +12,7 @@ public class Program {
 	public static void main(String[] args) {
 
 		List<String> list = new ArrayList<>();
-		String path = "C:\\Git\\Java_Course\\JavaCompleto2020\\18_Interfaces\\exercicio\\file.txt"; //LISTA DE NOMES
+		String path = "C:\\Users\\olive\\Git\\Java_Course\\JavaCompleto2020\\18_Interfaces\\exercicio\\file.txt"; //LISTA DE NOMES
 		
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 			
